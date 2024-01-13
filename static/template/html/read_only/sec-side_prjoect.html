@@ -1,0 +1,52 @@
+<section id="sproject">
+    <div class="container">
+        <h3>Side Projects</h3>
+        <table class="table" style="font-size: smaller;">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Period</th>
+                    <th scope="col">Project Name</th>
+                    <th scope="col">Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for project in SIDE_PROJECT %}
+                {% set num = loop.index %}
+                {% set p = SIDE_PROJECT[project] %}
+                {% set info = SIDE_PROJECT[project].basic_info %}
+                <tr>
+                    <td scope="row" style="font-size: smaller; font-weight: bolder; text-align: center;">{{ num }}</td>
+                    <td style="font-size: small">{{ info.period_start }}<br>{{ info.period_end }}</td>
+                    <td style="min-width: 400px; font-weight: bold;">
+                        {{ p.english.project_name }}
+                        {% if info.external_link %}
+                        &nbsp;&nbsp;
+                        <a href="{{ info.external_link }}" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        {% endif %}
+                        {% if info.pdf %}
+                        &nbsp;&nbsp;
+                        <a href="{{ info.pdf }}" target="_blank">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </a>
+                        {% endif %}
+                        {% if info.video %}
+                        &nbsp;&nbsp;
+                        <a href="{{ info.video }}" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        {% endif %}
+                    </td>
+                    <td style="font-size: small; text-transform: lowercase;">
+                        {% for tag in info.tags %}
+                        {{ tag }} {% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>

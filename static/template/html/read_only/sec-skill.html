@@ -1,0 +1,22 @@
+<section id="skill">
+    <div class="container">
+        <h3>Skills</h3>
+        {% for type in SKILL %}
+            {% set skills = SKILL[type] %}
+            <h4 style="text-transform: capitalize;">{{ type }}</h4>
+            <ul>
+                {% for skill_name in skills %}
+                {% set skill = skills[skill_name] %}
+                    <li>
+                        <i style="min-width: 25px; text-align: center;"class="{{ skill.basic_info.image }}"></i>
+                        <text style="text-transform: lowercase;">{{ skill.basic_info.level }}</text> - 
+                        <b>{{ skill_name }}</b>
+                        {% if skill.english.description %}
+                            - <em>{{ skill.english.description }}</em>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+</section>

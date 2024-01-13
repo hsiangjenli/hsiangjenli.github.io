@@ -1,0 +1,17 @@
+<section id="research">
+    <div class="container">
+        <h3>Research Interests</h3>
+        <ul>
+            {% for research in RI %}
+                {% set info = RI[research] %}
+                <li>
+                    <i style="min-width: 25px; text-align: center;" class="{{ info.basic_info.image }}"></i> 
+                    <text style="font-weight: bolder;">{{ info.english.name }}</text> - <em style="font-size: smaller;">{{ info.basic_info.status }}</em>
+                </li>
+                <li style="list-style: none; margin-left: 30px; color: #aaaaaa;">
+                    <em>{{ info.english.description }}</em>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
