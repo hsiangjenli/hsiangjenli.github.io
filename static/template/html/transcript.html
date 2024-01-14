@@ -9,6 +9,12 @@
             font-family: sans-serif;
             color: rgb(70, 70, 70);
             position: relative;
+            width: 210mm;
+        }
+
+        @page {
+            margin: 0;
+            padding: 0;
         }
 
         body::before {
@@ -22,7 +28,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: 30%;
-            background-position-y: 400px;
+            /* background-position-y: 400px; */
             opacity: 0.2;
             /* Adjust this value for transparency */
             z-index: -1;
@@ -43,11 +49,13 @@
 
         .grade-container {
             display: inline-block;
-            width: calc(50% - 15px);
-            height: 205px;
-            max-height: 205px;
+            width: 300px;
+            height: 215px; /* Adjusted height for better alignment */
+            max-height: 250px;
             border: 1px solid rgb(200, 200, 200);
             position: relative;
+            /* margin: 5px; */
+            float: left;
         }
 
         .s-title {
@@ -90,15 +98,18 @@
         Student ID: {{ std_id }}, Name: {{ std_name }} <br>
         Overall GPA: {{ overall_gpa_score }} <br>
     </div>
-    <center>
+    <div style="margin-left: 87px;">
         {% for transcript in transcripts %}
         <div class="grade-container">
             <div class="s-title"><u>{{ transcript['year'] }}, {{ transcript['semester'] }}</u></div>
-            <div><center>{{ transcript['html'] }}</center></div>
-            <span class="f-info"><b>Total Credits Earned: </b> {{ transcript['Total Credits Earned'] }}, <b>Grade Point Average: </b> {{ transcript['Grade Point Average'] }}</span>
+            <div style="padding: 10px;">
+                {{ transcript['html'] }}
+            </div>
+            <span class="f-info"><b>Total Credits Earned: </b> {{ transcript['Total Credits Earned'] }}, <b>Grade Point
+                    Average: </b> {{ transcript['Grade Point Average'] }}</span>
         </div>
         {% endfor %}
-    </center>
+    </div>
 
 </body>
 

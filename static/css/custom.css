@@ -10,3 +10,21 @@ table td {
 th {
     vertical-align: middle;
 }
+
+.w400 {
+    min-width: 400px
+}
+
+@media screen and (max-width: 768px) {
+    .w400 {
+        min-width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .w400 {
+        min-width: auto;    
+    }
+    
+}
