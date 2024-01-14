@@ -1,0 +1,25 @@
+<div class="heading">
+    <text class="highlight">Ski</text><text>lls</text>
+    <hr class="line">
+</div>
+<div class="sec">
+
+    {% for type in SKILL %}
+    <div class="small">
+        {% set skills = SKILL[type] %}
+        <b>{{ type }} : </b>
+        
+        {% for skill_name in skills %}
+            {% set skill = skills[skill_name] %}
+
+            <text>{{ skill_name }}</text> 
+            <text class="annotation" style="text-transform: lowercase;">
+                {{ skill.basic_info.level }}
+            </text>
+            {% if not loop.last %}, {% endif %}
+
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+</div>

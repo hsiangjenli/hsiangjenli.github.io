@@ -11,8 +11,8 @@
 
                 <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
                     <text style="font-size: larger; font-weight: bolder;">{{ edu.name }} </text> <em style="font-size: medium;"> {{ edu.country }}</em><br>
-                    <text><a href="{{ edu.href }}">{{ edu.major }}</a></text><br>
-                    <text>GPA: {{ gpa }} &nbsp;&nbsp;<a href="{{ info.transcript }}"><i class="fa-solid fa-file-pdf"></i></a></text>
+                    <text><em><a href="{{ edu.href }}">{{ edu.major }}</a></em></text><br>
+                    <text>- GPA: {{ gpa }} &nbsp;&nbsp;<a href="{{ info.transcript }}"><i class="fa-solid fa-file-pdf"></i></a></text>
                 </div>
 
             {% endfor %}

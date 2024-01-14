@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        @page {
+            margin: 0;
+            padding: 0;
+            font-family: Raleway;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Raleway;
+        }
+
+        /* DIV ======================================================================= */
+        .container {
+            display: flex;
+        }
+
+        .sec {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        .left-div {
+            flex: 1;
+        }
+
+        .right-div {
+            text-align: right;
+        }
+
+        /* TEXT ======================================================================= */
+
+        .large {
+            font-size: large
+        }
+
+        .medium {
+            font-size: medium
+        }
+
+        .small {
+            font-size: small
+        }
+
+        .x-small {
+            font-size: x-small
+        }
+
+        .b {
+            font-weight: bolder;
+        }
+        .mono {
+            font-family: 'Ubuntu Mono'}
+
+        .heading {
+            display: flex;
+            align-items: center;
+            font-size: large;
+            font-weight: 900;
+        }
+
+        .line {
+            flex-grow: 1;
+            margin-left: 10px;
+            border: .25px solid #555;
+        }
+
+        .highlight {
+            color: #b84646;
+        }
+
+        .annotation {
+            font-size: x-small;
+            color: gray;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>{% include 'info.html' %}</div>
+    <div style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 3rem; padding-right: 3rem;">
+        {% include'sec-edu.html' %}
+        {% include'sec-award.html' %}
+        {% include'sec-side_prjoect.html' %}
+        {% include'sec-skill.html' %}
+    </div>
+</body>
+
+</html>
