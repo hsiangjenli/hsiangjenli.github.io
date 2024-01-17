@@ -15,6 +15,27 @@ th {
     min-width: 400px
 }
 
+.annot {
+    color: #aaaaaa;
+}
+
+.small {
+    font-size: small;
+}
+.medium {
+    font-size: medium;
+}
+.large {
+    font-size: large;
+}
+.larger {
+    font-size: larger;
+}
+
+.b {
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 768px) {
     .w400 {
         min-width: auto;

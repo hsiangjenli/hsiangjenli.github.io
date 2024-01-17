@@ -1,18 +1,15 @@
 <section id="award">
     <div class="container">
         <h3>Competition & Award</h3>
-        {% for award_id in AWARD %}
-        {% set award = AWARD[award_id] %}
-        {% set info = AWARD[award_id].basic_info %}
-        <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
-            <text style="font-size: larger; font-weight: bolder;">
-                {{ award.english.title }}
-            </text>
-            <em style="color: #aaaaaa; font-size: medium;">- {{ info.year }}</em>
-            <br>
-            <text><em>{{ award.english.host }}</em></text><br>
-            <text style="color: #aaaaaa;">- {{ award.english.ranking }}</text>
-        </div>
-        {% endfor %}
+            {% for award_id in AWARD %}
+            {% set award = AWARD[award_id] %}
+            {% set info = AWARD[award_id].basic_info %}
+            <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <text class="b larger">{{ award.english.title }}</text> <em class="annot medium"> - {{ info.year }}</em><br>
+                <a href="{{ info.href }}"><em>{{ award.english.host }}</em></a><br>
+                <text class="annot">- {{ award.english.ranking }}</text>
+            </div>
+            {% endfor %}
+        </ul>
     </div>
 </section>
