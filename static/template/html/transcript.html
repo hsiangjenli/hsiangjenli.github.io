@@ -50,7 +50,7 @@
         .grade-container {
             display: inline-block;
             width: 300px;
-            height: 215px; /* Adjusted height for better alignment */
+            height: 230px; /* Adjusted height for better alignment */
             max-height: 250px;
             border: 1px solid rgb(200, 200, 200);
             position: relative;
@@ -91,12 +91,13 @@
 
 <body>
     <h3>{{ university }}</h3>
-    <h4>Transcript of Academic Record</h4>
+    <h4 style="margin: .3rem;">Transcript of Academic Record</h4>
 
     <div style="text-align: center; font-size: small; margin-bottom: .35rem;">
-        <p><b>-- {{ major }} --</b></p>
+        <p style="margin: .3rem;"><b>-- {{ major }} --</b></p>
         Student ID: {{ std_id }}, Name: {{ std_name }} <br>
         Overall GPA: {{ overall_gpa_score }} <br>
+        Total Credits Earned: {{ earned_credits }}/ {{ total_credits }} <br>
     </div>
     <div style="margin-left: 87px;">
         {% for transcript in transcripts %}

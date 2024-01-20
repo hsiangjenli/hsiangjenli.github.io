@@ -12,6 +12,8 @@
 
         @page {
             margin: 0;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
             padding: 0;
             font-family: Raleway;
         }
@@ -74,37 +76,41 @@
         .line {
             flex-grow: 1;
             margin-left: 10px;
-            border: .25px solid #555;
+            border: .25px solid #666;
         }
 
         .highlight {
-            color: #b84646;
+            color: #b84646!important;
         }
 
         .annotation {
             font-size: x-small;
-            color: gray;
+            color: #333;
+        }
+
+        .i {
+            font-style: italic;
         }
 
         a {
             text-decoration: none;
-            color: gray;
+            color: #333;
         }
     </style>
 </head>
 
 <body>
-    <div><div style="padding-top: 2rem; margin: 0; text-align: center;">
+    <div><div style="text-align: center;">
     <text style="font-weight: 400; font-size: xx-large;">Hsiang-Jen Li </text>
     <text class="highlight" style="font-weight: bold; font-size: xx-large;"> RN</text>
 
-    <div class="b" style="font-size: x-small; color: grey; text-decoration: none; padding: 1rem;">
+    <div class="b" style="font-size: x-small; color: grey; text-decoration: none; padding-top: 1rem;">
         <a href="hsiangjenli"><i class="fa-brands fa-github"></i> hsiangjenli </a> |
         <a href="mailto:hsiangjenli@gmail.com"><i class="fa-solid fa-envelope"></i> hsiangjenli@gmail.com </a>
     </div>
 
 </div></div>
-    <div style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 3rem; padding-right: 3rem;">
+    <div style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 2rem; padding-right: 2rem;">
         <div class="heading">
     <text class="highlight">Edu</text><text>cation</text>
     <hr class="line">
@@ -124,10 +130,10 @@
     </div>
     <div class="container">
         <div class="left-div"> 
-            <text class="x-small">Department of Computer Science and Information Engineering</text><br>
-            <text class="b annotation">GPA: 4.02/4.3</text>
+            <text class="x-small i"><text style="text-transform: capitalize;">master's</text> in Department of Computer Science and Information Engineering</text><br>
+            <text class="annotation">- GPA: 4.02/4.3</text>
         </div>
-        <div class="right-div highlight">
+        <div class="right-div">
             <text class="b annotation">2024</text>
         </div>
     </div>
@@ -148,10 +154,10 @@
     </div>
     <div class="container">
         <div class="left-div"> 
-            <text class="x-small">Department of Money and Banking</text><br>
-            <text class="b annotation">GPA: 3.82/4.3</text>
+            <text class="x-small i"><text style="text-transform: capitalize;">bachelor's</text> in Department of Money and Banking</text><br>
+            <text class="annotation">- GPA: 3.82/4.3</text>
         </div>
-        <div class="right-div highlight">
+        <div class="right-div">
             <text class="b annotation">2022</text>
         </div>
     </div>
@@ -160,7 +166,27 @@
 
 
         <div class="heading">
-    <text class="highlight">Com</text><text>petition and Award</text>
+    <text class="highlight">Wor</text><text>k Experience</text>
+    <hr class="line">
+</div>
+
+<div class="sec">
+    
+        
+        
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="b">Shanghai Commercial & Savings Bank - Digital Banking Department</text><br>
+            <text class="x-small i">Internship in SCSB Digital Banking</text> <br>
+        </div>
+        <div class="right-div annotation b">2023.07 ~ 2023.08</div>
+    
+    </div>
+    
+</div>
+        <div class="heading">
+    <text class="highlight">Com</text><text>petition & Award</text>
     <hr class="line">
 </div>
 
@@ -172,7 +198,7 @@
     <div class="container small">
         <div class="left-div">
             <text class="b">Campus Fintech Innovation Challenge</text><br>
-            <text class="x-small">- Taiwan Academy of Banking and Finance</text> <br>
+            <text class="x-small i">Taiwan Academy of Banking and Finance</text> <br>
             <text class="annotation">- Ranked as the 8th out of 187 teams</text>
         </div>
         <div class="right-div annotation b">2022</div>
@@ -185,7 +211,7 @@
     <div class="container small">
         <div class="left-div">
             <text class="b">Joint Exhibition on Artificial Intelligence and Neural Networks</text><br>
-            <text class="x-small">- National Kaohsiung University of Science and Technology - Department of Electrical Engineering</text> <br>
+            <text class="x-small i">National Kaohsiung University of Science and Technology - Department of Electrical Engineering</text> <br>
             <text class="annotation">- Ranked as the 1st out of an estimated 30 teams</text>
         </div>
         <div class="right-div annotation b">2022</div>
@@ -198,7 +224,7 @@
     <div class="container small">
         <div class="left-div">
             <text class="b">Campus Achievement Exhibition</text><br>
-            <text class="x-small">- Fintech Space</text> <br>
+            <text class="x-small i">Fintech Space</text> <br>
             <text class="annotation">- Competition's preferred choice</text>
         </div>
         <div class="right-div annotation b">2020</div>
@@ -207,7 +233,7 @@
     
 </div>
         <div class="heading">
-    <text class="highlight">Sid</text><text>e Projects & IT Blogs</text>
+    <text class="highlight">Sid</text><text>e Project</text>
     <hr class="line">
 </div>
 <div class="sec">
@@ -216,51 +242,53 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+
     <div class="container small">
         <div class="left-div">
             <text class="small b">Evasion Attack in Machine Learning</text><br>
             <text class="annotation">
                 
-                    - We are trying to add some noise to the malware(binary file) to make it undetectable by the CNN model.<br>
+                - Trying to use evasion attack to attack the CNN-based maleware detection model.<br>
+                
+                - Need to add noise to the maleware sample to make the model misclassify the sample.<br>
+                
+                - The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).<br>
                 
         </div>
-        <div class="right-div annotation b">2023.09 ~ 2023.12</div>    
+        <div class="right-div annotation b">2023.09 ~ 2023.12</div>
     </div>
+
+    
     
     
     
     
 
-    <div class="container small">
-        <div class="left-div">
-            <text class="small b">2023 IT home Ironman Challenge - AI and Data</text><br>
-            <text class="annotation">
-                
-                    - I will try to learn and read some papers about Network Science and its application in 30 days.<br>
-                
-        </div>
-        <div class="right-div annotation b">2023.09 ~ 2023.10</div>    
-    </div>
+    
     
     
     
     
 
-    <div class="container small">
-        <div class="left-div">
-            <text class="small b">Web Scraping : Social Network Crawler</text><br>
-            <text class="annotation">
-                
-                    - Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.<br>
-                
-                    - The data will be stored in MongoDB and can be used for further analysis.<br>
-                
-        </div>
-        <div class="right-div annotation b">2023.07 ~ 2023.08</div>    
-    </div>
     
     
     
+    
+    
+
     
 
     <div class="container small">
@@ -268,33 +296,24 @@
             <text class="small b">Graph-based : Keywords Recommendation System</text><br>
             <text class="annotation">
                 
-                    - Applying Graph Theory/Network Science field to build a keywords recommendation system.<br>
+                - Applying Network Science field to build a keywords recommendation system.<br>
                 
         </div>
-        <div class="right-div annotation b">2023.05 ~ 2023.06</div>    
+        <div class="right-div annotation b">2023.05 ~ 2023.06</div>
     </div>
+
+    
     
     
     
     
 
-    <div class="container small">
-        <div class="left-div">
-            <text class="small b">Taiwan Famous Ecommerce : Find Identical Products</text><br>
-            <text class="annotation">
-                
-                    - Finding identical products from item's name is a quite challenging task.<br>
-                
-                    - Using Regular-Expression and CKIP-transformer to extract keywords from item's name.<br>
-                
-                    - And using dimension-reduction and cluster algorithms to find identical products.<br>
-                
-        </div>
-        <div class="right-div annotation b">2022.11 ~ 2022.12</div>    
-    </div>
     
     
     
+    
+    
+
     
 
     <div class="container small">
@@ -302,20 +321,24 @@
             <text class="small b">Apriori J104</text><br>
             <text class="annotation">
                 
-                    - An application for analyzing the skills required by the job market.<br>
+                - An application for analyzing the skills required by the job market.<br>
                 
-                    - The data is crawled from 104 job bank and stored in MongoDB.<br>
+                - The data is crawled from 104 job bank and stored in MongoDB.<br>
                 
-                    - And the data will be processed by CKIP-transformer.<br>
+                - And the data will be processed by CKIP-transformer.<br>
                 
-                    - Finally, using apyori algorithm to find the association rules between skills.<br>
+                - Finally, using apyori algorithm to find the association rules between skills.<br>
                 
         </div>
-        <div class="right-div annotation b">2022.05 ~ 2022.06</div>    
+        <div class="right-div annotation b">2022.05 ~ 2022.06</div>
     </div>
+
     
     
     
+    
+    
+
     
 
     <div class="container small">
@@ -323,16 +346,20 @@
             <text class="small b">Financial Public Opinion Analysis</text><br>
             <text class="annotation">
                 
-                    - Using Django to build a web application for analyzing financial public opinion.<br>
+                - Using Django to build a web application for analyzing financial public opinion.<br>
                 
-                    - The data is crawled from Anue and the data will be stored in MongoDB.<br>
+                - The data is crawled from Anue and the data will be stored in MongoDB.<br>
                 
         </div>
-        <div class="right-div annotation b">2022.03 ~ 2022.06</div>    
+        <div class="right-div annotation b">2022.03 ~ 2022.06</div>
     </div>
+
     
     
     
+    
+    
+
     
 
     <div class="container small">
@@ -340,11 +367,13 @@
             <text class="small b">Line-Bot : Stock Info</text><br>
             <text class="annotation">
                 
-                    - A Line-Bot for getting the stock information.<br>
+                - A Line-Bot for getting the stock information.<br>
                 
         </div>
-        <div class="right-div annotation b">2020.10 ~ 2021.07</div>    
+        <div class="right-div annotation b">2020.10 ~ 2021.07</div>
     </div>
+
+    
     
 </div>
         <div class="heading">

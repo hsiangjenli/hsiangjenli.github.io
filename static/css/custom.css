@@ -1,3 +1,7 @@
+h3 {
+    font-weight: bolder;
+}
+
 table td {
     padding-left: .5rem;
     padding-right: .5rem;

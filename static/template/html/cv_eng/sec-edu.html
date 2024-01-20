@@ -4,7 +4,7 @@
 </div>
 
 {% for degree in EDU %}
-{% set edu = EDU[degree].university.english %}
+{% set edu = EDU[degree].university[LANG] %}
 {% set info = EDU[degree].university.basic_info %}
 
 {% set grad_year = info.graduate_year %}
@@ -17,10 +17,10 @@
     </div>
     <div class="container">
         <div class="left-div"> 
-            <text class="x-small">{{ edu.major }}</text><br>
-            <text class="b annotation">GPA: {{ gpa }}</text>
+            <text class="x-small i"><text style="text-transform: capitalize;">{{ degree }}'s</text> in {{ edu.major }}</text><br>
+            <text class="annotation">- GPA: {{ gpa }}</text>
         </div>
-        <div class="right-div highlight">
+        <div class="right-div">
             <text class="b annotation">{{ grad_year }}</text>
         </div>
     </div>
