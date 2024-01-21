@@ -1,0 +1,22 @@
+<div class="heading">
+    <text class="highlight">Rea</text><text>search Interest</text>
+    <hr class="line">
+</div>
+
+<div class="sec">
+    {% for research in RI %}
+        {% set info = RI[research].basic_info %}
+        {% set r = RI[research][LANG] %}
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="b">{{ r.name }}</text><br>
+            {% if r.description %}
+                <text class="x-small">{{ r.description }}</text> <br>
+            {% endif %}
+        </div>
+        <div class="right-div period">{{ info.status }}</div>
+    
+    </div>
+    {% endfor %}
+</div>

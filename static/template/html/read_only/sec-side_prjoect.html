@@ -17,8 +17,17 @@
                 {% set info = SIDE_PROJECT[project].basic_info %}
                 <tr>
                     <td scope="row" style="font-size: smaller; font-weight: bolder; text-align: center;">{{ num }}</td>
-                    <td style="font-size: small; text-align: center;">{{ info.period_start }}<br>{{ info.period_end }}</td>
-                    <td class="w400" style="font-weight: bold;">
+                    <td style="font-size: small; text-align: left; min-width: 130px;">
+                        {{ info.period_start }}
+                         ~ 
+                        {% if info.period_end == 'now' %}
+                           <b>{{ info.period_end }} 🚀</b>
+
+                        {% else %}
+                            {{ info.period_end }}
+                        {% endif %}
+                    </td>
+                    <td class="w400 b">
                         {{ p.english.project_name }}
                         {% if info.external_link %}
                         &nbsp;&nbsp;

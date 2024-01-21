@@ -2,7 +2,7 @@
     <text class="highlight">Edu</text><text>cation</text>
     <hr class="line">
 </div>
-
+<div class="sec">
 {% for degree in EDU %}
 {% set edu = EDU[degree].university[LANG] %}
 {% set info = EDU[degree].university.basic_info %}
@@ -10,21 +10,21 @@
 {% set grad_year = info.graduate_year %}
 {% set gpa = info.gpa %}
 
-<div class="sec small">
-    <div class="container">
-        <div class="left-div"><text class="b">{{ edu.name }} </text> </div>
-        <div class="right-div highlight"><i> {{ edu.city }}, {{ edu.country }}</i><br></div>
-    </div>
-    <div class="container">
-        <div class="left-div"> 
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">{{ edu.name }} </text><br>
             <text class="x-small i"><text style="text-transform: capitalize;">{{ degree }}'s</text> in {{ edu.major }}</text><br>
-            <text class="annotation">- GPA: {{ gpa }}</text>
+            <text class="annotation">
+                <ul class="dash"><li>GPA: {{ gpa }}</li></ul>
+            </text>
         </div>
-        <div class="right-div">
-            <text class="b annotation">{{ grad_year }}</text>
+        <div class="right-div highlight">
+            <i> {{ edu.city }}, {{ edu.country }}</i><br>
+            <text class="period">{{ grad_year }}</text>
         </div>
     </div>
 
-</div>
 
 {% endfor %}
+</div>

@@ -9,7 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+    
         @page {
             margin: 0;
             margin-top: 2.5rem;
@@ -17,85 +17,113 @@
             padding: 0;
             font-family: Raleway;
         }
-
+    
         body {
             margin: 0;
             padding: 0;
             font-family: Raleway;
         }
-
+    
         /* DIV ======================================================================= */
         .container {
             display: flex;
         }
-
+    
         .sec {
             margin-top: .5rem;
             margin-bottom: .5rem;
         }
-
+    
         .left-div {
             flex: 1;
+            margin-top: .1rem;
+            margin-bottom: .1rem;
+            margin-right: 5rem;
         }
-
+    
         .right-div {
             text-align: right;
         }
-
+    
         /* TEXT ======================================================================= */
-
+    
         .large {
             font-size: large
         }
-
+    
         .medium {
             font-size: medium
         }
-
+    
         .small {
             font-size: small
         }
-
+    
         .x-small {
             font-size: x-small
         }
-
+    
         .b {
             font-weight: bolder;
         }
+    
         .mono {
-            font-family: 'Ubuntu Mono'}
-
+            font-family: 'Ubuntu Mono'
+        }
+    
         .heading {
             display: flex;
             align-items: center;
             font-size: large;
             font-weight: 900;
         }
-
+    
         .line {
             flex-grow: 1;
             margin-left: 10px;
             border: .25px solid #666;
         }
-
+    
         .highlight {
-            color: #b84646!important;
+            color: #b84646 !important;
         }
-
+    
         .annotation {
             font-size: x-small;
             color: #333;
         }
-
+    
         .i {
             font-style: italic;
         }
-
+    
         a {
             text-decoration: none;
             color: #333;
         }
+
+        .period {
+            font-size: x-small;
+            font-weight: bolder;
+            color: #b84646 !important;
+        }
+    
+        /* UL */
+    
+        ul.dash {
+            list-style: none;
+            margin: 0;
+            padding: 0px;
+            padding-left: 1.4em;
+        }
+    
+        ul.dash>li:before {
+            display: inline-block;
+            content: "-";
+            width: 1em;
+            margin-left: -1.2em;
+        }
+
     </style>
 </head>
 
@@ -115,6 +143,7 @@
     <text class="highlight">Edu</text><text>cation</text>
     <hr class="line">
 </div>
+<div class="sec">
 
 
 
@@ -123,22 +152,20 @@
 
 
 
-<div class="sec small">
-    <div class="container">
-        <div class="left-div"><text class="b">National Taiwan University of Science and Technology </text> </div>
-        <div class="right-div highlight"><i> Taipei, Taiwan</i><br></div>
-    </div>
-    <div class="container">
-        <div class="left-div"> 
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">National Taiwan University of Science and Technology </text><br>
             <text class="x-small i"><text style="text-transform: capitalize;">master's</text> in Department of Computer Science and Information Engineering</text><br>
-            <text class="annotation">- GPA: 4.02/4.3</text>
+            <text class="annotation">
+                <ul class="dash"><li>GPA: 4.02/4.3</li></ul>
+            </text>
         </div>
-        <div class="right-div">
-            <text class="b annotation">2024</text>
+        <div class="right-div highlight">
+            <i> Taipei, Taiwan</i><br>
+            <text class="period">2024</text>
         </div>
     </div>
 
-</div>
 
 
 
@@ -147,24 +174,24 @@
 
 
 
-<div class="sec small">
-    <div class="container">
-        <div class="left-div"><text class="b">National Kaohsiung University of Science and Technology </text> </div>
-        <div class="right-div highlight"><i> Kaohsiung, Taiwan</i><br></div>
-    </div>
-    <div class="container">
-        <div class="left-div"> 
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">National Kaohsiung University of Science and Technology </text><br>
             <text class="x-small i"><text style="text-transform: capitalize;">bachelor's</text> in Department of Money and Banking</text><br>
-            <text class="annotation">- GPA: 3.82/4.3</text>
+            <text class="annotation">
+                <ul class="dash"><li>GPA: 3.82/4.3</li></ul>
+            </text>
         </div>
-        <div class="right-div">
-            <text class="b annotation">2022</text>
+        <div class="right-div highlight">
+            <i> Kaohsiung, Taiwan</i><br>
+            <text class="period">2022</text>
         </div>
     </div>
 
+
+
 </div>
-
-
         <div class="heading">
     <text class="highlight">Wor</text><text>k Experience</text>
     <hr class="line">
@@ -180,7 +207,7 @@
             <text class="b">Shanghai Commercial & Savings Bank - Digital Banking Department</text><br>
             <text class="x-small i">Internship in SCSB Digital Banking</text> <br>
         </div>
-        <div class="right-div annotation b">2023.07 ~ 2023.08</div>
+        <div class="right-div period">2023.07 ~ 2023.08</div>
     
     </div>
     
@@ -197,11 +224,13 @@
 
     <div class="container small">
         <div class="left-div">
-            <text class="b">Campus Fintech Innovation Challenge</text><br>
+            <text class="small b">Campus Fintech Innovation Challenge</text><br>
             <text class="x-small i">Taiwan Academy of Banking and Finance</text> <br>
-            <text class="annotation">- Ranked as the 8th out of 187 teams</text>
+            <text class="annotation">
+                <ul class="dash"><li>Ranked as the 8th out of 187 teams</li></ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2022</div>
+        <div class="right-div period">2022</div>
     
     </div>
     
@@ -210,11 +239,13 @@
 
     <div class="container small">
         <div class="left-div">
-            <text class="b">Joint Exhibition on Artificial Intelligence and Neural Networks</text><br>
+            <text class="small b">Joint Exhibition on Artificial Intelligence and Neural Networks</text><br>
             <text class="x-small i">National Kaohsiung University of Science and Technology - Department of Electrical Engineering</text> <br>
-            <text class="annotation">- Ranked as the 1st out of an estimated 30 teams</text>
+            <text class="annotation">
+                <ul class="dash"><li>Ranked as the 1st out of an estimated 30 teams</li></ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2022</div>
+        <div class="right-div period">2022</div>
     
     </div>
     
@@ -223,11 +254,13 @@
 
     <div class="container small">
         <div class="left-div">
-            <text class="b">Campus Achievement Exhibition</text><br>
+            <text class="small b">Campus Achievement Exhibition</text><br>
             <text class="x-small i">Fintech Space</text> <br>
-            <text class="annotation">- Competition's preferred choice</text>
+            <text class="annotation">
+                <ul class="dash"><li>Competition's preferred choice</li></ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2020</div>
+        <div class="right-div period">2020</div>
     
     </div>
     
@@ -243,10 +276,72 @@
     
 
     
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">Learn Julia</text><br>
+            <text class="annotation">
+                <ul class="dash">
+                
+                <li>Learning Julia Programming Language with a series of scripts.</li>
+                
+                </ul>
+            </text>
+        </div>
+        <div class="right-div period">2024.01 ~ now</div>
+    </div>
+
     
     
     
     
+    
+
+    
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">Awesome Metaheuristic and its Applications</text><br>
+            <text class="annotation">
+                <ul class="dash">
+                
+                <li>A curated list of awesome metaheuristic and its applications resources.</li>
+                
+                <li>Including the basic concepts of metaheuristic, the application of metaheuristic, like Graph Neural Network and Graph Database.</li>
+                
+                <li>Also including the latest research papers about metaheuristic.</li>
+                
+                </ul>
+            </text>
+        </div>
+        <div class="right-div period">2024.01 ~ now</div>
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">Awesome Complex System and Network Science</text><br>
+            <text class="annotation">
+                <ul class="dash">
+                
+                <li>A curated list of awesome complex system and network science resources.</li>
+                
+                <li>Including the basic concepts of complex system and network science, the application of complex system and network science, like Graph Neural Network and Graph Database.</li>
+                
+                <li>Also including the latest research papers about complex system and network science.</li>
+                
+                </ul>
+            </text>
+        </div>
+        <div class="right-div period">2023.12 ~ now</div>
+    </div>
 
     
     
@@ -260,15 +355,18 @@
         <div class="left-div">
             <text class="small b">Evasion Attack in Machine Learning</text><br>
             <text class="annotation">
+                <ul class="dash">
                 
-                - Trying to use evasion attack to attack the CNN-based maleware detection model.<br>
+                <li>Trying to use evasion attack to attack the CNN-based maleware detection model.</li>
                 
-                - Need to add noise to the maleware sample to make the model misclassify the sample.<br>
+                <li>Need to add noise to the maleware sample to make the model misclassify the sample.</li>
                 
-                - The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).<br>
+                <li>The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).</li>
                 
+                </ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2023.09 ~ 2023.12</div>
+        <div class="right-div period">2023.09 ~ 2023.12</div>
     </div>
 
     
@@ -278,10 +376,48 @@
     
 
     
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">2023 IT home Ironman Challenge - AI and Data</text><br>
+            <text class="annotation">
+                <ul class="dash">
+                
+                <li>In this challenge, I had written 30 articles about Network Science and Graph Neural Network.</li>
+                
+                <li>Including the basic concepts of Network Science, the application of Network Science, like Graph Neural Network and Graph Database.</li>
+                
+                <li>Also including the latest research papers about Graph Neural Network.</li>
+                
+                </ul>
+            </text>
+        </div>
+        <div class="right-div period">2023.09 ~ 2023.10</div>
+    </div>
+
     
     
     
     
+    
+
+    
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">Web Scraping : Social Network Crawler</text><br>
+            <text class="annotation">
+                <ul class="dash">
+                
+                <li>Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.</li>
+                
+                <li>The data will be stored in MongoDB and can be used for further analysis.</li>
+                
+                </ul>
+            </text>
+        </div>
+        <div class="right-div period">2023.07 ~ 2023.08</div>
+    </div>
 
     
     
@@ -295,11 +431,14 @@
         <div class="left-div">
             <text class="small b">Graph-based : Keywords Recommendation System</text><br>
             <text class="annotation">
+                <ul class="dash">
                 
-                - Applying Network Science field to build a keywords recommendation system.<br>
+                <li>Applying Network Science field to build a keywords recommendation system.</li>
                 
+                </ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2023.05 ~ 2023.06</div>
+        <div class="right-div period">2023.05 ~ 2023.06</div>
     </div>
 
     
@@ -307,6 +446,26 @@
     
     
     
+
+    
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">Taiwan Famous Ecommerce : Find Identical Products</text><br>
+            <text class="annotation">
+                <ul class="dash">
+                
+                <li>Finding identical products from item's name is a quite challenging task.</li>
+                
+                <li>Using Regular-Expression and CKIP-transformer to extract keywords from item's name.</li>
+                
+                <li>And using dimension-reduction and cluster algorithms to find identical products.</li>
+                
+                </ul>
+            </text>
+        </div>
+        <div class="right-div period">2022.11 ~ 2022.12</div>
+    </div>
 
     
     
@@ -320,17 +479,20 @@
         <div class="left-div">
             <text class="small b">Apriori J104</text><br>
             <text class="annotation">
+                <ul class="dash">
                 
-                - An application for analyzing the skills required by the job market.<br>
+                <li>An application for analyzing the skills required by the job market.</li>
                 
-                - The data is crawled from 104 job bank and stored in MongoDB.<br>
+                <li>The data is crawled from 104 job bank and stored in MongoDB.</li>
                 
-                - And the data will be processed by CKIP-transformer.<br>
+                <li>And the data will be processed by CKIP-transformer.</li>
                 
-                - Finally, using apyori algorithm to find the association rules between skills.<br>
+                <li>Finally, using apyori algorithm to find the association rules between skills.</li>
                 
+                </ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2022.05 ~ 2022.06</div>
+        <div class="right-div period">2022.05 ~ 2022.06</div>
     </div>
 
     
@@ -345,14 +507,29 @@
         <div class="left-div">
             <text class="small b">Financial Public Opinion Analysis</text><br>
             <text class="annotation">
+                <ul class="dash">
                 
-                - Using Django to build a web application for analyzing financial public opinion.<br>
+                <li>Using Django to build a web application for analyzing financial public opinion.</li>
                 
-                - The data is crawled from Anue and the data will be stored in MongoDB.<br>
+                <li>The data is crawled from Anue and the data will be stored in MongoDB.</li>
                 
+                </ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2022.03 ~ 2022.06</div>
+        <div class="right-div period">2022.03 ~ 2022.06</div>
     </div>
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
 
     
     
@@ -366,18 +543,81 @@
         <div class="left-div">
             <text class="small b">Line-Bot : Stock Info</text><br>
             <text class="annotation">
+                <ul class="dash">
                 
-                - A Line-Bot for getting the stock information.<br>
+                <li>A Line-Bot for getting the stock information.</li>
                 
+                </ul>
+            </text>
         </div>
-        <div class="right-div annotation b">2020.10 ~ 2021.07</div>
+        <div class="right-div period">2020.10 ~ 2021.07</div>
     </div>
 
     
     
 </div>
         <div class="heading">
-    <text class="highlight">Ski</text><text>lls</text>
+    <text class="highlight">Rea</text><text>search Interest</text>
+    <hr class="line">
+</div>
+
+<div class="sec">
+    
+        
+        
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="b">Complex Systems and Network Science</text><br>
+            
+                <text class="x-small">Unlike grid-like data structures, complex systems are composed by nodes and edges, which are more complicated for analysis and modeling. </text> <br>
+            
+        </div>
+        <div class="right-div period">Recently</div>
+    
+    </div>
+    
+        
+        
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="b">Metaheuristics</text><br>
+            
+                <text class="x-small">Metaheuristic is a bio-inspired algorithm that can be used to solve optimization problems.</text> <br>
+            
+        </div>
+        <div class="right-div period">Future Plan</div>
+    
+    </div>
+    
+        
+        
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="b">Distributed Computing</text><br>
+            
+        </div>
+        <div class="right-div period">Future Plan</div>
+    
+    </div>
+    
+        
+        
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="b">Privacy-Preserving Machine Learning</text><br>
+            
+        </div>
+        <div class="right-div period">Future Plan</div>
+    
+    </div>
+    
+</div>
+        <div class="heading">
+    <text class="highlight">Ski</text><text>ll</text>
     <hr class="line">
 </div>
 <div class="sec">
@@ -393,6 +633,15 @@
             <text>python</text> 
             <text class="annotation" style="text-transform: lowercase;">
                 Advanced
+            </text>
+            , 
+
+        
+            
+
+            <text>julia</text> 
+            <text class="annotation" style="text-transform: lowercase;">
+                Beginner
             </text>
             , 
 
