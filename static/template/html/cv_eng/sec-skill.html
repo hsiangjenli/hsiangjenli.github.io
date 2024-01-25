@@ -1,5 +1,5 @@
 <div class="heading">
-    <text class="highlight">Ski</text><text>ll</text>
+    <text class="highlight">Ski</text><text>lls</text>
     <hr class="line">
 </div>
 <div class="sec">
@@ -7,7 +7,7 @@
     {% for type in SKILL %}
     <div class="small">
         {% set skills = SKILL[type] %}
-        <b>{{ type }} : </b>
+        <b>{{ type|replace('_', '/') }} : </b>
         
         {% for skill_name in skills %}
             {% set skill = skills[skill_name] %}

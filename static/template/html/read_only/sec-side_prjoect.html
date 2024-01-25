@@ -17,7 +17,7 @@
                 {% set info = SIDE_PROJECT[project].basic_info %}
                 <tr>
                     <td scope="row" style="font-size: smaller; font-weight: bolder; text-align: center;">{{ num }}</td>
-                    <td style="font-size: small; text-align: left; min-width: 130px;">
+                    <td style="font-size: small; text-align: left" class="w130">
                         {{ info.period_start }}
                          ~ 
                         {% if info.period_end == 'now' %}

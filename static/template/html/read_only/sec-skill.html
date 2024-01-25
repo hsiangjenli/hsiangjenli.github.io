@@ -3,7 +3,7 @@
         <h3>Skills</h3>
         {% for type in SKILL %}
             {% set skills = SKILL[type] %}
-            <h4 style="text-transform: capitalize;">{{ type }}</h4>
+            <h4 style="text-transform: capitalize;">{{ type|replace('_', '/') }}</h4>
             <ul>
                 {% for skill_name in skills %}
                 {% set skill = skills[skill_name] %}

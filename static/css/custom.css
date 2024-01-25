@@ -19,6 +19,10 @@ th {
     min-width: 400px
 }
 
+.w130 {
+    min-width: 130px
+}
+
 .annot {
     color: #aaaaaa;
 }
@@ -26,9 +30,11 @@ th {
 .small {
     font-size: small;
 }
+
 .medium {
     font-size: medium;
 }
+
 .large {
     font-size: large;
 }
@@ -49,7 +55,23 @@ th {
 
 @media screen and (max-width: 576px) {
     .w400 {
-        min-width: auto;    
+        min-width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .w130 {
+        text-align: center!important;
+        min-width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .w130 {
+        text-align: center!important;
+        min-width: auto;
     }
     
 }
