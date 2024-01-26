@@ -15,6 +15,14 @@ th {
     vertical-align: middle;
 }
 
+.p0 {
+    padding: 0!important;
+}
+
+.m0 {
+    margin: 0!important;
+}
+
 .w400 {
     min-width: 400px
 }
@@ -28,7 +36,7 @@ th {
 }
 
 .small {
-    font-size: small;
+    font-size: small!important;
 }
 
 .medium {
@@ -44,6 +52,10 @@ th {
 
 .b {
     font-weight: bolder;
+}
+
+.text-center {
+    text-align: center!important;
 }
 
 @media screen and (max-width: 768px) {
