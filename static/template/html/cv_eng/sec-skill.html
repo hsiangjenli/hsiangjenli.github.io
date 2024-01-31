@@ -9,8 +9,9 @@
         {% set skills = SKILL[type] %}
         <b>{{ type|replace('_', '/') }} : </b>
         
-        {% for skill_name in skills %}
-            {% set skill = skills[skill_name] %}
+        {% for skill_id in skills %}
+            {% set skill = skills[skill_id] %}
+            {% set skill_name = skills[skill_id].english.name %}
 
             <text>{{ skill_name }}</text> 
             <text class="annotation" style="text-transform: lowercase;">

@@ -5,10 +5,11 @@
             {% set skills = SKILL[type] %}
             <h4 style="text-transform: capitalize;">{{ type|replace('_', '/') }}</h4>
             <ul>
-                {% for skill_name in skills %}
-                {% set skill = skills[skill_name] %}
+                {% for skill_id in skills %}
+                {% set skill_name = skills[skill_id].english.name %}
+                {% set skill = skills[skill_id] %}
                     <li>
-                        <i style="min-width: 25px; text-align: center;"class="{{ skill.basic_info.image }}"></i>
+                        <i style="min-width: 40px; text-align: center;"class="{{ skill.basic_info.image }}"></i>
                         <text style="text-transform: lowercase;">{{ skill.basic_info.level }}</text> - 
                         <b>{{ skill_name }}</b>
                         {% if skill.english.description %}

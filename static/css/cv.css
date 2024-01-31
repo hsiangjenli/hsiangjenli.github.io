@@ -1,0 +1,122 @@
+/* GLOBAL ========================================================================================================================================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'jf-openhuninn';
+    src: url('https://hsiangjenli.github.io/static/font/jf-openhuninn/jf-openhuninn.ttf');
+}
+
+@page {
+    margin: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0;
+    font-family: Raleway, 'Noto Sans TC';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, 'Noto Sans TC';
+}
+
+/* DIV ============================================================================================================================================================================================= */
+.container {
+    display: flex;
+}
+
+.sec {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.left-div {
+    flex: 1;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    margin-right: 5rem;
+}
+
+.right-div {
+    text-align: right;
+}
+
+/* TEXT ============================================================================================================================================================================================ */
+.large {
+    font-size: large
+}
+
+.medium {
+    font-size: medium
+}
+
+.small {
+    font-size: small
+}
+
+.x-small {
+    font-size: x-small
+}
+
+.b {
+    font-weight: 600;
+}
+
+.mono {
+    font-family: 'Ubuntu Mono'
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: 800;
+}
+
+.line {
+    flex-grow: 1;
+    margin-left: 10px;
+    border: .25px solid #666;
+}
+
+.highlight {
+    color: #b84646 !important;
+}
+
+.annotation {
+    font-size: x-small;
+    color: #333;
+}
+
+.i {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.period {
+    font-size: x-small;
+    font-weight: bolder;
+    color: #b84646 !important;
+}
+
+/* UL ============================================================================================================================================================================================== */
+
+ul.dash {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    padding-left: 1.4em;
+}
+
+ul.dash>li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1.2em;
+}

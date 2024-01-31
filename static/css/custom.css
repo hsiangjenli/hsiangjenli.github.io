@@ -87,3 +87,11 @@ th {
     }
     
 }
+
+.ml-05 {
+    padding-left: .5rem;
+}
+
+.mr-05 {
+    padding-right: .5rem;
+}

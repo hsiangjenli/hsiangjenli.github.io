@@ -1,6 +1,15 @@
 <section id="sproject">
     <div class="container">
         <h3>Side Project & IT Blog</h3>
+
+        <p>
+            Below are my recently personal <em class="b">side projects</em>, <em class="b">IT blog</em>, and <em class="b">cheatsheet</em>.<br>
+            <em class="large annot">
+                <a href="{{ IT_BLOG }}"><i class="fa-solid fa-keyboard"></i>&nbsp;&nbsp;IT blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="{{ CHEATSHEET }}"><i class="fa-solid fa-rectangle-list"></i>&nbsp;&nbsp;Cheatsheet</a>
+            </em>
+        </p>
+
         <table class="table" style="font-size: smaller;">
             <thead>
                 <tr>
@@ -64,8 +73,8 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Type</th>
                     <th scope="col" style="text-align: center;">Post Date</th>
+                    <th scope="col">Type</th>
                     <th scope="col">Title</th>
                 </tr>
                 <tbody>
@@ -74,9 +83,9 @@
                         {% set note_type = blog["title"].split(']')[0][1:] %}
                         {% set blog_title = blog["title"].split(']')[1] %}
                         <td scope="row" style="font-size: smaller; font-weight: bolder; text-align: center;">{{ loop.index }}</td>
+                        <td class="small text-center" style="min-width: 90px;">{{ blog["date"][:10] }}</td>
                         <td class="small b">{{ note_type }}</td>
-                        <td class="small text-center">{{ blog["date"][:10] }}</td>
-                        <td><a href="{{ blog['_link'] }}">{{ blog_title }}</a></td>
+                        <td class="b"><a href="{{ blog['_link'] }}">{{ blog_title }}</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
