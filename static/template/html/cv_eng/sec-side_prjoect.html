@@ -1,0 +1,29 @@
+<div class="heading">
+    <text class="highlight">Sid</text><text>e Project</text>
+    <hr class="line">
+</div>
+<div class="sec">
+    {% for project in SIDE_PROJECT %}
+    {% set num = loop.index %}
+    {% set p = SIDE_PROJECT[project][LANG] %}
+    {% set info = SIDE_PROJECT[project].basic_info %}
+
+    {% if info.weight >= WEIGTH %}
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">{{ p.project_name }}</text><br>
+            <text class="annotation">
+                <ul class="dash">
+                {% for des in p.project_description %}
+                <li>{{ des }}</li>
+                {% endfor %}
+                </ul>
+            </text>
+        </div>
+        <div class="right-div period">{{ info.period_start }} ~ {{ info.period_end }}</div>
+    </div>
+
+    {% endif %}
+    {% endfor %}
+</div>

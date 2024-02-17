@@ -1,0 +1,18 @@
+<section id="edu">
+    <div class="container">
+        <h3>Education</h3>
+            {% for degree in EDU %}
+            <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                {% set edu = EDU[degree].university.english %}
+                {% set info = EDU[degree].university.basic_info %}
+
+                {% set grad_year = info.graduate_year %}
+                {% set gpa = info.gpa %}
+
+                    <text class="larger b">{{ edu.name }} </text> <em class="annot medium"> - {{ edu.country }}</em><br>
+                    <text><em><a href="{{ edu.href }}">{{ edu.major }}</a></em></text><br>
+                    <text class="annot">- GPA: {{ gpa }} &nbsp;&nbsp;<a href="{{ info.transcript }}"><i class="fa-solid fa-file-pdf"></i></a></text>
+            </div>
+            {% endfor %}
+    </div>
+</section>

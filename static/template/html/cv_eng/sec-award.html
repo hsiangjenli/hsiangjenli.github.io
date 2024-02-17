@@ -1,0 +1,23 @@
+<div class="heading">
+    <text class="highlight">Com</text><text>petition & Award</text>
+    <hr class="line">
+</div>
+
+<div class="sec">
+    {% for award_id in AWARD %}
+        {% set award = AWARD[award_id][LANG] %}
+        {% set info = AWARD[award_id].basic_info %}
+
+    <div class="container small">
+        <div class="left-div">
+            <text class="small b">{{ award.title }}</text><br>
+            <text class="x-small i">{{ award.host }}</text> <br>
+            <text class="annotation">
+                <ul class="dash"><li>{{ award.ranking }}</li></ul>
+            </text>
+        </div>
+        <div class="right-div period">{{ info.year }}</div>
+    
+    </div>
+    {% endfor %}
+</div>

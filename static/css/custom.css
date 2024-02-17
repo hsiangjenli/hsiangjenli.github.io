@@ -1,0 +1,102 @@
+h3 {
+    font-weight: bolder;
+}
+
+table td {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+th {
+    vertical-align: middle;
+}
+
+.p0 {
+    padding: 0!important;
+}
+
+.m0 {
+    margin: 0!important;
+}
+
+.w400 {
+    min-width: 400px
+}
+
+.w130 {
+    min-width: 130px
+}
+
+.annot {
+    color: #aaaaaa;
+}
+
+.small {
+    font-size: small!important;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.large {
+    font-size: large;
+}
+.larger {
+    font-size: larger;
+}
+
+.b {
+    font-weight: bolder;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+@media screen and (max-width: 768px) {
+    .w400 {
+        min-width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .w400 {
+        min-width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .w130 {
+        text-align: center!important;
+        min-width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .w130 {
+        text-align: center!important;
+        min-width: auto;
+    }
+    
+}
+
+.ml-05 {
+    padding-left: .5rem;
+}
+
+.mr-05 {
+    padding-right: .5rem;
+}
+
+.pypi {
+    height: 18px;
+
+}
