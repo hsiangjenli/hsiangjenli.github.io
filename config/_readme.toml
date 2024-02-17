@@ -1,0 +1,208 @@
+[Author] 
+Name.English = 'Hsiang-Jen-Li'
+Name.NickName = 'RN'
+
+Name.Others.Original = '李享紝'
+Name.Others.Pronunciation = 'image/李享紝.svg'
+
+Profile = 'image/logo.svg'
+Mail = 'hsiangjenli@gmail.com'
+
+[Experience]
+  [Experience.NTUST_SIMSLAB]
+  Title = "System Informatics and Management Science - SiMS Lab"
+  Period = "2022.09 - now"
+  Description = "Master student in SiMS Lab, NTUST"
+  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/ntust-simslab.svg"
+  
+  [Experience.Sharing_Programming_Knowledge]
+  Title = "Sharing Programming Knowledge with Beginners"
+  Period = "2020 - now"
+  Description = "Authored {tutorial_repos_count} tutorial articles or repositories on various topics such as {tutorial_repos_keywords}"
+  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/creative.png"
+
+  [Experience.2022_NKUST_CCET_TA]
+  Title = "National Kaohsiung University of Science and Technology"
+  Period = "2022.09 - 2023.01"
+  Description = "Cross College Elite Tech Program - Data Science - Teaching assistant"
+  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/nkust.png"
+
+[Social_Media]
+  [Social_Media.Github]
+    Home = 'https://github.com/hsiangjenli'
+    BG_Color = '100000'
+    Logo_Color = 'white'
+    Font_Awesome = 'fa-brands fa-github'
+
+  [Social_Media.Gitlab]
+    Home = 'https://gitlab.com/hsiangjenli'
+    BG_Color = '330F63'
+    Logo_Color = 'white'
+    Font_Awesome = 'fa-brands fa-gitlab'
+
+  [Social_Media.Kaggle]
+    Home = 'https://www.kaggle.com/hsiangjenli'
+    BG_Color = '20BEFF'
+    Logo_Color = 'white'
+    Font_Awesome = 'fa-brands fa-kaggle'
+
+  [Social_Media.Blog]
+    Home = 'https://hsiangjenli.github.io/blog'
+    BG_Color = '7160b0'
+    Logo_Color = 'white'
+    Font_Awesome = 'fa-brands fa-blogger-b'
+
+  [Social_Media.CheatSheets]
+    Home = 'https://hsiangjenli.github.io/cheat-sheet'
+    BG_Color = '3f3663'
+    Logo_Color = 'white'
+    Font_Awesome = 'fa-solid fa-ghost'
+
+[Education]
+  [Education.Master]
+    University.Name = 'National Taiwan University of Science and Technology'
+    University.Others = '國立臺灣科技大學'
+    University.Country = 'Taiwan'
+    University.Logo = 'image/ntust.png'
+    Major.Name = 'Department of Computer Science and Information Engineering'
+    Major.Others = 'Big data analytics and information security'
+    Year = '2024'
+    Graduation = false
+
+  [Education.Bachelor]
+    University.Name = 'National Kaohsiung University of Science and Technology'
+    University.Others = '國立高雄科技大學'
+    University.Country = 'Taiwan'
+    University.Logo = 'image/nkust.png'
+    Major.Name = 'Department of Money and Banking'
+    Major.Others = ''
+    Year = '2022'
+    Graduation = true
+
+[Award]
+  [Award.2022_TABF_TBB_Fintech]
+  Year = '2022'
+  Name.Host = 'Taiwan Academy of Banking and Finance'
+  Name.Others = '台灣金融研訓院-臺灣中小企業銀行-校園金融科技創意挑戰賽'
+  Name.English = 'Campus Fintech Innovation Challenge'
+  Ranking = 'Ranked as the 8th out of 187 teams'
+  Image = 'https://th.bing.com/th/id/R.499f30b79e79f1156a02f9745b516589?rik=aeCJCVY1AisOpA&pid=ImgRaw&r=0'
+
+  [Award.2022_NKUST_EE_AI]
+  Year = '2022'
+  Name.Host = 'National Kaohsiung University of Science and Technology - Electrical Engineering'
+  Name.Others = '國立高雄科技大學-電機系-人工智慧暨類神經網路聯合專題展'
+  Name.English = 'Joint Exhibition on Artificial Intelligence and Neural Networks'
+  Ranking = 'Ranked as the 1st out of an estimated 30 teams'
+  Image = 'https://user-images.githubusercontent.com/71996166/222050262-a19f4b61-0d9a-4149-b540-528e0e03f75f.png'
+
+  [Award.2020_FintechSpace]
+  Year = '2020'
+  Name.Host = 'Fintech Space'
+  Name.Others = 'Fintech Space-校園成果展'
+  Name.English = 'Campus Achievement Exhibition'
+  Ranking = "Competition's preferred choice"
+  Image = 'https://www.fintechspace.com.tw/wp-content/uploads/2020/08/FinTechSpace-logo-%E5%BD%A9%E8%89%B2.png'
+
+[Personal_Project]
+  [Personal_Project.tw_famous_ecommerce_keywords_recommendation_system]
+  Year = '2023'
+  Name = 'Graph-based : Keywords Recommendation System'
+  Tags = ['Graph Theory', 'Network', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'Fast API']
+
+
+  [Personal_Project.pystru]
+  Year = '2023'
+  Name = 'PyStru'
+  Tags = ['click', 'open-source', 'project-structure']
+  Documentation = 'https://hsiangjenli.github.io/pystru/'
+  Image = 'https://hsiangjenli.github.io/pystru/static/image/cover.png'
+  Description = 'PyStru is a package I created to simplify the process of setting up a new Python project. It includes features such as creating static websites, generating README files, and generating gitignore files, all with the goal of making the process faster and less repetitive.'
+
+  [Personal_Project.tw_famous_ecommerce]
+  Year = '2022'
+  Name = 'Taiwan Famous E-commerce'
+  Tags = ['SQLite', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'dimension-reduction', 'cluster']
+  Image = ''
+
+  [Personal_Project.AprioriJ104]
+  Year = '2022'
+  Name = 'Apriori-J104'
+  Tags = ['Web Scraping', 'pyvis', 'apyori', 'ckip-transformers']
+  Documentation = 'https://hsiangjenli.gitlab.io/apriori-j104/README.html'
+  Image = 'https://i.imgur.com/bJS92RH.png'
+  
+  # [Personal_Project.FrozenFlaskPersonalBlog]
+  # Year = '2022'
+  # Name = 'Frozen-Flask-Personal-Blog-個人部落格'
+  # Tags = ['Flask', 'Frozen-Flask', 'Bootstrap', 'gitlab page']
+  # Documentation = 'https://hsiangjenli.gitlab.io/'
+  # Image = ''
+
+  [Personal_Project.DjangoPOA]
+  Year = '2022'
+  Name = 'NKUST-Django-Public-Opinion-Analysis'
+  Tags = ['Web Scraping', 'Django', 'MongoDB', 'Bootstrap', 'plotly.js', 'Anue', 'TWSE']
+  Documentation = 'https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project/-/wikis/home'
+  Image = ''
+
+  [Personal_Project.TWSE]
+  Year = '2021'
+  Name = 'Crawler-TWSE'
+  Tags = ['Web Scraping', 'SQLite', 'plotly']
+  Documentation = 'https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所'
+  Image = ''
+
+  [Personal_Project.Anue]
+  Year = '2021'
+  Name = 'Crawler-Anue'
+  Tags = ['Web Scraping', 'MongoDB']
+  Documentation = 'https://gitlab.com/tuxedo-web-scraping/anue'
+  Image = 'https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg'
+
+  [Personal_Project.LineBot]
+  Year = '2020'
+  Name = 'LineBot-Stock-info'
+  Tags = ['Line-Bot', 'Heroku', 'mplfinance', 'yfinance']
+  Documentation = 'https://github.com/hsiangjenli/LineBot-STOCK.tw-Public'
+  Image = 'https://camo.githubusercontent.com/a171e8f00d35f451876bc4165e5c05a8453fc8bfa553d4df88530b5020ee175f/68747470733a2f2f692e696d6775722e636f6d2f444c524b5871372e706e67'
+
+[Skills]
+  [Skills.Python]
+  Title = 'Python'
+  Description = 'I have extensive experience using Python for both static and dynamic web scraping, as well as building dynamic web pages using Django. I am well-versed in utilizing data analysis and machine learning packages such as Pandas, Numpy, and scikit-learn. Additionally, I am able to integrate databases through Python programming.'
+  Image = 'image/python.svg'
+
+  [Skills.Docker]
+  Title = 'Docker'
+  Description = 'I am able to set up development environments using Docker and familiar with basic Docker commands.'
+  Image = 'image/docker.svg'
+
+  [Skills.Database]
+  Title = 'Database'
+  Description = 'Basic operations. MySQL, SQLite, MongoDB'
+  Image = 'image/database.png'
+
+  [Skills.Ubuntu]
+  Title = 'Ubuntu'
+  Description = 'Basic operations'
+  Image = 'image/Ubuntu.png'
+
+  [Skills.git]
+  Title = 'GitHub & git'
+  Description = 'I am proficient in using GitHub Workflow for automated deployment, and I am familiar with the basics of Git.'
+  Image = 'image/git.svg'
+
+  [Skills.golang]
+  Title = 'Golang'
+  Description = 'I am currently learning Golang and helping to translate <a class="b" href="https://github.com/hsiangjenli/learngo">tutorial examples</a> for Golang on GitHub.'
+  Image = 'image/golang.svg'
+
+[Attributes]
+  [Attributes.image_learning]
+  Image = 'image/creative.png'
+  Description = '<a href="https://www.flaticon.com/free-icons/learning" title="learning icons">Learning icons created by Amethyst prime - Flaticon</a>'
+  
+  [Attributes.image_database]
+  Image = 'image/database.png'
+  Description = '<a href="https://www.flaticon.com/free-icons/server" title="server icons">Server icons created by Freepik - Flaticon</a>'

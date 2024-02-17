@@ -1,0 +1,53 @@
+name: 'Deploy my static website'
+
+on:
+  schedule: [{cron: "0 0 * * 0"}]
+  push:
+    branches: [main]
+
+jobs:
+  sync:
+    # ==============================================================================================================================
+    name: 'Deploy my Static Website'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    # ==============================================================================================================================
+    steps:
+    # ------------------------------------------------------------------------------------------------------------------------------
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+      with:
+        ref: main
+        token: ${{ secrets.ACCESS_TOKEN }}
+    # ------------------------------------------------------------------------------------------------------------------------------    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+    # ------------------------------------------------------------------------------------------------------------------------------
+    - name: Install requirements
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    # ------------------------------------------------------------------------------------------------------------------------------
+    - name: Run Python code to generate static site
+      run: |
+        python auto.py
+    # ------------------------------------------------------------------------------------------------------------------------------
+    - name: Setup Weasyprint mini Docker Image
+      uses: addnab/docker-run-action@v3
+      with:
+          image: minidocks/weasyprint
+          options: -v ${{ github.workspace }}:/app -w /app --user=root
+          run: weasyprint static/output/cv_eng.html -s static/css/cv.css static/pdf/cv_eng.pdf
+    # ------------------------------------------------------------------------------------------------------------------------------
+    - name: Copy Static Folder
+      run: cp -r static/* hsiangjenli.github.io/static/
+    # ------------------------------------------------------------------------------------------------------------------------------
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./hsiangjenli.github.io

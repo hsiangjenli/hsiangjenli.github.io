@@ -1,0 +1,221 @@
+[language]
+    [language.python]
+        [language.python.basic_info]
+        level = "Advanced"
+        image = "fa-brands fa-python"
+
+        [language.python.english]
+        name = "Python"
+        description = "familiar with pandas, numpy, scikit-learn, pytorch etc."
+
+        [language.python.chinese]
+        name = "Python"
+        description = "..."
+
+    [language.julia]
+        [language.julia.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-code"
+
+        [language.julia.english]
+        name = "Julia"
+        description = "<a href='https://github.com/hsiangjenli/learn-julia'>click here.</a>"
+
+        [language.julia.chinese]
+        name = "Julia"
+        description = "..."
+
+    [language.sql]
+        [language.sql.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-database"
+
+        [language.sql.english]
+        name = "SQL"
+        # description = "..."
+
+        [language.sql.chinese]
+        name = "SQL"
+        description = "..."
+
+
+[website]
+    # [website.django]
+    #     [website.django.basic_info]
+    #     level = "Intermediate"
+    #     image = "..."
+
+    #     [website.django.english]
+    #     name = "Django"
+    #     description = "..."
+
+    #     [website.django.chinese]
+    #     name = "Django"
+    #     description = "..."
+
+
+    [website.fastapi]
+        [website.fastapi.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-bolt"
+
+        [website.fastapi.english]
+        name = "FastAPI"
+        # description = "..."
+
+        [website.fastapi.chinese]
+        name = "FastAPI"
+        description = "..."
+
+
+    [website.html]
+        [website.html.basic_info]
+        level = "Beginner"
+        image = "fa-brands fa-html5"
+
+        [website.html.english]
+        name = "HTML"
+        # description = "..."
+
+        [website.html.chinese]
+        name = "HTML"
+        description = "..."
+
+
+    [website.css_scss]
+        [website.css_scss.basic_info]
+        level = "Beginner"
+        image = "fa-brands fa-css3"
+
+        [website.css_scss.english]
+        name = "CSS/SCSS"
+        # description = "..."
+
+        [website.css_scss.chinese]
+        name = "CSS/SCSS"
+        description = "..."
+
+
+    [website.bootstrap]
+        [website.bootstrap.basic_info]
+        level = "Beginner"
+        image = "fa-brands fa-bootstrap"
+
+        [website.bootstrap.english]
+        name = "Bootstrap"
+        # description = "..."
+
+        [website.bootstrap.chinese]
+        name = "Bootstrap"
+        description = "..."
+
+
+[tool]
+    [tool.git]
+        [tool.git.basic_info]
+        level = "Intermediate"
+        image = "fa-brands fa-git-alt"
+
+        [tool.git.english]
+        name = "Git"
+        # description = "..."
+
+        [tool.git.chinese]
+        name = "Git"
+        description = "..."
+    
+
+    [tool.docker]
+        [tool.docker.basic_info]
+        level = "Intermediate"
+        image = "fa-brands fa-docker"
+
+        [tool.docker.english]
+        name = "Docker"
+        # description = "..."
+
+        [tool.docker.chinese]
+        name = "Docker"
+        description = "..."
+
+
+    # [tool.spark]
+    #     [tool.spark.basic_info]
+    #     level = "Ongoing"
+    #     image = "..."
+
+    #     [tool.spark.english]
+    #     name = "Spark"
+    #     description = "..."
+
+    #     [tool.spark.chinese]
+    #     name = "Spark"
+    #     description = "..."
+    
+
+    # [tool.hadoop]
+    #     [tool.hadoop.basic_info]
+    #     level = "Ongoing"
+    #     image = "..."
+
+    #     [tool.hadoop.english]
+    #     name = "Hadoop"
+    #     description = "..."
+
+    #     [tool.hadoop.chinese]
+    #     name = "Hadoop"
+    #     description = "..."
+[CI_CD]
+    [CI_CD.github_actions]
+        [CI_CD.github_actions.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-code-compare"
+
+        [CI_CD.github_actions.english]
+        name = "Github Actions"
+        # description = "..."
+
+        [CI_CD.github_actions.chinese]
+        name = "Github Actions"
+        description = "..."
+    
+    [CI_CD.MLflow]
+        [CI_CD.MLflow.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-gauge-high"
+
+        [CI_CD.MLflow.english]
+        name = "MLflow"
+        description = "using MLflow to track experiments and mointor the hardware usage."
+
+        [CI_CD.MLflow.chinese]
+        name = "MLflow"
+        description = "..."
+
+[platform]
+    [platform.ubuntu]
+        [platform.ubuntu.basic_info]
+        level = "Intermediate"
+        image = "fa-brands fa-ubuntu"
+
+        [platform.ubuntu.english]
+        name = "Ubuntu"
+        # description = "..."
+
+        [platform.ubuntu.chinese]
+        name = "Ubuntu"
+        description = "..."
+    
+
+    [platform.windows]
+        [platform.windows.basic_info]
+        level = "Intermediate"
+        image = "fa-brands fa-windows"
+
+        [platform.windows.english]
+        name = "Windows"
+        # description = "..."
+
+        [platform.windows.chinese]
+        name = "Windows"
+        description = "..."

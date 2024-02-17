@@ -1,0 +1,289 @@
+# odd number is finance related project
+# even number is computer science related project
+
+[pypi_dimg4md]
+    [pypi_dimg4md.basic_info]
+    period_start = "2024.02"
+    period_end = "2024.02"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/pyimg4md"
+    tags = ['Python', 'Markdown']
+    weight = 2
+    pypi = "py-dimg4md"
+
+    [pypi_dimg4md.english]
+    project_name = "DIMG4MD"
+    project_description = [
+        "A Python package for automatically download the image from the markdown file and save it to the local folder.",
+    ]
+
+    [pypi_dimg4md.chinese]
+    project_name = "DIMG4MD"
+    # project_description = "..."
+
+[learn_julia]
+    [learn_julia.basic_info]
+    period_start = "2024.01"
+    period_end = "now"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/learn-julia"
+    tags = ['Julia']
+    weight = 2
+
+    [learn_julia.english]
+    project_name = "Learn Julia"
+    project_description = [
+        "Learning Julia Programming Language with a series of scripts.",
+    ]
+
+    [learn_julia.chinese]
+    project_name = "學習 Julia"
+    # project_description = "..."
+
+
+[awesome_metaheuristic]
+    [awesome_metaheuristic.basic_info]
+    period_start = "2024.01"
+    period_end = "now"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/awesome-metaheuristic-and-its-application"
+    weight = 2
+
+    [awesome_metaheuristic.english]
+    project_name = "Awesome Metaheuristic and its Applications"
+    project_description = [
+        "A curated list of awesome metaheuristic and its applications resources.",
+        "Including the basic concepts of metaheuristic, the application of metaheuristic, like Graph Neural Network and Graph Database.",
+        "Also including the latest research papers about metaheuristic."
+    ]
+
+    [awesome_metaheuristic.chinese]
+    project_name = "Awesome - 啟發式演算法與應用"
+    # project_description = "..."
+
+[awesome_complex_system]
+    [awesome_complex_system.basic_info]
+    period_start = "2023.12"
+    period_end = "now"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/awesome-complex-system"
+    weight = 2
+
+    [awesome_complex_system.english]
+    project_name = "Awesome Complex System and Network Science"
+    project_description = [
+        "A curated list of awesome complex system and network science resources.",
+        "Including the basic concepts of complex system and network science, the application of complex system and network science, like Graph Neural Network and Graph Database.",
+        "Also including the latest research papers about complex system and network science."
+    ]
+
+    [awesome_complex_system.chinese]
+    project_name = "Awesome - 複雜系統與網路科學"
+    # project_description = "..."
+
+[ntust_csie_ml_cybersecurity]
+    [ntust_csie_ml_cybersecurity.basic_info]
+    period_start = "2023.09"
+    period_end = "2023.12"
+    project_type = "class project"
+    external_link = ""
+    tags = ['Machine Learning', 'Cybersecurity', 'Adversarial Attack', 'CNN', 'Maleware Detection']
+    pdf = "https://drive.google.com/file/d/1e8d_MSq9L3k7YJNjAGVuhjGYujt4ICTV/view?usp=sharing"
+    weight = 6
+
+    [ntust_csie_ml_cybersecurity.english]
+    project_name = "Evasion Attack in Machine Learning"
+    project_description = [
+        "Trying to use evasion attack to attack the CNN-based maleware detection model.",
+        "Need to add noise to the maleware sample to make the model misclassify the sample.",
+        "The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).",
+    ]
+
+    [ntust_csie_ml_cybersecurity.chinese]
+    project_name = "..."
+
+[2023_ithome_ironman_challenge]
+    [2023_ithome_ironman_challenge.basic_info]
+    period_start = "2023.09"
+    period_end = "2023.10"
+    project_type = "personal project"
+    external_link = "https://ithelp.ithome.com.tw/users/20132837/ironman/6927"
+    image = "https://github.com/hsiangjenli/hsiangjenli/assets/71996166/7d0927f8-c1ea-4c11-bf7e-f3fdff670e1a"
+    tags = ['Network Science', 'GNN', 'Paper Reading', '30 Days Challenge']
+    weight = 2
+    # pdf = "..."
+
+    [2023_ithome_ironman_challenge.english]
+    project_name = "2023 IT home Ironman Challenge - AI and Data"
+    project_description = [
+        "In this challenge, I had written 30 articles about Network Science and Graph Neural Network.",
+        "Including the basic concepts of Network Science, the application of Network Science, like Graph Neural Network and Graph Database.",
+        "Also including the latest research papers about Graph Neural Network."
+    ]
+
+    [2023_ithome_ironman_challenge.chinese]
+    project_name = "2023 IT home 鐵人賽 - AI & Data"
+    # project_description = "..."
+
+[scsb_social_network_crawler]
+    [scsb_social_network_crawler.basic_info]
+    period_start = "2023.07"
+    period_end = "2023.08"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/social-network-crawler/"
+    tags = ['Web Scraping', 'Dynamic Web Scraping', 'Selenium', 'BeautifulSoup', 'playwright']
+    weight = 5
+
+    [scsb_social_network_crawler.english]
+    project_name = "Web Scraping : Social Network Crawler"
+    project_description = [
+        "Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.",
+        "The data will be stored in MongoDB and can be used for further analysis."
+        ]
+
+    [scsb_social_network_crawler.chinese]
+    project_name = "動態社群網路爬蟲"
+
+
+[tw_famous_ecommerce_keywords_recommendation_system]
+    [tw_famous_ecommerce_keywords_recommendation_system.basic_info]
+    period_start = "2023.05"
+    period_end = "2023.06"
+    project_type = "class project"
+    image = "image/rocket.svg"
+    tags = ['Graph Theory', 'Network', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'Fast API']
+    pdf = "https://drive.google.com/file/d/1IXfgcc8a_FrKM8mhFT_ELxcTvrda5zqs/view?usp=sharing"
+    video = "https://youtu.be/T2dS-ZdDytc"
+    weight = 6
+
+    [tw_famous_ecommerce_keywords_recommendation_system.english]
+    project_name = "Graph-based : Keywords Recommendation System"
+    project_description = [
+        "Applying Network Science field to build a keywords recommendation system.",
+    ]
+
+    [tw_famous_ecommerce_keywords_recommendation_system.chinese]
+    project_name = "基於網路圖的關鍵字推薦系統"
+    # project_description = "..."
+
+
+[tw_famous_ecommerce_find_identical_products]
+    [tw_famous_ecommerce_find_identical_products.basic_info]
+    period_start = "2022.11"
+    period_end = "2022.12"
+    project_type = "class project"
+    image = "image/rocket.svg"
+    tags = ['SQLite', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'dimension-reduction', 'cluster']
+    weight = 2
+
+    [tw_famous_ecommerce_find_identical_products.english]
+    project_name = "Taiwan Famous Ecommerce : Find Identical Products"
+    project_description = [
+        "Finding identical products from item's name is a quite challenging task.",
+        "Using Regular-Expression and CKIP-transformer to extract keywords from item's name.",
+        "And using dimension-reduction and cluster algorithms to find identical products."
+    ]
+
+    [tw_famous_ecommerce_find_identical_products.chinese]
+    project_name = "..."
+    # project_description = "..."
+
+
+[apriori_j104]
+    [apriori_j104.basic_info]
+    period_start = "2022.05"
+    period_end = "2022.06"
+    project_type = "class project"
+    external_link = "https://hsiangjenli.gitlab.io/apriori-j104/README.html"
+    image = "https://i.imgur.com/bJS92RH.png"
+    tags = ['Web Scraping', 'pyvis', 'apyori', 'CKIP-transformer']
+    weight = 6
+
+    [apriori_j104.english]
+    project_name = "Apriori J104"
+    project_description = [
+        "An application for analyzing the skills required by the job market.",
+        "The data is crawled from 104 job bank and stored in MongoDB.",
+        "And the data will be processed by CKIP-transformer.",
+        "Finally, using apyori algorithm to find the association rules between skills."
+        ]
+
+    [apriori_j104.chinese]
+    project_name = "工作技能分析系統"
+    # project_description = "..."
+
+
+[public_opinion_analysis]
+    [public_opinion_analysis.basic_info]
+    period_start = "2022.03"
+    period_end = "2022.06"
+    project_type = "class project"
+    external_link = "https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project"
+    image = "image/rocket.svg"
+    tags =  ['Web Scraping', 'Django', 'MongoDB', 'Bootstrap', 'plotly.js', 'Anue', 'TWSE']
+    weight = 5
+
+    [public_opinion_analysis.english]
+    project_name = "Financial Public Opinion Analysis"
+    project_description = [
+        "Using Django to build a web application for analyzing financial public opinion.",
+        "The data is crawled from Anue and the data will be stored in MongoDB.",
+    ]
+
+    [public_opinion_analysis.chinese]
+    project_name = "輿情分析系統"
+    # project_description = "..."
+
+
+[webscraping_anue]
+    [webscraping_anue.basic_info]
+    period_start = "2022.04"
+    period_end = "2022.04"
+    project_type = "personal project"
+    external_link = "https://gitlab.com/tuxedo-web-scraping/anue"
+    image = "https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg"
+    tags = ['Web Scraping', 'MongoDB']
+    weight = 1
+
+    [webscraping_anue.english]
+    project_name = "Web Scraping : Anue"
+
+    [webscraping_anue.chinese]
+    project_name = "爬蟲 : Anue"
+    
+
+[webscraping_twse]
+    [webscraping_twse.basic_info]
+    period_start = "2021.12"
+    period_end = "2022.04"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
+    image = "image/rocket.svg"
+    tags = ['Web Scraping', 'SQLite', 'plotly']
+    weight = 1
+
+    [webscraping_twse.english]
+    project_name = "Web Scraping : TWSE"
+
+    [webscraping_twse.chinese]
+    project_name = "爬蟲 : 台灣證券交易所"
+
+
+[linebot_stock_info]
+    [linebot_stock_info.basic_info]
+    period_start = "2020.10"
+    period_end = "2021.07"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/LineBot-STOCK.tw-Public"
+    image = "https://camo.githubusercontent.com/a171e8f00d35f451876bc4165e5c05a8453fc8bfa553d4df88530b5020ee175f/68747470733a2f2f692e696d6775722e636f6d2f444c524b5871372e706e67"
+    tags = ['Line-Bot', 'Heroku', 'mplfinance', 'yfinance']
+    weight = 3
+
+    [linebot_stock_info.english]
+    project_name = "Line-Bot : Stock Info"
+    project_description = [
+        "A Line-Bot for getting the stock information.",
+    ]
+
+    [linebot_stock_info.chinese]
+    project_name = "Line-Bot : 股票資訊"

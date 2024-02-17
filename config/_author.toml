@@ -1,0 +1,21 @@
+name.english = "Hsiang-Jen Li"
+name.nick_name = "RN"
+
+name.others.chinese.original = "李享紝"
+name.others.chinese.pronunciation = "image/李享紝.svg"
+
+profile = "image/logo.svg"
+mail = "hsiangjenli@gmail.com"
+
+[social_media]
+    [social_media.github]
+    url = "https://github.com/hsiangjenli"
+    bg_color = "100000"
+    logo_color = "white"
+    font_awesome = "fa-brands fa-github"
+
+    [social_media.gitlab]
+    url = "https://gitlab.com/hsiangjenli"
+    bg_color = "330F63"
+    logo_color = "white"
+    font_awesome = "fa-brands fa-gitlab"

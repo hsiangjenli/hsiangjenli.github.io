@@ -1,0 +1,54 @@
+[complex_systems]
+    [complex_systems.basic_info]
+    status = "Recently"
+    image = "fa-solid fa-circle-nodes"
+
+    [complex_systems.english]
+    name = "Complex Systems and Network Science"
+    description = "Unlike grid-like data structures, complex systems are composed by nodes and edges, which are more complicated for analysis and modeling. "
+
+    [complex_systems.chinese]
+    name = "複雜系統"
+    description = ""
+
+
+[metaheuristics]
+    [metaheuristics.basic_info]
+    status = "Future Plan"
+    image = "fa-solid fa-dna"
+
+    [metaheuristics.english]
+    name = "Metaheuristics"
+    description = "Metaheuristic is a bio-inspired algorithm that can be used to solve optimization problems."
+
+    [metaheuristics.chinese]
+    name = "啟發式演算法"
+    description = ""
+
+
+[distributed_computing]
+    [distributed_computing.basic_info]
+    status = "Future Plan"
+    image = "fa-solid fa-group-arrows-rotate"
+
+    [distributed_computing.english]
+    name = "Distributed Computing"
+    # description = ""
+
+    [distributed_computing.chinese]
+    name = "分散式運算"
+    description = ""
+
+
+[machine_learning_privacy]
+    [machine_learning_privacy.basic_info]
+    status = "Future Plan"
+    image = "fa-solid fa-fingerprint"
+
+    [machine_learning_privacy.english]
+    name = "Privacy-Preserving Machine Learning"
+    # description = ""
+
+    [machine_learning_privacy.chinese]
+    name = "機器學習資料隱私"
+    description = ""
