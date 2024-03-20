@@ -1,6 +1,21 @@
 # odd number is finance related project
 # even number is computer science related project
 
+[ntust_latex_template]
+    [ntust_latex_template.basic_info]
+    period_start = "2024.03"
+    period_end = "now"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/ntust-thesis-latex"
+    tags = ["LaTeX", "XeLatex", "tex-live", "Docker","Overleaf", "NTUST"]
+    weight = 2
+
+    [ntust_latex_template.english]
+    project_name = "NTUST LaTeX Template"
+
+    [ntust_latex_template.chinese]
+    project_name = "國立臺灣科技大學 論文 LaTeX 模板"
+
 [pypi_dimg4md]
     [pypi_dimg4md.basic_info]
     period_start = "2024.02"

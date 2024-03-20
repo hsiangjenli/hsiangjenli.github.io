@@ -38,6 +38,18 @@
         name = "SQL"
         description = "..."
 
+    [language.latex]
+        [language.latex.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-superscript"
+
+        [language.latex.english]
+        name = "LaTeX"
+        # description = "..."
+
+        [language.latex.chinese]
+        name = "LaTeX"
+        description = "..."
 
 [website]
     # [website.django]
