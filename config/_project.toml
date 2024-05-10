@@ -1,23 +1,23 @@
 # odd number is finance related project
 # even number is computer science related project
 
-[ntust_latex_template]
-    [ntust_latex_template.basic_info]
-    period_start = "2024.03"
-    period_end = "now"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/ntust-thesis-latex"
-    tags = ["LaTeX", "XeLatex", "tex-live", "Docker","Overleaf", "NTUST"]
-    weight = 2
+# [ntustLatexTemplate]
+#     [ntustLatexTemplate.basic_info]
+#     period_start = "2024.03"
+#     period_end = "now"
+#     project_type = "personal project"
+#     external_link = "https://github.com/hsiangjenli/ntust-thesis-latex"
+#     tags = ["LaTeX", "XeLatex", "tex-live", "Docker","Overleaf", "NTUST"]
+#     weight = 2
 
-    [ntust_latex_template.english]
-    project_name = "NTUST LaTeX Template"
+#     [ntustLatexTemplate.english]
+#     project_name = "NTUST LaTeX Template"
 
-    [ntust_latex_template.chinese]
-    project_name = "國立臺灣科技大學 論文 LaTeX 模板"
+#     [ntustLatexTemplate.chinese]
+#     project_name = "國立臺灣科技大學 論文 LaTeX 模板"
 
-[pypi_dimg4md]
-    [pypi_dimg4md.basic_info]
+[pypiDIMG4MD]
+    [pypiDIMG4MD.basic_info]
     period_start = "2024.02"
     period_end = "2024.02"
     project_type = "personal project"
@@ -26,18 +26,18 @@
     weight = 2
     pypi = "py-dimg4md"
 
-    [pypi_dimg4md.english]
+    [pypiDIMG4MD.english]
     project_name = "DIMG4MD"
     project_description = [
         "A Python package for automatically download the image from the markdown file and save it to the local folder.",
     ]
 
-    [pypi_dimg4md.chinese]
+    [pypiDIMG4MD.chinese]
     project_name = "DIMG4MD"
     # project_description = "..."
 
-[learn_julia]
-    [learn_julia.basic_info]
+[learnJulia]
+    [learnJulia.basic_info]
     period_start = "2024.01"
     period_end = "now"
     project_type = "personal project"
@@ -45,26 +45,26 @@
     tags = ['Julia']
     weight = 2
 
-    [learn_julia.english]
+    [learnJulia.english]
     project_name = "Learn Julia"
     project_description = [
         "Learning Julia Programming Language with a series of scripts.",
     ]
 
-    [learn_julia.chinese]
+    [learnJulia.chinese]
     project_name = "學習 Julia"
     # project_description = "..."
 
 
-[awesome_metaheuristic]
-    [awesome_metaheuristic.basic_info]
+[awesomeMetaheuristic]
+    [awesomeMetaheuristic.basic_info]
     period_start = "2024.01"
     period_end = "now"
     project_type = "personal project"
     external_link = "https://github.com/hsiangjenli/awesome-metaheuristic-and-its-application"
     weight = 2
 
-    [awesome_metaheuristic.english]
+    [awesomeMetaheuristic.english]
     project_name = "Awesome Metaheuristic and its Applications"
     project_description = [
         "A curated list of awesome metaheuristic and its applications resources.",
@@ -72,19 +72,19 @@
         "Also including the latest research papers about metaheuristic."
     ]
 
-    [awesome_metaheuristic.chinese]
+    [awesomeMetaheuristic.chinese]
     project_name = "Awesome - 啟發式演算法與應用"
     # project_description = "..."
 
-[awesome_complex_system]
-    [awesome_complex_system.basic_info]
+[awesomeComplexSystem]
+    [awesomeComplexSystem.basic_info]
     period_start = "2023.12"
     period_end = "now"
     project_type = "personal project"
     external_link = "https://github.com/hsiangjenli/awesome-complex-system"
     weight = 2
 
-    [awesome_complex_system.english]
+    [awesomeComplexSystem.english]
     project_name = "Awesome Complex System and Network Science"
     project_description = [
         "A curated list of awesome complex system and network science resources.",
@@ -92,12 +92,12 @@
         "Also including the latest research papers about complex system and network science."
     ]
 
-    [awesome_complex_system.chinese]
+    [awesomeComplexSystem.chinese]
     project_name = "Awesome - 複雜系統與網路科學"
     # project_description = "..."
 
-[ntust_csie_ml_cybersecurity]
-    [ntust_csie_ml_cybersecurity.basic_info]
+[ntustcsieMLCybersecurity]
+    [ntustcsieMLCybersecurity.basic_info]
     period_start = "2023.09"
     period_end = "2023.12"
     project_type = "class project"
@@ -106,7 +106,7 @@
     pdf = "https://drive.google.com/file/d/1e8d_MSq9L3k7YJNjAGVuhjGYujt4ICTV/view?usp=sharing"
     weight = 6
 
-    [ntust_csie_ml_cybersecurity.english]
+    [ntustcsieMLCybersecurity.english]
     project_name = "Evasion Attack in Machine Learning"
     project_description = [
         "Trying to use evasion attack to attack the CNN-based maleware detection model.",
@@ -114,11 +114,11 @@
         "The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).",
     ]
 
-    [ntust_csie_ml_cybersecurity.chinese]
+    [ntustcsieMLCybersecurity.chinese]
     project_name = "..."
 
-[2023_ithome_ironman_challenge]
-    [2023_ithome_ironman_challenge.basic_info]
+[2023IthomeIronmanChallenge]
+    [2023IthomeIronmanChallenge.basic_info]
     period_start = "2023.09"
     period_end = "2023.10"
     project_type = "personal project"
@@ -128,7 +128,7 @@
     weight = 2
     # pdf = "..."
 
-    [2023_ithome_ironman_challenge.english]
+    [2023IthomeIronmanChallenge.english]
     project_name = "2023 IT home Ironman Challenge - AI and Data"
     project_description = [
         "In this challenge, I had written 30 articles about Network Science and Graph Neural Network.",
@@ -136,12 +136,12 @@
         "Also including the latest research papers about Graph Neural Network."
     ]
 
-    [2023_ithome_ironman_challenge.chinese]
+    [2023IthomeIronmanChallenge.chinese]
     project_name = "2023 IT home 鐵人賽 - AI & Data"
     # project_description = "..."
 
-[scsb_social_network_crawler]
-    [scsb_social_network_crawler.basic_info]
+[scsbSNC]
+    [scsbSNC.basic_info]
     period_start = "2023.07"
     period_end = "2023.08"
     project_type = "personal project"
@@ -149,19 +149,19 @@
     tags = ['Web Scraping', 'Dynamic Web Scraping', 'Selenium', 'BeautifulSoup', 'playwright']
     weight = 5
 
-    [scsb_social_network_crawler.english]
+    [scsbSNC.english]
     project_name = "Web Scraping : Social Network Crawler"
     project_description = [
         "Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.",
         "The data will be stored in MongoDB and can be used for further analysis."
         ]
 
-    [scsb_social_network_crawler.chinese]
+    [scsbSNC.chinese]
     project_name = "動態社群網路爬蟲"
 
 
-[tw_famous_ecommerce_keywords_recommendation_system]
-    [tw_famous_ecommerce_keywords_recommendation_system.basic_info]
+[twEKRS]
+    [twEKRS.basic_info]
     period_start = "2023.05"
     period_end = "2023.06"
     project_type = "class project"
@@ -171,19 +171,19 @@
     video = "https://youtu.be/T2dS-ZdDytc"
     weight = 6
 
-    [tw_famous_ecommerce_keywords_recommendation_system.english]
+    [twEKRS.english]
     project_name = "Graph-based : Keywords Recommendation System"
     project_description = [
         "Applying Network Science field to build a keywords recommendation system.",
     ]
 
-    [tw_famous_ecommerce_keywords_recommendation_system.chinese]
+    [twEKRS.chinese]
     project_name = "基於網路圖的關鍵字推薦系統"
     # project_description = "..."
 
 
-[tw_famous_ecommerce_find_identical_products]
-    [tw_famous_ecommerce_find_identical_products.basic_info]
+[twFEFIP]
+    [twFEFIP.basic_info]
     period_start = "2022.11"
     period_end = "2022.12"
     project_type = "class project"
@@ -191,7 +191,7 @@
     tags = ['SQLite', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'dimension-reduction', 'cluster']
     weight = 2
 
-    [tw_famous_ecommerce_find_identical_products.english]
+    [twFEFIP.english]
     project_name = "Taiwan Famous Ecommerce : Find Identical Products"
     project_description = [
         "Finding identical products from item's name is a quite challenging task.",
@@ -199,13 +199,13 @@
         "And using dimension-reduction and cluster algorithms to find identical products."
     ]
 
-    [tw_famous_ecommerce_find_identical_products.chinese]
+    [twFEFIP.chinese]
     project_name = "..."
     # project_description = "..."
 
 
-[apriori_j104]
-    [apriori_j104.basic_info]
+[aprioriJ104]
+    [aprioriJ104.basic_info]
     period_start = "2022.05"
     period_end = "2022.06"
     project_type = "class project"
@@ -214,7 +214,7 @@
     tags = ['Web Scraping', 'pyvis', 'apyori', 'CKIP-transformer']
     weight = 6
 
-    [apriori_j104.english]
+    [aprioriJ104.english]
     project_name = "Apriori J104"
     project_description = [
         "An application for analyzing the skills required by the job market.",
@@ -223,13 +223,13 @@
         "Finally, using apyori algorithm to find the association rules between skills."
         ]
 
-    [apriori_j104.chinese]
+    [aprioriJ104.chinese]
     project_name = "工作技能分析系統"
     # project_description = "..."
 
 
-[public_opinion_analysis]
-    [public_opinion_analysis.basic_info]
+[POA]
+    [POA.basic_info]
     period_start = "2022.03"
     period_end = "2022.06"
     project_type = "class project"
@@ -238,20 +238,20 @@
     tags =  ['Web Scraping', 'Django', 'MongoDB', 'Bootstrap', 'plotly.js', 'Anue', 'TWSE']
     weight = 5
 
-    [public_opinion_analysis.english]
+    [POA.english]
     project_name = "Financial Public Opinion Analysis"
     project_description = [
         "Using Django to build a web application for analyzing financial public opinion.",
         "The data is crawled from Anue and the data will be stored in MongoDB.",
     ]
 
-    [public_opinion_analysis.chinese]
+    [POA.chinese]
     project_name = "輿情分析系統"
     # project_description = "..."
 
 
-[webscraping_anue]
-    [webscraping_anue.basic_info]
+[webANUE]
+    [webANUE.basic_info]
     period_start = "2022.04"
     period_end = "2022.04"
     project_type = "personal project"
@@ -260,15 +260,15 @@
     tags = ['Web Scraping', 'MongoDB']
     weight = 1
 
-    [webscraping_anue.english]
+    [webANUE.english]
     project_name = "Web Scraping : Anue"
 
-    [webscraping_anue.chinese]
+    [webANUE.chinese]
     project_name = "爬蟲 : Anue"
     
 
-[webscraping_twse]
-    [webscraping_twse.basic_info]
+[webTWSE]
+    [webTWSE.basic_info]
     period_start = "2021.12"
     period_end = "2022.04"
     project_type = "personal project"
@@ -277,15 +277,15 @@
     tags = ['Web Scraping', 'SQLite', 'plotly']
     weight = 1
 
-    [webscraping_twse.english]
+    [webTWSE.english]
     project_name = "Web Scraping : TWSE"
 
-    [webscraping_twse.chinese]
+    [webTWSE.chinese]
     project_name = "爬蟲 : 台灣證券交易所"
 
 
-[linebot_stock_info]
-    [linebot_stock_info.basic_info]
+[linebotStockInfo]
+    [linebotStockInfo.basic_info]
     period_start = "2020.10"
     period_end = "2021.07"
     project_type = "personal project"
@@ -294,11 +294,11 @@
     tags = ['Line-Bot', 'Heroku', 'mplfinance', 'yfinance']
     weight = 3
 
-    [linebot_stock_info.english]
+    [linebotStockInfo.english]
     project_name = "Line-Bot : Stock Info"
     project_description = [
         "A Line-Bot for getting the stock information.",
     ]
 
-    [linebot_stock_info.chinese]
+    [linebotStockInfo.chinese]
     project_name = "Line-Bot : 股票資訊"

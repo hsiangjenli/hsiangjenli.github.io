@@ -30,8 +30,9 @@ gpa:
 
 cv:
 	python auto.py
-	weasyprint static/output/cv_eng.html -s static/css/cv.css static/pdf/cv_eng.pdf
-	weasyprint static/output/cv_zh_tw.html -s static/css/cv.css static/pdf/cv_zh_tw.pdf
+	docker run -it --rm -v "$(PWD):/workspace" hsiangjenli/xelatex:ntust-thesis-v1.8.1 xelatex test.tex
+	# weasyprint static/output/cv_eng.html -s static/css/cv.css static/pdf/cv_eng.pdf
+	# weasyprint static/output/cv_zh_tw.html -s static/css/cv.css static/pdf/cv_zh_tw.pdf
 
 push:
 	git pull origin html5

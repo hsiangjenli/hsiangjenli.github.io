@@ -10,6 +10,19 @@ def set_environemnt(folder: str, template: str):
     template = env.get_template(template)
     return template
 
+def latex_set_environemnt(folder: str, template: str):
+    env = Environment(
+        block_start_string='<<%',
+        block_end_string='%>>',
+        variable_start_string='<<',
+        variable_end_string='>>',
+        comment_start_string='<<#',
+        comment_end_string='#>>',
+        loader=FileSystemLoader(folder),
+    )
+    template = env.get_template(template)
+    return template
+
 def write(string, output):
     with open(output, 'w', encoding='utf-8') as f:
         f.write(string)

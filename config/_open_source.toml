@@ -1,0 +1,9 @@
+[python-docs-zh-tw]
+    [python-docs-zh-tw.basic_info]
+        name = "python/python-docs-zh-tw"
+        external_link = "https://github.com/python/python-docs-zh-tw"
+
+    [python-docs-zh-tw.pull_request]
+        history = [
+            "https://github.com/python/python-docs-zh-tw/pull/609"
+        ]

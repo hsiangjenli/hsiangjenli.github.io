@@ -4,7 +4,7 @@
     period_end = "2023.08"
     image = "image/scsb.png"
     [scsb_digital_banking.english]
-    title = "Shanghai Commercial & Savings Bank - Digital Banking Department"
+    title = "Shanghai Commercial and Savings Bank - Digital Banking Department"
     description = "Internship in SCSB Digital Banking"
     location = "Taipei, Taiwan"
 
@@ -50,6 +50,7 @@
     [nkust_ccet_ta.english]
     title = "National Kaohsiung University of Science and Technology"
     description = "Cross College Elite Tech Program - Data Science - Teaching assistant"
+    location = "Kaohsiung, Taiwan"
 
     [nkust_ccet_ta.chinese]
     title = "國立高雄科技大學"

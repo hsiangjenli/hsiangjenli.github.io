@@ -1,233 +1,233 @@
-[language]
-    [language.python]
-        [language.python.basic_info]
+[Language]
+    [Language.python]
+        [Language.python.basic_info]
         level = "Advanced"
         image = "fa-brands fa-python"
 
-        [language.python.english]
+        [Language.python.english]
         name = "Python"
         description = "familiar with pandas, numpy, scikit-learn, pytorch etc."
 
-        [language.python.chinese]
+        [Language.python.chinese]
         name = "Python"
         description = "..."
 
-    [language.julia]
-        [language.julia.basic_info]
+    [Language.julia]
+        [Language.julia.basic_info]
         level = "Beginner"
         image = "fa-solid fa-code"
 
-        [language.julia.english]
+        [Language.julia.english]
         name = "Julia"
         description = "<a href='https://github.com/hsiangjenli/learn-julia'>click here.</a>"
 
-        [language.julia.chinese]
+        [Language.julia.chinese]
         name = "Julia"
         description = "..."
 
-    [language.sql]
-        [language.sql.basic_info]
+    [Language.sql]
+        [Language.sql.basic_info]
         level = "Beginner"
         image = "fa-solid fa-database"
 
-        [language.sql.english]
+        [Language.sql.english]
         name = "SQL"
         # description = "..."
 
-        [language.sql.chinese]
+        [Language.sql.chinese]
         name = "SQL"
         description = "..."
 
-    [language.latex]
-        [language.latex.basic_info]
+    [Language.latex]
+        [Language.latex.basic_info]
         level = "Beginner"
         image = "fa-solid fa-superscript"
 
-        [language.latex.english]
+        [Language.latex.english]
         name = "LaTeX"
         # description = "..."
 
-        [language.latex.chinese]
+        [Language.latex.chinese]
         name = "LaTeX"
         description = "..."
 
-[website]
-    # [website.django]
-    #     [website.django.basic_info]
+[Website]
+    # [Website.django]
+    #     [Website.django.basic_info]
     #     level = "Intermediate"
     #     image = "..."
 
-    #     [website.django.english]
+    #     [Website.django.english]
     #     name = "Django"
     #     description = "..."
 
-    #     [website.django.chinese]
+    #     [Website.django.chinese]
     #     name = "Django"
     #     description = "..."
 
 
-    [website.fastapi]
-        [website.fastapi.basic_info]
+    [Website.fastapi]
+        [Website.fastapi.basic_info]
         level = "Beginner"
         image = "fa-solid fa-bolt"
 
-        [website.fastapi.english]
+        [Website.fastapi.english]
         name = "FastAPI"
         # description = "..."
 
-        [website.fastapi.chinese]
+        [Website.fastapi.chinese]
         name = "FastAPI"
         description = "..."
 
 
-    [website.html]
-        [website.html.basic_info]
+    [Website.html]
+        [Website.html.basic_info]
         level = "Beginner"
         image = "fa-brands fa-html5"
 
-        [website.html.english]
+        [Website.html.english]
         name = "HTML"
         # description = "..."
 
-        [website.html.chinese]
+        [Website.html.chinese]
         name = "HTML"
         description = "..."
 
 
-    [website.css_scss]
-        [website.css_scss.basic_info]
+    [Website.CSSSCSS]
+        [Website.CSSSCSS.basic_info]
         level = "Beginner"
         image = "fa-brands fa-css3"
 
-        [website.css_scss.english]
+        [Website.CSSSCSS.english]
         name = "CSS/SCSS"
         # description = "..."
 
-        [website.css_scss.chinese]
+        [Website.CSSSCSS.chinese]
         name = "CSS/SCSS"
         description = "..."
 
 
-    [website.bootstrap]
-        [website.bootstrap.basic_info]
+    [Website.bootstrap]
+        [Website.bootstrap.basic_info]
         level = "Beginner"
         image = "fa-brands fa-bootstrap"
 
-        [website.bootstrap.english]
+        [Website.bootstrap.english]
         name = "Bootstrap"
         # description = "..."
 
-        [website.bootstrap.chinese]
+        [Website.bootstrap.chinese]
         name = "Bootstrap"
         description = "..."
 
 
-[tool]
-    [tool.git]
-        [tool.git.basic_info]
+[Tool]
+    [Tool.git]
+        [Tool.git.basic_info]
         level = "Intermediate"
         image = "fa-brands fa-git-alt"
 
-        [tool.git.english]
+        [Tool.git.english]
         name = "Git"
         # description = "..."
 
-        [tool.git.chinese]
+        [Tool.git.chinese]
         name = "Git"
         description = "..."
     
 
-    [tool.docker]
-        [tool.docker.basic_info]
+    [Tool.docker]
+        [Tool.docker.basic_info]
         level = "Intermediate"
         image = "fa-brands fa-docker"
 
-        [tool.docker.english]
+        [Tool.docker.english]
         name = "Docker"
         # description = "..."
 
-        [tool.docker.chinese]
+        [Tool.docker.chinese]
         name = "Docker"
         description = "..."
 
 
-    # [tool.spark]
-    #     [tool.spark.basic_info]
+    # [Tool.spark]
+    #     [Tool.spark.basic_info]
     #     level = "Ongoing"
     #     image = "..."
 
-    #     [tool.spark.english]
+    #     [Tool.spark.english]
     #     name = "Spark"
     #     description = "..."
 
-    #     [tool.spark.chinese]
+    #     [Tool.spark.chinese]
     #     name = "Spark"
     #     description = "..."
     
 
-    # [tool.hadoop]
-    #     [tool.hadoop.basic_info]
+    # [Tool.hadoop]
+    #     [Tool.hadoop.basic_info]
     #     level = "Ongoing"
     #     image = "..."
 
-    #     [tool.hadoop.english]
+    #     [Tool.hadoop.english]
     #     name = "Hadoop"
     #     description = "..."
 
-    #     [tool.hadoop.chinese]
+    #     [Tool.hadoop.chinese]
     #     name = "Hadoop"
     #     description = "..."
-[CI_CD]
-    [CI_CD.github_actions]
-        [CI_CD.github_actions.basic_info]
+["CI CD"]
+    ["CI CD".githubActions]
+        ["CI CD".githubActions.basic_info]
         level = "Beginner"
         image = "fa-solid fa-code-compare"
 
-        [CI_CD.github_actions.english]
+        ["CI CD".githubActions.english]
         name = "Github Actions"
         # description = "..."
 
-        [CI_CD.github_actions.chinese]
+        ["CI CD".githubActions.chinese]
         name = "Github Actions"
         description = "..."
     
-    [CI_CD.MLflow]
-        [CI_CD.MLflow.basic_info]
+    ["CI CD".MLflow]
+        ["CI CD".MLflow.basic_info]
         level = "Beginner"
         image = "fa-solid fa-gauge-high"
 
-        [CI_CD.MLflow.english]
+        ["CI CD".MLflow.english]
         name = "MLflow"
         description = "using MLflow to track experiments and mointor the hardware usage."
 
-        [CI_CD.MLflow.chinese]
+        ["CI CD".MLflow.chinese]
         name = "MLflow"
         description = "..."
 
-[platform]
-    [platform.ubuntu]
-        [platform.ubuntu.basic_info]
+[Platform]
+    [Platform.ubuntu]
+        [Platform.ubuntu.basic_info]
         level = "Intermediate"
         image = "fa-brands fa-ubuntu"
 
-        [platform.ubuntu.english]
+        [Platform.ubuntu.english]
         name = "Ubuntu"
         # description = "..."
 
-        [platform.ubuntu.chinese]
+        [Platform.ubuntu.chinese]
         name = "Ubuntu"
         description = "..."
     
 
-    [platform.windows]
-        [platform.windows.basic_info]
+    [Platform.windows]
+        [Platform.windows.basic_info]
         level = "Intermediate"
         image = "fa-brands fa-windows"
 
-        [platform.windows.english]
+        [Platform.windows.english]
         name = "Windows"
         # description = "..."
 
-        [platform.windows.chinese]
+        [Platform.windows.chinese]
         name = "Windows"
         description = "..."

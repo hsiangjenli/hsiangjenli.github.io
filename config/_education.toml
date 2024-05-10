@@ -1,11 +1,11 @@
-[master]
-    [master.university.basic_info]
+["M.S."]
+    ["M.S.".university.basic_info]
     image = "static/image/ntust.png"
-    graduate_year = 2024
+    graduate_year = "2024"
     gpa = "4.02/4.3"
     transcript = "static/pdf/transcript_ntust.pdf"
 
-    [master.university.english]
+    ["M.S.".university.english]
     name = "National Taiwan University of Science and Technology"
     country = "Taiwan"
     city = "Taipei"
@@ -14,7 +14,7 @@
     supervisor = "Prof. Chao-Lung Yang"
     href = "https://www.csie.ntust.edu.tw/"
 
-    [master.university.chinese]
+    ["M.S.".university.chinese]
     name = "國立臺灣科技大學"
     country = "臺灣"
     city = "臺北"
@@ -22,21 +22,21 @@
     description = "大數據分析與資訊安全"
 
 
-[bachelor]
-    [bachelor.university.basic_info]
+["B.S."]
+    ["B.S.".university.basic_info]
     image = "static/image/nkust.png"
-    graduate_year = 2022
+    graduate_year = "2022"
     gpa = "3.82/4.3"
     transcript = "static/pdf/transcript_nkust.pdf"
 
-    [bachelor.university.english]
+    ["B.S.".university.english]
     name = "National Kaohsiung University of Science and Technology"
     country = "Taiwan"
     city = "Kaohsiung"
     major = "Department of Money and Banking"
     href = "https://banking.nkust.edu.tw/"
 
-    [bachelor.university.chinese]
+    ["B.S.".university.chinese]
     name = "國立高雄科技大學"
     country = "臺灣"
     city = "高雄"
