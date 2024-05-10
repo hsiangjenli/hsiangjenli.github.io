@@ -1,0 +1,172 @@
+\documentclass[10pt, a4paper]{article}
+
+    \usepackage{graphicx} % Required for inserting images
+    \usepackage[left=1cm, right=1cm, top=2cm, bottom=2cm]{geometry}
+    \usepackage{titlesec}
+    \usepackage[inline]{enumitem}
+    \usepackage[dvipsnames]{xcolor}
+    \usepackage{hyperref}
+    \usepackage{xparse}
+    \usepackage{tikzpagenodes}
+
+    \RequirePackage{etex}
+    \usepackage{fontspec} % 加這個就可以設定字體
+    \usepackage[T1]{fontenc} % font size
+    \usepackage{xeCJK} % 讓中英文字體分開設置 
+    % \setmainfont[Mapping=tex-text]{Times New Roman} % 設定主要字型，也就是英文字型 
+    \setCJKmainfont{AR PL UKai TW} % 設定中文字型 
+    \setCJKmonofont{AR PL UKai TW}
+
+    \usepackage{xhfill}
+
+    % -- global setting --
+    \pagestyle{empty} % remove page number
+    \usepackage{setspace}
+    \setstretch{0.5}
+    
+    % --------------------
+
+    % -- personal information --
+    \newcommand{\myname}[1]{
+        \begin{center}
+            {\LARGE #1}
+        \end{center}
+    }
+    % --------------------------
+
+    % -- section --
+    \titleformat{\section}{\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{} % set section font size
+    % set section after space
+    \titlespacing{\section}{0pt}{0.5em}{1em}
+    \newcommand{\mysec}[1]{\section*{\textbf{#1 ~} \xrfill[0.3\baselineskip]{0.1pt}[Black]}}
+
+    % -- item -----
+    \newlist{skillset}{enumerate*}{1}
+    \setlist[skillset]{label={}, afterlabel={}, itemjoin={{, }}}
+    \newcommand{\skillblock}[2]{
+    \noindent\makebox[0.1\paperwidth][l]{#1}\ignorespaces #2\par}
+    \newlist{linkset}{enumerate*}{1}
+    \setlist[linkset]{label={}, afterlabel={}, itemjoin={{ \textbar{} }}}
+
+    \newcommand{\myitemspace}{\setlength\itemsep{-2pt}}
+
+    \NewDocumentCommand{\myitem}{mooo}{
+        \noindent
+        \textbf{#1}
+        \IfValueT{#2}{
+            \begin{itemize}[label={}, leftmargin=0pt, topsep=.25em, after=\vspace{.5em}]
+                \myitemspace
+                \small
+                \IfValueT{#2}{\item #2}
+                \IfValueT{#3}{\item #3}
+                \IfValueT{#4}{\item #4}
+            \end{itemize}
+        }
+
+    }
+    
+    \NewDocumentCommand{\manyitem}{moooo}{
+        \noindent
+        \textbf{#1}
+        \IfValueT{#2}{
+            \begin{itemize}[leftmargin=*, topsep=.25em, after=\vspace{.5em}]
+                \myitemspace
+                \small
+                \IfValueT{#2}{\item #2}
+                \IfValueT{#3}{\item #3}
+                \IfValueT{#4}{\item #4}
+                \IfValueT{#5}{\item #5}
+            \end{itemize}
+        }
+    }
+    \newcommand{\hl}[1]{\textit{\color{Mahogany} #1}}
+    
+    \title{cv}
+    \author{<< NAME >>}
+    \date{April 2024}
+    
+
+\begin{document}
+
+    % \MyIfEmptyTF{Hsiang-Jen Li}{A}{B}
+    \begin{tikzpicture}[remember picture,overlay,shift={(current page.north east)}]
+        \node[anchor=north east,xshift=-0.6cm,yshift=-0.5cm]{\includegraphics[width=3cm]{qrcode_hsiangjenli.github.io.png}};
+    \end{tikzpicture}
+
+    \myname{<< NAME >>} % ===============================================
+    
+    \begin{center}
+        \begin{linkset}
+            \item \href{mailto:<< MAIL >>}{<< MAIL >>}
+            \item \href{https://github.com/<< GITHUB >>}{github.com/<< GITHUB >>}
+            \item \href{<< IT_BLOG >>}{IT Blog}
+        \end{linkset}
+    \end{center}
+
+    
+    \mysec{Education} % ====================================================
+        <<% for degree in EDU %>>
+            <<% set edu = EDU[degree].university.english %>>
+            <<% set info = EDU[degree].university.basic_info %>>
+            <<% set grad_year = info.graduate_year %>>
+            <<% set gpa = info.gpa %>>
+
+            \myitem
+                {<< edu.name >> \hfill \hl{<<edu.city>>, << edu.country >>}}
+                [\textbf{<< degree >>} in << edu.major >> \hfill \small << grad_year >>]
+                [Overall GPA: << gpa >>]
+        <<% endfor %>>
+
+
+    \mysec{Experience} % ===================================================
+        <<% for exp in EXP %>>
+            <<% set start = EXP[exp].basic_info.period_start %>>
+            <<% set end = EXP[exp].basic_info.period_end %>>
+            <<% set info = EXP[exp].english %>>
+            \myitem
+                {<< info.title >> \hfill \hl{<< info.location >>}}
+                [<< info.description >> \hfill \small << start >> - << end >>]
+
+        <<% endfor %>>
+    
+    \mysec{Skills} % =======================================================
+        <<% for category in SKILL %>>
+            <<% set cat = SKILL[category] %>>
+            \skillblock{\textbf{<< category >>}}{
+            <<% for skill in cat %>><< cat[skill].english.name >> <<% if not loop.last %>>, <<% endif %>> <<% endfor %>>
+            }
+                
+        <<% endfor %>>
+    
+    \mysec{Competitions \& Awards} % ===================================================
+        <<% for award_id in AWARD %>>
+            <<% set award = AWARD[award_id].english %>>
+            <<% set info = AWARD[award_id].basic_info %>>
+            \myitem
+                {<< award.title >> \hfill \hl{<< info.year >>}}
+                [Hosted by << award.host >>]
+                [<< award.ranking >>]
+
+        <<% endfor %>>
+    
+    \mysec{Side Projects} % =================================================
+        <<% for project in SIDE_PROJECT %>>
+            <<% set info = SIDE_PROJECT[project].basic_info %>>
+            <<% set project = SIDE_PROJECT[project].english %>>
+            <<% if info.weight > WEIGTH %>> 
+                \manyitem
+                    {<< project.project_name >>  \hfill \hl{<< info.period_start>> - << info.period_end >>}}
+                    <<% for detail in project.project_description %>>[<< detail >>]<<% endfor %>>
+            <<% endif %>>
+        <<% endfor %>>
+    
+    \mysec{Research Interests} % ===========================================
+        \begin{itemize}[leftmargin=*]
+            \myitemspace
+            <<% for research in RI %>>
+                <<% set info = RI[research].english %>>
+                \item << info.name >>
+            <<% endfor %>>
+        \end{itemize}
+
+\end{document}
