@@ -36,7 +36,7 @@ jobs:
     - name: Setup Weasyprint mini Docker Image
       uses: addnab/docker-run-action@v3
       with:
-        image: 
+        image: hsiangjenli/xelatex:ntust-thesis-v1.8.1
         options: -v ${{ github.workspace }}:/app -w /app --user=root
         run: xelatex cv_eng.tex --output-directory=static/pdf
     # ------------------------------------------------------------------------------------------------------------------------------
