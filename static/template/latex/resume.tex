@@ -23,13 +23,15 @@
     \pagestyle{empty} % remove page number
     \usepackage{setspace}
     \setstretch{0.5}
+    \AtBeginDocument{\color{darkgray}} % set font color
     
     % --------------------
 
     % -- personal information --
     \newcommand{\myname}[1]{
+        \color{black}
         \begin{center}
-            {\LARGE #1}
+            {\LARGE \textbf{#1}}
         \end{center}
     }
     % --------------------------
@@ -38,7 +40,7 @@
     \titleformat{\section}{\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{} % set section font size
     % set section after space
     \titlespacing{\section}{0pt}{0.5em}{1em}
-    \newcommand{\mysec}[1]{\section*{\textbf{#1 ~} \xrfill[0.3\baselineskip]{0.1pt}[Black]}}
+    \newcommand{\mysec}[1]{\section*{\color{black} \textbf{#1 ~} \xrfill[0.3\baselineskip]{0.1pt}[Black]}}
 
     % -- item -----
     \newlist{skillset}{enumerate*}{1}
@@ -129,7 +131,7 @@
 
         <<% endfor %>>
     
-    \mysec{Skills} % =======================================================
+    \mysec{Skills} % =======================================================        
         <<% for category in SKILL %>>
             <<% set cat = SKILL[category] %>>
             \skillblock{\textbf{<< category >>}}{
@@ -137,6 +139,7 @@
             }
                 
         <<% endfor %>>
+        ~ % add space
     
     \mysec{Competitions \& Awards} % ===================================================
         <<% for award_id in AWARD %>>

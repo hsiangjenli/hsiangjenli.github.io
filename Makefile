@@ -1,5 +1,5 @@
 html:
-	python auto.py
+	python auto.py --dev True
 	cp -r static/* hsiangjenli.github.io/static
 
 gpa:
@@ -29,8 +29,8 @@ gpa:
 	weasyprint static/output/nkust.html static/pdf/transcript_nkust.pdf
 
 cv:
-	python auto.py
-	docker run -it --rm -v "$(PWD):/workspace" hsiangjenli/xelatex:ntust-thesis-v1.8.1 xelatex test.tex
+	python auto.py --dev True
+	docker run -it --rm -v "$(PWD):/workspace" hsiangjenli/xelatex:ntust-thesis-v1.8.1 xelatex cv_eng.tex
 	# weasyprint static/output/cv_eng.html -s static/css/cv.css static/pdf/cv_eng.pdf
 	# weasyprint static/output/cv_zh_tw.html -s static/css/cv.css static/pdf/cv_zh_tw.pdf
 

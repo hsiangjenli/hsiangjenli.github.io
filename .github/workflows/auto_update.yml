@@ -36,9 +36,9 @@ jobs:
     - name: Setup Weasyprint mini Docker Image
       uses: addnab/docker-run-action@v3
       with:
-          image: minidocks/weasyprint
-          options: -v ${{ github.workspace }}:/app -w /app --user=root
-          run: weasyprint static/output/cv_eng.html -s static/css/cv.css static/pdf/cv_eng.pdf
+        image: 
+        options: -v ${{ github.workspace }}:/app -w /app --user=root
+        run: xelatex cv_eng.tex --output-directory=static/pdf
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Copy Static Folder
       run: cp -r static/* hsiangjenli.github.io/static/

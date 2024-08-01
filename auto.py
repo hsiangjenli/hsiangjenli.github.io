@@ -2,6 +2,7 @@ import os
 import shutil
 import requests
 import datetime
+import argparse
 from core import tutils
 
 # == personal information ============================================================================================
@@ -37,6 +38,13 @@ LATEX_TEMPLATE = tutils.latex_set_environemnt(folder='static/template/latex', te
 
 # == main ============================================================================================================
 if __name__ == "__main__":
+
+    args = argparse.ArgumentParser()
+    args.add_argument("--dev", help="Development mode", default=False, type=bool)
+    args = args.parse_args()
+
+    if args.dev:
+        DEV = bool(args.dev)
     
     shutil.rmtree(f"{WEBPAGE}/static", ignore_errors=True)
     os.makedirs(f"{WEBPAGE}/static", exist_ok=True)
@@ -68,7 +76,7 @@ if __name__ == "__main__":
         "PULL_REQUEST": PULL_REQUEST,
     }
 
-    O_WEBPAGE = WEBPAGE_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE)
+    O_WEBPAGE = WEBPAGE_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, DEV_MODE=args.dev)
     tutils.write(O_WEBPAGE, f"{WEBPAGE}/index.html")
 
     # O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#b84646", LANG="english", WEIGTH=2)
@@ -78,4 +86,4 @@ if __name__ == "__main__":
     # tutils.write(O_CV_CHN, f"static/output/cv_zh_tw.html")
 
     O_LATEX = LATEX_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, WEIGTH=1)
-    tutils.write(O_LATEX, f"test.tex")
+    tutils.write(O_LATEX, f"cv_eng.tex")
