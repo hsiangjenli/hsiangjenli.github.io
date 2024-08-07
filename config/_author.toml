@@ -19,3 +19,9 @@ mail = "hsiangjenli@gmail.com"
     bg_color = "330F63"
     logo_color = "white"
     font_awesome = "fa-brands fa-gitlab"
+
+    [social_media.dockerhub]
+    url = "https://hub.docker.com/u/hsiangjenli"
+    bg_color = "2CA5E0"
+    logo_color = "white"
+    font_awesome = "fa-brands fa-docker"
