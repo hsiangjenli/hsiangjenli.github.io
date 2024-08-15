@@ -8,6 +8,12 @@ profile = "image/logo.svg"
 mail = "hsiangjenli@gmail.com"
 
 [social_media]
+    [social_media.linkedin]
+    url = "https://www.linkedin.com/in/hsiangjenli"
+    bg_color = "0077B5"
+    logo_color = "white"
+    font_awesome = "fa-brands fa-linkedin"
+
     [social_media.github]
     url = "https://github.com/hsiangjenli"
     bg_color = "100000"
