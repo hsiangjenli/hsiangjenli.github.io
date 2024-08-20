@@ -16,6 +16,25 @@
 #     [ntustLatexTemplate.chinese]
 #     project_name = "國立臺灣科技大學 論文 LaTeX 模板"
 
+[pyCode2Vido]
+    [pyCode2Vido.basic_info]
+    period_start = "2024.08"
+    period_end = "2024.08"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/code2video"
+    tags = ['Python', "ffmpeg", "pillow"]
+    weight = 2
+
+    [pyCode2Vido.english]
+    project_name = "Code2Video"
+    project_description = [
+        "A small project for converting the code snippet to the video.",
+    ]
+
+    [pyCode2Vido.chinese]
+    project_name = "程式碼轉影片"
+    # project_description = "..."
+
 [pypiDIMG4MD]
     [pypiDIMG4MD.basic_info]
     period_start = "2024.02"
