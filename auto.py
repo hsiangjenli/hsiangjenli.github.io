@@ -77,6 +77,7 @@ if __name__ == "__main__":
     }
 
     O_WEBPAGE = WEBPAGE_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, DEV_MODE=args.dev)
+    O_WEBPAGE = tutils.html_formater(O_WEBPAGE)
     tutils.write(O_WEBPAGE, f"{WEBPAGE}/index.html")
 
     # O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#b84646", LANG="english", WEIGTH=2)

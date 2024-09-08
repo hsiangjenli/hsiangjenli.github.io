@@ -1,5 +1,11 @@
 from jinja2 import Environment, FileSystemLoader
 import toml
+from bs4 import BeautifulSoup
+
+def html_formater(html: str):
+    soup = BeautifulSoup(html, 'html.parser')
+    pretty_soup = soup.prettify()
+    return pretty_soup
 
 def load_toml(path: str):    
     with open(path, "r") as f:
