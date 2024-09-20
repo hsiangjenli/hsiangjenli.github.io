@@ -12,7 +12,7 @@ def load_toml(path: str):
         return toml.load(f)
 
 def set_environemnt(folder: str, template: str):
-    env = Environment(loader=FileSystemLoader(folder))
+    env = Environment(loader=FileSystemLoader(folder), trim_blocks=True, lstrip_blocks=True, autoescape=True)
     template = env.get_template(template)
     return template
 
@@ -24,6 +24,8 @@ def latex_set_environemnt(folder: str, template: str):
         variable_end_string='>>',
         comment_start_string='<<#',
         comment_end_string='#>>',
+        trim_blocks=True, 
+        lstrip_blocks=True,
         loader=FileSystemLoader(folder),
     )
     template = env.get_template(template)

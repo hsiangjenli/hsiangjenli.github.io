@@ -11,6 +11,16 @@ Q = "<div>The way lead to success is your own resolution.</div><div>得常咬菜
 NAME = "Hsiang-Jen Li"
 ZH_TW_NAME = "李享紝"
 NICKNAME = "RN"
+
+SEEKING_POSITION = [
+    "Seeking a Data & MLOps Engineer role with a focus on research and complex data relationships",
+    "Learning best through teaching, I write IT blogs and encourage others to share knowledge, promoting shared growth and learning",
+    "Establishing and enforcing development standards: Skilled in creating clear and comprehensive development rules, ensuring developers maintain consistency in variable naming, commit messages, and other practices to avoid disorganization and maintain project quality",
+    "Code standards and documentation automation: Proficient in adhering to PEP8 and other Python coding standards, using tools to maintain code quality, and following Python docstring conventions for efficient documentation generation. Capable of using local language models to automatically generate compliant commit messages, improving team communication and project transparency",
+    "Unified development, version control, and deployment environments: Expertise in Git, utilizing branches and tags to distinguish WIP, development, and production-ready projects. Proficient in setting up custom GitHub Workflows to automate processes, such as triggering project releases upon push tags. Also experienced in using Docker to create consistent development and deployment environments, ensuring stability and consistency between development and production environments"
+    ]
+CURRENT_POSITION = "Finance & CS Background | Data Analyst @ SCSB"
+
 GITHUB = "hsiangjenli"
 MAIL = "hsiangjenli@gmail.com"
 IT_BLOG = "https://hsiangjenli.github.io/blog/"
@@ -58,6 +68,8 @@ if __name__ == "__main__":
         "NAME": NAME,
         "ZH_TW_NAME": ZH_TW_NAME, 
         "NICKNAME": NICKNAME,
+        "SEEKING_POSITION": SEEKING_POSITION,
+        "CURRENT_POSITION": CURRENT_POSITION,
         "GITHUB": GITHUB,
         "MAIL": MAIL,
         "COPYRIGHT": COPYRIGHT,
@@ -78,6 +90,7 @@ if __name__ == "__main__":
 
     O_WEBPAGE = WEBPAGE_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, DEV_MODE=args.dev)
     O_WEBPAGE = tutils.html_formater(O_WEBPAGE)
+
     tutils.write(O_WEBPAGE, f"{WEBPAGE}/index.html")
 
     # O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#b84646", LANG="english", WEIGTH=2)
@@ -85,6 +98,9 @@ if __name__ == "__main__":
 
     # O_CV_CHN = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="chinese", WEIGTH=2)
     # tutils.write(O_CV_CHN, f"static/output/cv_zh_tw.html")
+
+    PERSONAL_INFO["SEEKING_POSITION"] = [x.replace("&", "\\&") for x in SEEKING_POSITION]
+    PERSONAL_INFO["CURRENT_POSITION"] = CURRENT_POSITION.replace("&", "\\&")
 
     O_LATEX = LATEX_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, WEIGTH=1)
     tutils.write(O_LATEX, f"cv_eng.tex")

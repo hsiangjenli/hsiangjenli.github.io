@@ -12,31 +12,31 @@
         name = "Python"
         description = "..."
 
-    [Language.julia]
-        [Language.julia.basic_info]
-        level = "Beginner"
-        image = "fa-solid fa-code"
+    # [Language.julia]
+    #     [Language.julia.basic_info]
+    #     level = "Beginner"
+    #     image = "fa-solid fa-code"
 
-        [Language.julia.english]
-        name = "Julia"
-        description = "<a href='https://github.com/hsiangjenli/learn-julia'>click here.</a>"
+    #     [Language.julia.english]
+    #     name = "Julia"
+    #     description = "<a href='https://github.com/hsiangjenli/learn-julia'>click here.</a>"
 
-        [Language.julia.chinese]
-        name = "Julia"
-        description = "..."
+    #     [Language.julia.chinese]
+    #     name = "Julia"
+    #     description = "..."
 
-    [Language.sql]
-        [Language.sql.basic_info]
-        level = "Beginner"
-        image = "fa-solid fa-database"
+    # [Language.sql]
+    #     [Language.sql.basic_info]
+    #     level = "Beginner"
+    #     image = "fa-solid fa-database"
 
-        [Language.sql.english]
-        name = "SQL"
-        # description = "..."
+    #     [Language.sql.english]
+    #     name = "SQL"
+    #     # description = "..."
 
-        [Language.sql.chinese]
-        name = "SQL"
-        description = "..."
+    #     [Language.sql.chinese]
+    #     name = "SQL"
+    #     description = "..."
 
     [Language.latex]
         [Language.latex.basic_info]
@@ -216,6 +216,19 @@
 
         [Platform.ubuntu.chinese]
         name = "Ubuntu"
+        description = "..."
+    
+    [Platform.mac_os]
+        [Platform.mac_os.basic_info]
+        level = "Intermediate"
+        image = "fa-brands fa-apple"
+
+        [Platform.mac_os.english]
+        name = "mac OS"
+        # description = "..."
+
+        [Platform.mac_os.chinese]
+        name = "mac OS"
         description = "..."
     
 

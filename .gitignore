@@ -2,6 +2,7 @@ hsiangjenli.github.io/
 test*
 .DS_Store
 *.tex
+*.pdf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

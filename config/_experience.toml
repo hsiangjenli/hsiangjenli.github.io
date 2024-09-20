@@ -1,3 +1,18 @@
+[scsb_digital_banking_da]
+    [scsb_digital_banking_da.basic_info]
+    period_start = "2024.09"
+    period_end = "now"
+    image = "image/scsb.png"
+    [scsb_digital_banking_da.english]
+    title = "Shanghai Commercial and Savings Bank - Digital Banking Department"
+    description = ["Data Analyst @ SCSB Digital Banking", "TODO"]
+    location = "Taipei, Taiwan"
+
+    [scsb_digital_banking_da.chinese]
+    title = "上海商業儲蓄銀行"
+    description = ["數位銀行部 - 數據分析師"]
+    location = "臺北, 臺灣"
+
 [scsb_digital_banking]
     [scsb_digital_banking.basic_info]
     period_start = "2023.07"
@@ -5,12 +20,12 @@
     image = "image/scsb.png"
     [scsb_digital_banking.english]
     title = "Shanghai Commercial and Savings Bank - Digital Banking Department"
-    description = "Internship in SCSB Digital Banking"
+    description = ["Internship @ SCSB Digital Banking", "Developed a Public Opinion Analysis System for the SCSB"]
     location = "Taipei, Taiwan"
 
     [scsb_digital_banking.chinese]
     title = "上海商業儲蓄銀行"
-    description = "數位銀行部實習生"
+    description = ["數位銀行部實習生"]
     location = "臺北, 臺灣"
 
 # [ntust_simslab]
@@ -41,17 +56,17 @@
 #     title = "撰寫 IT Blog"
 
 
-[nkust_ccet_ta]
-    [nkust_ccet_ta.basic_info]
-    period_start = "2021.09"
-    period_end = "2022.01"
-    image = "image/nkust.png"
+# [nkust_ccet_ta]
+#     [nkust_ccet_ta.basic_info]
+#     period_start = "2021.09"
+#     period_end = "2022.01"
+#     image = "image/nkust.png"
 
-    [nkust_ccet_ta.english]
-    title = "National Kaohsiung University of Science and Technology"
-    description = "Cross College Elite Tech Program - Data Science - Teaching assistant"
-    location = "Kaohsiung, Taiwan"
+#     [nkust_ccet_ta.english]
+#     title = "National Kaohsiung University of Science and Technology"
+#     description = ["Cross College Elite Tech Program - Data Science - Teaching assistant"]
+#     location = "Kaohsiung, Taiwan"
 
-    [nkust_ccet_ta.chinese]
-    title = "國立高雄科技大學"
-    description = "高瞻科技不分系 資料科學 助教"
+#     [nkust_ccet_ta.chinese]
+#     title = "國立高雄科技大學"
+#     description = ["高瞻科技不分系 資料科學 助教"]

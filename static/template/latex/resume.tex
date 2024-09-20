@@ -35,16 +35,18 @@
         \end{center}
     }
     % --------------------------
+    
+    \newcommand{\hl}[1]{{\color{Mahogany} #1}}
 
     % -- section --
     \titleformat{\section}{\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{} % set section font size
     % set section after space
-    \titlespacing{\section}{0pt}{0.5em}{1em}
-    \newcommand{\mysec}[1]{\section*{\color{black} \textbf{#1 ~} \xrfill[0.3\baselineskip]{0.1pt}[Black]}}
+    \titlespacing{\section}{0pt}{1.25em}{.5em}
+    \newcommand{\mysec}[1]{\section*{\textbf{#1 ~} \xrfill[0.3\baselineskip]{0.1pt}[Black]}}
 
     % -- item -----
     \newlist{skillset}{enumerate*}{1}
-    \setlist[skillset]{label={}, afterlabel={}, itemjoin={{, }}}
+    \setlist[skillset]{label={}, afterlabel={}, itemjoin={{,}}}
     \newcommand{\skillblock}[2]{
     \noindent\makebox[0.1\paperwidth][l]{#1}\ignorespaces #2\par}
     \newlist{linkset}{enumerate*}{1}
@@ -81,7 +83,7 @@
             \end{itemize}
         }
     }
-    \newcommand{\hl}[1]{\textit{\color{Mahogany} #1}}
+    
     
     \title{cv}
     \author{<< NAME >>}
@@ -98,11 +100,28 @@
     \myname{<< NAME >>} % ===============================================
     
     \begin{center}
+
+        
+        \parbox{0.85\linewidth}{
+            \vspace{.75em} 
+                \begin{itemize}
+                    \myitemspace
+                    <<% for seek_pos in SEEKING_POSITION %>>
+                        \item << seek_pos >>
+                    <<% endfor %>>
+                \end{itemize}
+            \vspace{1em}
+        }
+        
+        | << CURRENT_POSITION >> | \\
+        \vspace{.5em}
+
         \begin{linkset}
             \item \href{mailto:<< MAIL >>}{<< MAIL >>}
             \item \href{https://github.com/<< GITHUB >>}{github.com/<< GITHUB >>}
             \item \href{<< IT_BLOG >>}{IT Blog}
         \end{linkset}
+
     \end{center}
 
     
@@ -112,8 +131,7 @@
             <<% set info = EDU[degree].university.basic_info %>>
             <<% set grad_year = info.graduate_year %>>
             <<% set gpa = info.gpa %>>
-
-            \myitem
+            \manyitem
                 {<< edu.name >> \hfill \hl{<<edu.city>>, << edu.country >>}}
                 [\textbf{<< degree >>} in << edu.major >> \hfill \small << grad_year >>]
                 [Overall GPA: << gpa >>]
@@ -125,10 +143,10 @@
             <<% set start = EXP[exp].basic_info.period_start %>>
             <<% set end = EXP[exp].basic_info.period_end %>>
             <<% set info = EXP[exp].english %>>
-            \myitem
+            \manyitem
                 {<< info.title >> \hfill \hl{<< info.location >>}}
-                [<< info.description >> \hfill \small << start >> - << end >>]
-
+                <<% for detail in info.description %>><<% if loop.first %>>[<< detail >> \hfill \small << start >> - << end >>]<<% else %>>[<< detail >>]<<% endif %>>
+                <<% endfor %>>
         <<% endfor %>>
     
     \mysec{Skills} % =======================================================        
@@ -137,7 +155,6 @@
             \skillblock{\textbf{<< category >>}}{
             <<% for skill in cat %>><< cat[skill].english.name >> <<% if not loop.last %>>, <<% endif %>> <<% endfor %>>
             }
-                
         <<% endfor %>>
         ~ % add space
     
@@ -145,12 +162,20 @@
         <<% for award_id in AWARD %>>
             <<% set award = AWARD[award_id].english %>>
             <<% set info = AWARD[award_id].basic_info %>>
-            \myitem
+            \manyitem
                 {<< award.title >> \hfill \hl{<< info.year >>}}
                 [Hosted by << award.host >>]
                 [<< award.ranking >>]
-
         <<% endfor %>>
+    
+    \mysec{Research Interests} % ===========================================
+        \begin{itemize}[leftmargin=*]
+            \myitemspace
+            <<% for research in RI %>>
+                <<% set info = RI[research].english %>>
+                \item << info.name >>
+            <<% endfor %>>
+        \end{itemize}
     
     \mysec{Side Projects} % =================================================
         <<% for project in SIDE_PROJECT %>>
@@ -162,14 +187,5 @@
                     <<% for detail in project.project_description %>>[<< detail >>]<<% endfor %>>
             <<% endif %>>
         <<% endfor %>>
-    
-    \mysec{Research Interests} % ===========================================
-        \begin{itemize}[leftmargin=*]
-            \myitemspace
-            <<% for research in RI %>>
-                <<% set info = RI[research].english %>>
-                \item << info.name >>
-            <<% endfor %>>
-        \end{itemize}
 
 \end{document}
