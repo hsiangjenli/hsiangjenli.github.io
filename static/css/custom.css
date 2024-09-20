@@ -15,6 +15,18 @@ th {
     vertical-align: middle;
 }
 
+#main > section {
+    border-top: solid 6px #f4f4f4;
+}
+
+    #main > section > .container {
+        padding: 1.5em 0 1.5em 0;
+    }
+
+    #main > section:first-child {
+        border-top: 0;
+    }
+
 .p0 {
     padding: 0!important;
 }

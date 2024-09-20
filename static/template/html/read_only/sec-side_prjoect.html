@@ -23,14 +23,12 @@
                 <tr>
                     <td scope="row" style="font-size: smaller; font-weight: bolder; text-align: center;">{{ num }}</td>
                     <td style="font-size: small; text-align: left" class="w130">
-                        {{ info.period_start }}
-                         ~ 
-                        {% if info.period_end == 'now' %}
-                           <b>{{ info.period_end }} 🚀</b>
-
-                        {% else %}
-                            {{ info.period_end }}
-                        {% endif %}
+                        {{- info.period_start }} ~ 
+                        {%- if info.period_end == 'now' %} 
+                            <b>{{ info.period_end }} 🚀</b>
+                        {%- else %}
+                            {{ info.period_end -}}
+                        {%- endif -%}
                     </td>
                     <td class="w400 b">
                         {{ p.english.project_name }}
@@ -62,7 +60,7 @@
                     </td>
                     <td style="font-size: small; text-transform: lowercase;">
                         {% for tag in info.tags %}
-                        {{ tag }} {% if not loop.last %}, {% endif %}
+                        {{- tag -}} {% if not loop.last %}, {% endif %}
                         {% endfor %}
                     </td>
                 </tr>
@@ -76,7 +74,7 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col" style="text-align: center;">Post Date</th>
+                    <th scope="col" style="text-align: center;">Date</th>
                     <th scope="col">Type</th>
                     <th scope="col">Title</th>
                 </tr>
