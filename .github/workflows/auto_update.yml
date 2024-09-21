@@ -41,7 +41,7 @@ jobs:
       with:
         image: hsiangjenli/xelatex:20240801
         options: -v ${{ github.workspace }}:/app -w /app --user=root
-        run: xelatex cv_eng.tex --output-directory=static/pdf
+        run: xelatex cv_eng.tex --output-directory=hsiangjenli.github.io/static/pdf
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
