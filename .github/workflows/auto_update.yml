@@ -42,6 +42,9 @@ jobs:
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Copy Static Folder
       run: cp -r static/* hsiangjenli.github.io/static/
+    - name: List files in publish directory
+      run: |
+        ls -al ./hsiangjenli.github.io/static/
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
