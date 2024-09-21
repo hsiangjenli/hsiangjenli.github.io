@@ -42,9 +42,8 @@ jobs:
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Copy Static Folder
       run: cp -r static/* hsiangjenli.github.io/static/
-    - name: List files in publish directory
-      run: |
-        find .
+    - name: Copy file in publish directory
+      run: cp cv_eng.pdf hsiangjenli.github.io/static/pdf
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
