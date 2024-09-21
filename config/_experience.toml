@@ -4,8 +4,8 @@
     period_end = "now"
     image = "image/scsb.png"
     [scsb_digital_banking_da.english]
-    title = "Shanghai Commercial and Savings Bank - Digital Banking Department"
-    description = ["Data Analyst @ SCSB Digital Banking", "TODO"]
+    title = "Shanghai Commercial and Savings Bank"
+    description = ["Data Analyst @ SCSB Digital Banking Department",]
     location = "Taipei, Taiwan"
 
     [scsb_digital_banking_da.chinese]
@@ -19,8 +19,8 @@
     period_end = "2023.08"
     image = "image/scsb.png"
     [scsb_digital_banking.english]
-    title = "Shanghai Commercial and Savings Bank - Digital Banking Department"
-    description = ["Internship @ SCSB Digital Banking", "Developed a Public Opinion Analysis System for the SCSB"]
+    title = "Shanghai Commercial and Savings Bank"
+    description = ["Internship @ SCSB Digital Banking Department", "Developed a Public Opinion Analysis System for the SCSB"]
     location = "Taipei, Taiwan"
 
     [scsb_digital_banking.chinese]

@@ -14,10 +14,10 @@ NICKNAME = "RN"
 
 SEEKING_POSITION = [
     "Seeking a Data & MLOps Engineer role with a focus on research and complex data relationships",
-    "Learning best through teaching, I write IT blogs and encourage others to share knowledge, promoting shared growth and learning",
-    "Establishing and enforcing development standards: Skilled in creating clear and comprehensive development rules, ensuring developers maintain consistency in variable naming, commit messages, and other practices to avoid disorganization and maintain project quality",
-    "Code standards and documentation automation: Proficient in adhering to PEP8 and other Python coding standards, using tools to maintain code quality, and following Python docstring conventions for efficient documentation generation. Capable of using local language models to automatically generate compliant commit messages, improving team communication and project transparency",
-    "Unified development, version control, and deployment environments: Expertise in Git, utilizing branches and tags to distinguish WIP, development, and production-ready projects. Proficient in setting up custom GitHub Workflows to automate processes, such as triggering project releases upon push tags. Also experienced in using Docker to create consistent development and deployment environments, ensuring stability and consistency between development and production environments"
+    "Learning best through teaching",
+    "Establishing development standards",
+    "Standardizing development practices to automate CI/CD",
+    "Unifying dev and deploy environments through Docker",
     ]
 CURRENT_POSITION = "Finance & CS Background | Data Analyst @ SCSB"
 
@@ -25,6 +25,7 @@ GITHUB = "hsiangjenli"
 MAIL = "hsiangjenli@gmail.com"
 IT_BLOG = "https://hsiangjenli.github.io/blog/"
 CHEATSHEET = "https://hsiangjenli.github.io/cheat-sheet/"
+LINKEDIN = "hsiangjenli"
 
 EDU = tutils.load_toml("config/_education.toml")
 EXP = tutils.load_toml("config/_experience.toml")
@@ -72,6 +73,7 @@ if __name__ == "__main__":
         "CURRENT_POSITION": CURRENT_POSITION,
         "GITHUB": GITHUB,
         "MAIL": MAIL,
+        "LINKEDIN": LINKEDIN,
         "COPYRIGHT": COPYRIGHT,
         "IT_BLOG": IT_BLOG,
         "CHEATSHEET": CHEATSHEET,

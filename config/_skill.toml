@@ -129,11 +129,11 @@
         image = "fa-brands fa-git-alt"
 
         [Tool.git.english]
-        name = "Git"
+        name = "git"
         # description = "..."
 
         [Tool.git.chinese]
-        name = "Git"
+        name = "git"
         description = "..."
     
 
