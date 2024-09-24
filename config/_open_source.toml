@@ -7,3 +7,15 @@
         history = [
             "https://github.com/python/python-docs-zh-tw/pull/609"
         ]
+
+[kelvins-awesome-dataops]
+    [kelvins-awesome-dataops.basic_info]
+        name = "kelvins/awesome-dataops"
+        external_link = ""
+    
+    [kelvins-awesome-dataops.pull_request]
+        history = [
+            "https://github.com/kelvins/awesome-dataops/pull/5",
+            "https://github.com/kelvins/awesome-dataops/pull/7",
+            "https://github.com/kelvins/awesome-dataops/pull/8",
+        ]

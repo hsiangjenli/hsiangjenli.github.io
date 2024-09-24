@@ -3,9 +3,11 @@
     period_start = "2024.09"
     period_end = "now"
     image = "image/scsb.png"
+    
     [scsb_digital_banking_da.english]
     title = "Shanghai Commercial and Savings Bank"
-    description = ["Data Analyst @ SCSB Digital Banking Department",]
+    headline = "Data Analyst @ SCSB Digital Banking Department"
+    description = []
     location = "Taipei, Taiwan"
 
     [scsb_digital_banking_da.chinese]
@@ -18,9 +20,11 @@
     period_start = "2023.07"
     period_end = "2023.08"
     image = "image/scsb.png"
+    
     [scsb_digital_banking.english]
     title = "Shanghai Commercial and Savings Bank"
-    description = ["Internship @ SCSB Digital Banking Department", "Developed a Public Opinion Analysis System for the SCSB"]
+    headline = "Intern @ SCSB Digital Banking Department"
+    description = ["Developed a Public Opinion Analysis System for the SCSB"]
     location = "Taipei, Taiwan"
 
     [scsb_digital_banking.chinese]
@@ -28,18 +32,18 @@
     description = ["數位銀行部實習生"]
     location = "臺北, 臺灣"
 
-# [ntust_simslab]
-#     [ntust_simslab.basic_info]
-#     period_start = "2022.09"
-#     period_end = "now"
-#     image = "image/ntust-simslab.svg"
+[ntust_simslab]
+    [ntust_simslab.basic_info]
+    period_start = "2022.09"
+    period_end = "2024.08"
+    image = "image/ntust-simslab.svg"
     
-#     [ntust_simslab.english]
-#     title = "System Informatics and Management Science - SiMS Lab"
-#     description = "Master student in SiMS Lab, NTUST"
+    [ntust_simslab.english]
+    title = "System Informatics and Management Science - SiMS Lab"
+    headline = "Master student @ SiMS Lab, NTUST"
 
-#     [ntust_simslab.chinese]
-#     title = "系統資訊與管理科學實驗室 - SiMS Lab"
+    [ntust_simslab.chinese]
+    title = "系統資訊與管理科學實驗室 - SiMS Lab"
 
 
 # [sharing_programming_knowledge]

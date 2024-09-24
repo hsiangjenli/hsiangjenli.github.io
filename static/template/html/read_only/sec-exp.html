@@ -1,0 +1,26 @@
+<section id="exp">
+    <div class="container">
+        <h3>Experiment</h3>
+            {% for exp in EXP %}
+            <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                {% set e = EXP[exp].english %}
+                {% set info = EXP[exp].basic_info %}
+
+                {% set period_start = info.period_start %}
+                {% set period_end = info.period_end %}
+                {% set company = e.title %}
+                {% set headline = e.headline %}
+                {% set description = e.description %}
+                {% set location = info.location %}
+
+                <text class="larger b">{{ company }} </text> <em class="annot medium"> - {{ period_start }} ~ {{ period_end }}</em><br>
+                
+                <text><em>{{ headline }}</em></text><br>
+                {% for des in description %}
+                    <text class="annot">- {{ des }}</text><br>
+                {% endfor %}
+
+            </div>
+            {% endfor %}
+    </div>
+</section>
