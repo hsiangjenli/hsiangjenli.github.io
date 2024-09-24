@@ -2,17 +2,18 @@
     <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
         <h1 id="logo"><a href="">{{ NAME }} <text style="font-size: x-small;"> {{ NICKNAME }} </text></a></h1>
-        <div class="medium"><em>{{ Q }}</em></div>
+        <div class="medium"><em>{{ Q | safe }}</em></div>
     </header>
     <nav id="nav">
         <ul style="font-size: 1.05rem">
             <li><a href="#intro">About me</a></li>
             <li><a href="#edu">Education</a></li>
+            <li><a href="#exp">Experiment</a></li>
             <li><a href="#award">Competition & Award</a></li>
-            <li><a href="#research">Research Interest</a></li>
             <li><a href="#skill">Skill</a></li>
-            <li><a href="#sproject">Side Project & IT Blog</a></li>
-            <li><a href="#pull_request">Pull Request</a></li>
+            <li><a href="#interest">Interest</a></li>
+            <!-- <li><a href="#sproject">Side Project & IT Blog</a></li> -->
+            <!-- <li><a href="#pull_request">Pull Request</a></li> -->
         </ul>
     </nav>
     <footer>

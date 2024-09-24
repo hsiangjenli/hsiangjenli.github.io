@@ -3,12 +3,17 @@
         <div id="main">
             {% include 'sec-intro.html' %}
             {% include 'sec-edu.html' %}
+            {% include 'sec-exp.html' %}
             {% include 'sec-award.html' %}
-            
-            {% include 'sec-research.html' %}
             {% include 'sec-skill.html' %}
-            {% include 'sec-side_prjoect.html' %}
-            {% include 'sec-pull_request.html' %}
+            <section id="interest">
+                <div class="container">
+                    <h3>Interest</h3>
+                    {% include 'sec-research.html' %}
+                    {% include 'sec-side_prjoect.html' %}
+                    {% include 'sec-pull_request.html' %}
+                </div>
+            </section>
             
         </div>
 
