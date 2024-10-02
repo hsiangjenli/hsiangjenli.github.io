@@ -177,31 +177,57 @@
     #     [Tool.hadoop.chinese]
     #     name = "Hadoop"
     #     description = "..."
-["CI CD"]
-    ["CI CD".githubActions]
-        ["CI CD".githubActions.basic_info]
+["CI/CD"]
+    ["CI/CD".githubActions]
+        ["CI/CD".githubActions.basic_info]
         level = "Beginner"
         image = "fa-solid fa-code-compare"
 
-        ["CI CD".githubActions.english]
+        ["CI/CD".githubActions.english]
         name = "Github Actions"
         # description = "..."
 
-        ["CI CD".githubActions.chinese]
+        ["CI/CD".githubActions.chinese]
         name = "Github Actions"
         description = "..."
     
-    ["CI CD".MLflow]
-        ["CI CD".MLflow.basic_info]
+    ["CI/CD".MLflow]
+        ["CI/CD".MLflow.basic_info]
         level = "Beginner"
         image = "fa-solid fa-gauge-high"
 
-        ["CI CD".MLflow.english]
+        ["CI/CD".MLflow.english]
         name = "MLflow"
         description = "using MLflow to track experiments and mointor the hardware usage."
 
-        ["CI CD".MLflow.chinese]
+        ["CI/CD".MLflow.chinese]
         name = "MLflow"
+        description = "..."
+    
+    ["CI/CD".Terraform]
+        ["CI/CD".Terraform.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-industry"
+
+        ["CI/CD".Terraform.english]
+        name = "Terraform"
+        # description = "..."
+
+        ["CI/CD".Terraform.chinese]
+        name = "Terraform"
+        description = "..."
+
+    ["CI/CD".GitOps]
+        ["CI/CD".GitOps.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-code-branch"
+
+        ["CI/CD".GitOps.english]
+        name = "GitOps"
+        # description = "..."
+
+        ["CI/CD".GitOps.chinese]
+        name = "GitOps"
         description = "..."
 
 [Platform]
