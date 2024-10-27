@@ -204,18 +204,23 @@
         name = "MLflow"
         description = "..."
     
-    ["CI/CD".Terraform]
-        ["CI/CD".Terraform.basic_info]
-        level = "Beginner"
-        image = "fa-solid fa-industry"
+    # ["CI/CD".Terraform]
+    #     ["CI/CD".Terraform.basic_info]
+    #     level = "Beginner"
+    #     image = "fa-solid fa-industry"
 
-        ["CI/CD".Terraform.english]
-        name = "Terraform"
+    #     ["CI/CD".Terraform.english]
+    #     name = "Terraform"
+    #     description = [
+    #         # S, Too many docker images need to be built and pushed to the docker hub.
+    #         # T, Organize the docker images and ....
+    #         # A, How to do....
+    #         # R, Now I can use Terraform to automate rebuilding the docker images when the code is updated.
+    #     ]
+
+        # ["CI/CD".Terraform.chinese]
+        # name = "Terraform"
         # description = "..."
-
-        ["CI/CD".Terraform.chinese]
-        name = "Terraform"
-        description = "..."
 
     ["CI/CD".GitOps]
         ["CI/CD".GitOps.basic_info]
