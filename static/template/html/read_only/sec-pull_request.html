@@ -7,7 +7,7 @@
             {% set info = PULL_REQUEST[pr].basic_info %}
             {% set history = PULL_REQUEST[pr].pull_request.history %}
             
-            <text class="larger b"><a href="{{ info.external_link }}">{{ info.name }}</a></text><text class="annot medium"> - <i class="fa-solid fa-clock-rotate-left"></i> {{ history|length }}</text>
+            <text class="large b"><a href="{{ info.external_link }}">{{ info.name }}</a></text><text class="annot medium"> - <i class="fa-solid fa-clock-rotate-left"></i> {{ history|length }}</text>
             <div class="medium">
                 {% for h in history %}
                     <li><a href="{{ h }}"> {{ h }}</a></li>
