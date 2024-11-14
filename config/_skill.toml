@@ -235,6 +235,17 @@
         name = "GitOps"
         description = "..."
 
+    ["CI/CD".Ansible]
+        ["CI/CD".Ansible.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-a"
+
+        ["CI/CD".Ansible.english]
+        name = "Ansible"
+
+        ["CI/CD".Ansible.chinese]
+        name = "Ansible"
+
 [Platform]
     [Platform.ubuntu]
         [Platform.ubuntu.basic_info]
