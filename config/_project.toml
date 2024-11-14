@@ -1,20 +1,25 @@
 # odd number is finance related project
 # even number is computer science related project
 
-# [ntustLatexTemplate]
-#     [ntustLatexTemplate.basic_info]
-#     period_start = "2024.03"
-#     period_end = "now"
-#     project_type = "personal project"
-#     external_link = "https://github.com/hsiangjenli/ntust-thesis-latex"
-#     tags = ["LaTeX", "XeLatex", "tex-live", "Docker","Overleaf", "NTUST"]
-#     weight = 2
+[awesomeLLM]
+    [awesomeLLM.basic_info]
+    period_start = "2024.09"
+    period_end = "now"
+    project_type = "personal project"
+    external_link = "https://hsiangjenli.github.io/note-llm"
+    tags = ["LLM", "Paper Reading"]
+    weight = 2
 
-#     [ntustLatexTemplate.english]
-#     project_name = "NTUST LaTeX Template"
+    [awesomeLLM.english]
+    project_name = "Note LLM"
+    project_description = [
+        "A curated list of awesome LLM resources.",
+        "Paper reading about LLM and its applications.",
+    ]
 
-#     [ntustLatexTemplate.chinese]
-#     project_name = "國立臺灣科技大學 論文 LaTeX 模板"
+    [awesomeLLM.chinese]
+    project_name = "Note LLM"
+    # project_description = "..."
 
 [pyCode2Vido]
     [pyCode2Vido.basic_info]
@@ -34,6 +39,21 @@
     [pyCode2Vido.chinese]
     project_name = "程式碼轉影片"
     # project_description = "..."
+
+[ntustLatexTemplate]
+    [ntustLatexTemplate.basic_info]
+    period_start = "2024.03"
+    period_end = "now"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/ntust-thesis-latex"
+    tags = ["LaTeX", "XeLatex", "tex-live", "Docker","Overleaf", "NTUST"]
+    weight = 2
+
+    [ntustLatexTemplate.english]
+    project_name = "NTUST LaTeX Template"
+
+    [ntustLatexTemplate.chinese]
+    project_name = "國立臺灣科技大學 論文 LaTeX 模板"
 
 [pypiDIMG4MD]
     [pypiDIMG4MD.basic_info]
