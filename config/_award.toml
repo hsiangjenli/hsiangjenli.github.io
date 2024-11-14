@@ -3,7 +3,12 @@
     year = 2022
     image = "https://th.bing.com/th/id/R.499f30b79e79f1156a02f9745b516589?rik=aeCJCVY1AisOpA&pid=ImgRaw&r=0"
     href = "https://www.tabf.org.tw/English/"
-    
+    external_data = [
+        "https://drive.google.com/file/d/17mHodfosjLdMtglsD3CqVOkrZpEDZO1m/view?usp=sharing",
+        "https://drive.google.com/file/d/18tsB30fu4O09uJyHJRHlW6Fy0Tbh-sUz/view?usp=sharing",
+        "https://drive.google.com/file/d/1G09H8KYHXiukd7q4Cn7asrRQ_zOiVqck/view?usp=sharing",
+    ]
+
     [2022_tabf_tbb_fintech.english]
     host = "Taiwan Academy of Banking and Finance"
     title = "Campus Fintech Innovation Challenge"
@@ -20,6 +25,9 @@
     year = 2022
     image = "https://user-images.githubusercontent.com/71996166/222050262-a19f4b61-0d9a-4149-b540-528e0e03f75f.png"
     href = "https://www.ee.nkust.edu.tw/"
+    external_data = [
+        "https://hackmd.io/@hsiangjenli/NKUST-AI"
+    ]
     
     [2022_nkust_ee_ai.english]
     host = "National Kaohsiung University of Science and Technology - Department of Electrical Engineering"
@@ -37,6 +45,8 @@
     year = 2020
     image = "https://www.fintechspace.com.tw/wp-content/uploads/2020/08/FinTechSpace-logo-%E5%BD%A9%E8%89%B2.png"
     href = "https://www.fintechspace.com.tw/en/"
+    external_data = [
+    ]
     
     [2020_fintech_space.english]
     host = "Fintech Space"
