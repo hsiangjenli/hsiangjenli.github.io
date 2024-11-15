@@ -1,36 +1,46 @@
-from jinja2 import Environment, FileSystemLoader
 import toml
 from bs4 import BeautifulSoup
+from jinja2 import Environment, FileSystemLoader
+
 
 def html_formater(html: str):
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, "html.parser")
     pretty_soup = soup.prettify()
     return pretty_soup
 
-def load_toml(path: str):    
+
+def load_toml(path: str):
     with open(path, "r") as f:
         return toml.load(f)
 
+
 def set_environemnt(folder: str, template: str):
-    env = Environment(loader=FileSystemLoader(folder), trim_blocks=True, lstrip_blocks=True, autoescape=True)
+    env = Environment(
+        loader=FileSystemLoader(folder),
+        trim_blocks=True,
+        lstrip_blocks=True,
+        autoescape=True,
+    )
     template = env.get_template(template)
     return template
 
+
 def latex_set_environemnt(folder: str, template: str):
     env = Environment(
-        block_start_string='<<%',
-        block_end_string='%>>',
-        variable_start_string='<<',
-        variable_end_string='>>',
-        comment_start_string='<<#',
-        comment_end_string='#>>',
-        trim_blocks=True, 
+        block_start_string="<<%",
+        block_end_string="%>>",
+        variable_start_string="<<",
+        variable_end_string=">>",
+        comment_start_string="<<#",
+        comment_end_string="#>>",
+        trim_blocks=True,
         lstrip_blocks=True,
         loader=FileSystemLoader(folder),
     )
     template = env.get_template(template)
     return template
 
+
 def write(string, output):
-    with open(output, 'w', encoding='utf-8') as f:
+    with open(output, "w", encoding="utf-8") as f:
         f.write(string)

@@ -8,11 +8,11 @@ repos:
     hooks:
       - id: isort
 
-  - repo: https://github.com/pappasam/toml-sort
-    rev: v0.23.1
-    hooks:
-      - id: toml-sort-fix
-        args: ["--in-place", "pyproject.toml"]
+  # - repo: https://github.com/pappasam/toml-sort
+  #   rev: v0.23.1
+  #   hooks:
+  #     - id: toml-sort-fix
+  #       args: ["--in-place", "pyproject.toml"]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.7.3

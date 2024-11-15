@@ -1,12 +1,14 @@
-from .crawler import GitHubRepos, CrawlerMyBlogPosts
 from .chore import CalculateKeywords
+from .crawler import CrawlerMyBlogPosts, GitHubRepos
 
 if __name__ == "__main__":
     # Crawl my blog posts
-    crawler = CrawlerMyBlogPosts("https://github.com/hsiangjenli/blog/tree/main/source/_posts/tutorial")
+    crawler = CrawlerMyBlogPosts(
+        "https://github.com/hsiangjenli/blog/tree/main/source/_posts/tutorial"
+    )
     posts, count_blogs = crawler.get_blog_posts_name()
     print(posts, count_blogs)
-    
+
     # Crawl my github repos
     github = GitHubRepos("hsiangjenli")
     repos, count_repos = github.get_tutorial_repos()
