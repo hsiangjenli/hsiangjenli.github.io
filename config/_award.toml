@@ -1,6 +1,6 @@
 [2022_tabf_tbb_fintech]
     [2022_tabf_tbb_fintech.info]
-    period_start = "2022-12-01"
+    period_start = "2022"
 
     [[2022_tabf_tbb_fintech.info.resource]]
     text = "Competition's Host Website"
@@ -34,7 +34,7 @@
 
 [2022_nkust_ee_ai]
     [2022_nkust_ee_ai.info]
-    period_start = "2022-01-01"
+    period_start = "2022"
 
     [[2022_nkust_ee_ai.info.resource]]
     text = "Competition's Host Website"
@@ -61,7 +61,7 @@
 
 [2020_fintech_space]
     [2020_fintech_space.info]
-    period_start = "2020-12-01"
+    period_start = "2020"
 
     [[2020_fintech_space.info.resource]]
     text = "Competition's Host Website"
