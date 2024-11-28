@@ -1,7 +1,7 @@
 [scsb_digital_banking_da]
     [scsb_digital_banking_da.info]
     period_start = "2024.09"
-    period_end = "now"
+    period_end = "Now"
     
     [scsb_digital_banking_da.english]
     title = "Shanghai Commercial and Savings Bank"
@@ -47,7 +47,7 @@
 [sharing_programming_knowledge]
     [sharing_programming_knowledge.info]
     period_start = "2020.01"
-    period_end = "now"
+    period_end = "Now"
 
     [sharing_programming_knowledge.english]
     title = "Sharing Programming Knowledge"
