@@ -1,29 +1,25 @@
 <section id="edu">
     <div class="container">
         <h3>Education</h3>
-            {% for degree in EDU %}
-            <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
-                {% set edu = EDU[degree].university.english %}
-                {% set info = EDU[degree].university.basic_info %}
-
-                {% set grad_year = info.graduate_year %}
-                {% set gpa = info.gpa %}
-                {% set supervisor = edu.supervisor %}
-                {% set thesis_title = edu.thesis_title %}
-
-                    <text class="larger b">{{ edu.name }} </text> <em class="annot medium"> - {{ edu.country }}</em><br>
-                    <text><em><a href="{{ edu.href }}">{{ edu.major }}</a></em></text><br>
-                    <text class="annot">- GPA: {{ gpa }} &nbsp;&nbsp;<a href="{{ info.transcript }}"><i class="fa-solid fa-file-pdf"></i></a></text>
-                    
-                    {% if thesis_title %}
-
-                    <blockquote class="medium" style="padding: .5rem;">
-                        <text class="annot"><text class="b">Title: </text><em>{{ thesis_title }}</em></text> <br>
-                        <text class="annot"><text class="b">Supervisor: </text>{{ supervisor }}</text>
-                    </blockquote>
-
-                    {% endif %}
-            </div>
+            {% for edu in EDU %}
+            <text class="larger b">{{ edu.english.university }} </text> <em class="annot medium"> - {{ edu.info.period_end_year }}</em>
+            <ul>
+                <li class="annot large">Major : {{ edu.english.major }}</li>
+                {% for des in edu.english.description %}
+                <li class="annot large">{{ des }}</li>
+                {% endfor %}
+                {% if edu.english.thesis %}
+                    <li class="annot large">Thesis : {{ edu.english.thesis }}</li>
+                    <li class="annot large">Advisor : {{ edu.english.supervisor }}</li>
+                {% endif %}
+                <li class="annot large">
+                    GPA : {{ edu.info.gpa }} &nbsp; 
+                    (
+                        {% for resource in edu.info.resource %}
+                        {{ resource.html | safe }} {% if not loop.last %},&nbsp;{% endif %}
+                    {% endfor %}
+                    )
+                </li>
+            </ul> 
             {% endfor %}
-    </div>
 </section>

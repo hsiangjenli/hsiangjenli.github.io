@@ -1,46 +1,57 @@
 ["M.S."]
-    ["M.S.".university.basic_info]
-    image = "static/image/ntust.png"
-    graduate_year = "2024"
+    ["M.S.".info]
+    graduation = "2024"
     gpa = "4.02/4.3"
-    transcript = "static/pdf/transcript_ntust.pdf"
 
-    ["M.S.".university.english]
-    name = "National Taiwan University of Science and Technology"
-    country = "Taiwan"
-    city = "Taipei"
-    major = "Department of Computer Science and Information Engineering"
-    description = "Big data analytics and information security"
-    supervisor = "Chao-Lung Yang & Shan-Hsiang Shen"
-    thesis_title = "Temporal Graph Embedding incorporating with Memory Mechanism and k-hop Selection"
+    [["M.S.".info.resource]]
+    text = "Department Website"
     href = "https://www.csie.ntust.edu.tw/"
 
-    ["M.S.".university.chinese]
-    name = "國立臺灣科技大學"
-    country = "臺灣"
-    city = "臺北"
+    [["M.S.".info.resource]]
+    text = "Transcript"
+    href = "https://hsiangjenli.github.io/static/pdf/transcript_ntust.pdf"
+
+    [["M.S.".info.resource]]
+    text = "Graduate Thesis"
+    href = "https://etheses.lib.ntust.edu.tw/detail/f3738badcd95779cf574e5c3e0d6e43f/"
+
+
+    ["M.S.".english]
+    university = "National Taiwan University of Science and Technology"
+    major = "Department of Computer Science and Information Engineering"
+    location = "Taipei, Taiwan"
+    # description = ["Big data analytics and information security"]
+    supervisor = "Chao-Lung Yang & Shan-Hsiang Shen"
+    thesis = "Temporal Graph Embedding incorporating with Memory Mechanism and k-hop Selection"
+
+    ["M.S.".chinese]
+    university = "國立臺灣科技大學"
     major = "資訊工程學系"
+    location = "臺北, 臺灣"
     supervisor = "楊朝龍、沈上翔"
-    thesis_title = "結合記憶機制以及多躍式選擇於時序圖嵌入"
-    description = "大數據分析與資訊安全"
+    thesis = "結合記憶機制以及多躍式選擇於時序圖嵌入"
+    description = ["大數據分析與資訊安全"]
 
 
 ["B.S."]
-    ["B.S.".university.basic_info]
-    image = "static/image/nkust.png"
-    graduate_year = "2022"
+    ["B.S.".info]
+    graduation = "2022"
     gpa = "3.82/4.3"
-    transcript = "static/pdf/transcript_nkust.pdf"
-
-    ["B.S.".university.english]
-    name = "National Kaohsiung University of Science and Technology"
-    country = "Taiwan"
-    city = "Kaohsiung"
-    major = "Department of Money and Banking"
+    
+    [["B.S.".info.resource]]
+    text = "Department Website"
     href = "https://banking.nkust.edu.tw/"
 
-    ["B.S.".university.chinese]
-    name = "國立高雄科技大學"
-    country = "臺灣"
-    city = "高雄"
+    [["B.S.".info.resource]]
+    text = "Transcript"
+    href = "https://hsiangjenli.github.io/static/pdf/transcript_nkust.pdf"
+
+    ["B.S.".english]
+    university = "National Kaohsiung University of Science and Technology"
+    major = "Department of Money and Banking"
+    location = "Kaohsiung, Taiwan"
+
+    ["B.S.".chinese]
+    university = "國立高雄科技大學"
     major = "金融系"
+    location = "高雄, 臺灣"
