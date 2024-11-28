@@ -1,21 +1,20 @@
 <section id="award">
     <div class="container">
         <h3>Competition & Award</h3>
-            {% for award_id in AWARD %}
-            {% set award = AWARD[award_id] %}
-            {% set info = AWARD[award_id].basic_info %}
-            <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
-                <text class="b larger">{{ award.english.title }}</text> <em class="annot medium"> - {{ info.year }}</em><br>
-                <a href="{{ info.href }}"><em>{{ award.english.host }}</em></a><br>
-                <text class="annot">- {{ award.english.ranking }} &nbsp;
-
-                    {% for resource in info.external_data %}
-                        <a href="{{ resource }}" target="_blank"> &nbsp; <i class="fa-brands fa-google-drive"></i> </a>
+        {% for award in AWARD %}
+        <div>
+            <text class="b larger">{{ award.english.title }}</text> <em class="annot medium"> - {{ award.info.period_start.year }}</em><br>
+            <ul>
+                {% for desc in award.english.description %}
+                <li class="annot large">{{ desc }}</li>
+                {% endfor %}
+                <li class="annot large">
+                    {% for resource in award.info.resource %}
+                    {{ resource.html | safe }} {% if not loop.last %},&nbsp;{% endif %}
                     {% endfor %}
-
-                </text>
-            </div>
-            {% endfor %}
-        </ul>
+                </li>
+            </ul>
+        </div>
+        {% endfor %}
     </div>
 </section>

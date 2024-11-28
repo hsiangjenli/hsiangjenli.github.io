@@ -1,59 +1,82 @@
 [2022_tabf_tbb_fintech]
-    [2022_tabf_tbb_fintech.basic_info]
-    year = 2022
-    image = "https://th.bing.com/th/id/R.499f30b79e79f1156a02f9745b516589?rik=aeCJCVY1AisOpA&pid=ImgRaw&r=0"
+    [2022_tabf_tbb_fintech.info]
+    period_start = "2022-12-01"
+
+    [[2022_tabf_tbb_fintech.info.resource]]
+    text = "Competition's Host Website"
     href = "https://www.tabf.org.tw/English/"
-    external_data = [
-        "https://drive.google.com/file/d/17mHodfosjLdMtglsD3CqVOkrZpEDZO1m/view?usp=sharing",
-        "https://drive.google.com/file/d/18tsB30fu4O09uJyHJRHlW6Fy0Tbh-sUz/view?usp=sharing",
-        "https://drive.google.com/file/d/1G09H8KYHXiukd7q4Cn7asrRQ_zOiVqck/view?usp=sharing",
-    ]
+    
+    [[2022_tabf_tbb_fintech.info.resource]]
+    text = "Slide"
+    href = "https://drive.google.com/file/d/17mHodfosjLdMtglsD3CqVOkrZpEDZO1m/view?usp=sharing"
+
+    [[2022_tabf_tbb_fintech.info.resource]]
+    text = "Group Photo"
+    href = "https://drive.google.com/file/d/1G09H8KYHXiukd7q4Cn7asrRQ_zOiVqck/view?usp=sharing"
+
+    [[2022_tabf_tbb_fintech.info.resource]]
+    text = "Participation Certificate"
+    href = "https://drive.google.com/file/d/18tsB30fu4O09uJyHJRHlW6Fy0Tbh-sUz/view?usp=sharing"
 
     [2022_tabf_tbb_fintech.english]
-    host = "Taiwan Academy of Banking and Finance"
     title = "Campus Fintech Innovation Challenge"
-    ranking = "Ranked as the 8th out of 187 teams"
+    description = [
+        "Hosted by Taiwan Academy of Banking and Finance",
+        "Ranked as the 8th out of 187 teams"
+    ]
     
     [2022_tabf_tbb_fintech.chinese]
-    host = "台灣金融研訓院-臺灣中小企業銀行"
-    title = "校園金融科技創新競賽"
-    ranking = "前八強"
+    title = "台灣金融研訓院-臺灣中小企業銀行-校園金融科技創意挑戰賽"
+    description = [
+        "校園金融科技創新競賽（共 187 支隊伍）"
+    ]
 
 
 [2022_nkust_ee_ai]
-    [2022_nkust_ee_ai.basic_info]
-    year = 2022
-    image = "https://user-images.githubusercontent.com/71996166/222050262-a19f4b61-0d9a-4149-b540-528e0e03f75f.png"
-    href = "https://www.ee.nkust.edu.tw/"
-    external_data = [
-        "https://hackmd.io/@hsiangjenli/NKUST-AI"
-    ]
+    [2022_nkust_ee_ai.info]
+    period_start = "2022-01-01"
+
+    [[2022_nkust_ee_ai.info.resource]]
+    text = "Competition's Host Website"
+    href = "https://ee.nkust.edu.tw"
+    
+    [[2022_nkust_ee_ai.info.resource]]
+    text = "Slide"
+    href = "https://hackmd.io/@hsiangjenli/NKUST-AI"
     
     [2022_nkust_ee_ai.english]
-    host = "National Kaohsiung University of Science and Technology - Department of Electrical Engineering"
     title = "Joint Exhibition on Artificial Intelligence and Neural Networks"
-    ranking = "Ranked as the 1st out of an estimated 30 teams"
+    description = [
+        "Hosted by National Kaohsiung University of Science and Technology - Department of Electrical Engineering",
+        "Ranked as the 1st out of an estimated 30 teams"
+    ]
     
     [2022_nkust_ee_ai.chinese]
     host = "國立高雄科技大學-電機工程系"
     title = "人工智慧暨類神經網路聯合專題展"
-    ranking = "第一名"
-
+    description = [
+        "主辦單位：國立高雄科技大學-電機工程系",
+        "在約 30 支隊伍中排名第一"
+    ]
 
 [2020_fintech_space]
-    [2020_fintech_space.basic_info]
-    year = 2020
-    image = "https://www.fintechspace.com.tw/wp-content/uploads/2020/08/FinTechSpace-logo-%E5%BD%A9%E8%89%B2.png"
-    href = "https://www.fintechspace.com.tw/en/"
-    external_data = [
-    ]
+    [2020_fintech_space.info]
+    period_start = "2020-12-01"
+
+    [[2020_fintech_space.info.resource]]
+    text = "Competition's Host Website"
+    href = "https://www.fintechspace.com.tw/"
     
     [2020_fintech_space.english]
-    host = "Fintech Space"
     title = "Campus Achievement Exhibition"
-    ranking = "Competition's preferred choice"
+    description = [
+        "Hosted by Fintech Space",
+        "Ranked as the preferred choice"
+    ]
     
     [2020_fintech_space.chinese]
-    host = "Fintech Space"
     title = "校園成果展"
-    ranking = "優選"
+    description = [
+        "主辦單位：Fintech Space",
+        "優選"
+    ]
