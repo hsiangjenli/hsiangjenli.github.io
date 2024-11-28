@@ -2,7 +2,6 @@
     <div class="container">
         <h3>Competition & Award</h3>
         {% for award in AWARD %}
-        <div>
             <text class="b larger">{{ award.english.title }}</text> <em class="annot medium"> - {{ award.info.period_start.year }}</em><br>
             <ul>
                 {% for desc in award.english.description %}
@@ -14,7 +13,6 @@
                     {% endfor %}
                 </li>
             </ul>
-        </div>
         {% endfor %}
     </div>
 </section>

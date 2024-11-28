@@ -1,25 +1,24 @@
 [scsb_digital_banking_da]
-    [scsb_digital_banking_da.basic_info]
+    [scsb_digital_banking_da.info]
     period_start = "2024.09"
     period_end = "now"
-    image = "image/scsb.png"
     
     [scsb_digital_banking_da.english]
     title = "Shanghai Commercial and Savings Bank"
     headline = "Data Analyst @ SCSB Digital Banking Department"
-    description = []
     location = "Taipei, Taiwan"
+    description = ["Research"]
 
     [scsb_digital_banking_da.chinese]
     title = "上海商業儲蓄銀行"
-    description = ["數位銀行部 - 數據分析師"]
+    headline = "數據分析師 @ SCSB 數位金融事業部"
     location = "臺北, 臺灣"
+    description = ["研究"]
 
 [scsb_digital_banking]
-    [scsb_digital_banking.basic_info]
+    [scsb_digital_banking.info]
     period_start = "2023.07"
     period_end = "2023.08"
-    image = "image/scsb.png"
     
     [scsb_digital_banking.english]
     title = "Shanghai Commercial and Savings Bank"
@@ -29,14 +28,13 @@
 
     [scsb_digital_banking.chinese]
     title = "上海商業儲蓄銀行"
-    description = ["數位銀行部實習生"]
+    headline = "數位金融處實習生"
     location = "臺北, 臺灣"
 
 [ntust_simslab]
-    [ntust_simslab.basic_info]
+    [ntust_simslab.info]
     period_start = "2022.09"
     period_end = "2024.08"
-    image = "image/ntust-simslab.svg"
     
     [ntust_simslab.english]
     title = "System Informatics and Management Science - SiMS Lab"
@@ -46,31 +44,30 @@
     title = "系統資訊與管理科學實驗室 - SiMS Lab"
 
 
-# [sharing_programming_knowledge]
-#     [sharing_programming_knowledge.basic_info]
-#     period_start = "2020.01"
-#     period_end = "now"
-#     image = "image/creative.png"
+[sharing_programming_knowledge]
+    [sharing_programming_knowledge.info]
+    period_start = "2020.01"
+    period_end = "now"
 
-#     [sharing_programming_knowledge.english]
-#     title = "Sharing Programming Knowledge"
-#     description = "Authored {tutorial_repos_count} tutorial articles or repositories on various topics such as {tutorial_repos_keywords}"
+    [sharing_programming_knowledge.english]
+    title = "Sharing Programming Knowledge"
+    headline = "Enthusiast @ Knowledge Sharing"
 
-#     [sharing_programming_knowledge.chinese]
-#     title = "撰寫 IT Blog"
+    [sharing_programming_knowledge.chinese]
+    title = "撰寫 IT Blog"
 
 
-# [nkust_ccet_ta]
-#     [nkust_ccet_ta.basic_info]
-#     period_start = "2021.09"
-#     period_end = "2022.01"
-#     image = "image/nkust.png"
+[nkust_ccet_ta]
+    [nkust_ccet_ta.info]
+    period_start = "2021.09"
+    period_end = "2022.01"
 
-#     [nkust_ccet_ta.english]
-#     title = "National Kaohsiung University of Science and Technology"
-#     description = ["Cross College Elite Tech Program - Data Science - Teaching assistant"]
-#     location = "Kaohsiung, Taiwan"
+    [nkust_ccet_ta.english]
+    title = "National Kaohsiung University of Science and Technology"
+    headline = "Teaching Assistant @ Cross College Elite Tech Program - Data Science"
+    location = "Kaohsiung, Taiwan"
 
-#     [nkust_ccet_ta.chinese]
-#     title = "國立高雄科技大學"
-#     description = ["高瞻科技不分系 資料科學 助教"]
+    [nkust_ccet_ta.chinese]
+    title = "國立高雄科技大學"
+    headline = "高瞻科技不分系 資料科學 助教"
+    location = "高雄, 臺灣"
