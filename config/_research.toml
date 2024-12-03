@@ -1,54 +1,44 @@
 [complex_systems]
-    [complex_systems.basic_info]
-    status = "Recently"
-    image = "fa-solid fa-circle-nodes"
+    [complex_systems.info]
+    tags = ["Recently"]
 
     [complex_systems.english]
-    name = "Complex Systems and Network Science"
-    description = "Unlike grid-like data structures, complex systems are composed by nodes and edges, which are more complicated for analysis and modeling. "
+    title = "Complex Systems and Network Science"
+    description = ["Unlike grid-like data structures, complex systems are composed by nodes and edges, which are more complicated for analysis and modeling. "]
 
     [complex_systems.chinese]
-    name = "複雜系統"
-    description = ""
+    title = "複雜系統"
 
 
 [metaheuristics]
-    [metaheuristics.basic_info]
-    status = "Future Plan"
-    image = "fa-solid fa-dna"
+    [metaheuristics.info]
+    tags = ["Future Plan"]
 
     [metaheuristics.english]
-    name = "Metaheuristics"
-    description = "Metaheuristic is a bio-inspired algorithm that can be used to solve optimization problems."
+    title = "Metaheuristics"
+    description = ["Metaheuristic is a bio-inspired algorithm that can be used to solve optimization problems."]
 
     [metaheuristics.chinese]
-    name = "啟發式演算法"
-    description = ""
+    title = "啟發式演算法"
 
 
 [distributed_computing]
-    [distributed_computing.basic_info]
-    status = "Future Plan"
-    image = "fa-solid fa-group-arrows-rotate"
+    [distributed_computing.info]
+    tags = ["Future Plan"]
 
     [distributed_computing.english]
-    name = "Distributed Computing"
-    # description = ""
+    title = "Distributed Computing"
 
     [distributed_computing.chinese]
-    name = "分散式運算"
-    description = ""
+    title = "分散式運算"
 
 
 [machine_learning_privacy]
-    [machine_learning_privacy.basic_info]
-    status = "Future Plan"
-    image = "fa-solid fa-fingerprint"
+    [machine_learning_privacy.info]
+    tags = ["Future Plan"]
 
     [machine_learning_privacy.english]
-    name = "Privacy-Preserving Machine Learning"
-    # description = ""
+    title = "Privacy-Preserving Machine Learning"
 
     [machine_learning_privacy.chinese]
-    name = "機器學習資料隱私"
-    description = ""
+    title = "機器學習資料隱私"
