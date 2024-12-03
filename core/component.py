@@ -1,10 +1,10 @@
-from enum import Enum
-from typing import ClassVar
 import datetime
-from typing import Optional
+from enum import Enum
 from pathlib import Path
+from typing import ClassVar, Optional, Union
 
-from pydantic import AnyHttpUrl, BaseModel
+import toml
+from pydantic import AnyHttpUrl, BaseModel, ConfigDict, Field, field_validator
 
 
 class FontAwesomeIcon(Enum):
@@ -18,9 +18,9 @@ class FontAwesomeIcon(Enum):
 
 
 class HtmlIcon(BaseModel):
-    text: str
-    fontawesom: str = None
-    href: AnyHttpUrl
+    text: str = None
+    fontawesome: str = None
+    href: AnyHttpUrl = None
 
     EXTENSION_MAPPING: ClassVar[dict[tuple[str, ...], FontAwesomeIcon]] = {
         (".pdf",): FontAwesomeIcon.PDF,
@@ -46,34 +46,95 @@ class HtmlIcon(BaseModel):
             if domain in url:
                 return icon
 
-        return FontAwesomeIcon.LINK
+        return FontAwesomeIcon.DEFAULT
+
+    @property
+    def style(self) -> str:
+        return "min-width: 40px; text-align: center;"
 
     @property
     def html(self) -> str:
-        icon_html = f'<i class="{self.icon_type.value}"></i>'
+        icon_html = f'<i style="{self.style}" class="{self.icon_type.value}"></i>'
         if self.href:
-            return (
-                f'<a href="{self.href}" target="_blank"> {icon_html} {self.text} </a>'
-            )
+            return f'<a href="{self.href}" style="font-weight: bold" target="_blank"> {icon_html}{self.text} </a>'
         return icon_html
 
+    @property
+    def icon(self) -> str:
+        icon_html = f'<i style="{self.style}" class="{self.icon_type.value}"></i>'
+        if self.fontawesome:
+            return f'<i style="{self.style}" class="{self.fontawesome}"></i>'
+        if not self.href:
+            return icon_html
+        return f'<a href="{self.href}" style="font-weight: bold;" target="_blank"> {icon_html} </a>'
+
+
 class EntryInfo(BaseModel):
+    period_start: Optional[Union[datetime.date, str]] = Field("Now")
+    period_end: Optional[Union[datetime.date, str]] = Field("Now", alias="graduation")
 
-    period_start: Optional[datetime.date]
-    period_end: Optional[datetime.date]
+    resource: Optional[list[HtmlIcon]] = None
 
-    resource: Optional[list[HtmlIcon]]
+    tags: Optional[list[str]] = None
+    weight: Optional[int] = 0
+    image: HtmlIcon = None
 
-    tags: Optional[list[str]]
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    @field_validator("period_start", "period_end")
+    def parse_date(cls, value):
+        if isinstance(value, str):
+            return value
+        # 處理多種時間格式
+        formats = ["%Y-%m-%d", "%Y.%m", "%Y"]
+        for fmt in formats:
+            try:
+                return datetime.datetime.strptime(value, fmt).date()
+            except ValueError:
+                continue
+        raise ValueError(f"Invalid date format: {value}")
+
+    @property
+    def period_start_year(self):
+        if isinstance(self.period_start, datetime.date):
+            return self.period_start.year
+        return self.period_start
+
+    @property
+    def period_end_year(self):
+        if isinstance(self.period_end, datetime.date):
+            return self.period_end.year
+        return self.period_end
+
+    @property
+    def period_start_year_month(self):
+        if isinstance(self.period_start, datetime.date):
+            return self.period_start.strftime("%Y-%m")
+        return self.period_start
+
+    @property
+    def period_end_year_month(self):
+        if isinstance(self.period_end, datetime.date):
+            return self.period_end.strftime("%Y-%m")
+        return self.period_end
+
 
 class EntryDescription(BaseModel):
-    title: str
-    description: Optional[list[str]]
+    title: str = Field(alias="university")
+    description: Optional[list[str]] = []
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    @property
+    def university(self):
+        return self.title
+
 
 class Entry(BaseModel):
     info: EntryInfo
     english: EntryDescription
     chinese: EntryDescription
+    model_config = ConfigDict(extra="allow")
+
 
 class TomlFile(BaseModel):
     entries: list[Entry]
@@ -83,19 +144,25 @@ class TomlFile(BaseModel):
         data = toml.load(path)
         return cls(entries=[data[entry] for entry in data])
 
+
+class SkillTomlFile(BaseModel):
+    entries: dict[str, list[Entry]]  # 動態解析各分類
+
+    @classmethod
+    def load(cls, path: str):
+        data = toml.load(path)
+        return cls(
+            entries={
+                entry: [data[entry][skill] for skill in data[entry]] for entry in data
+            }
+        )
+
+
 if __name__ == "__main__":
     import toml
 
     data = TomlFile.load("config/test.toml")
 
-    print(data)
-    # data = toml.load("config/test.toml")
-
-    # # data = TomlFile.load("config/test.toml")
-    # print(data['awesomeLLM'])
-    # # info = EntryInfo(**data["awesomeLLM"]['info'])
-    # # print(info)
-    # entry = Entry(**data['awesomeLLM'])
-    # print(entry)
-    # icon = HtmlIcon(text="PDF", href="https://example.com/document.pdf")
-    # print(icon.html)
+    for entry in data.entries:
+        for r in entry.info.resource:
+            print(r.html)
