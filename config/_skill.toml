@@ -1,216 +1,227 @@
 [Language]
     [Language.python]
-        [Language.python.basic_info]
+        [Language.python.info]
         level = "Advanced"
-        image = "fa-brands fa-python"
+        
+        [Language.python.info.image]
+        text = "Python"
+        fontawesome = "fa-brands fa-python"
 
         [Language.python.english]
-        name = "Python"
-        description = "familiar with pandas, numpy, scikit-learn, pytorch etc."
+        title = "Python"
+        description = ["Familiar with pandas, numpy, scikit-learn, pytorch etc."]
 
         [Language.python.chinese]
-        name = "Python"
-        description = "..."
+        title = "Python"
 
     # [Language.julia]
-    #     [Language.julia.basic_info]
+    #     [Language.julia.info]
     #     level = "Beginner"
-    #     image = "fa-solid fa-code"
+    #     fontawesome = "fa-solid fa-code"
 
     #     [Language.julia.english]
-    #     name = "Julia"
+    #     title = "Julia"
     #     description = "<a href='https://github.com/hsiangjenli/learn-julia'>click here.</a>"
 
     #     [Language.julia.chinese]
-    #     name = "Julia"
+    #     title = "Julia"
     #     description = "..."
 
     # [Language.sql]
-    #     [Language.sql.basic_info]
+    #     [Language.sql.info]
     #     level = "Beginner"
-    #     image = "fa-solid fa-database"
+    #     fontawesome = "fa-solid fa-database"
 
     #     [Language.sql.english]
-    #     name = "SQL"
+    #     title = "SQL"
     #     # description = "..."
 
     #     [Language.sql.chinese]
-    #     name = "SQL"
+    #     title = "SQL"
     #     description = "..."
 
     [Language.latex]
-        [Language.latex.basic_info]
+        [Language.latex.info]
         level = "Beginner"
-        image = "fa-solid fa-superscript"
+
+        [Language.latex.info.image]
+        text = "LaTeX"
+        fontawesome = "fa-solid fa-superscript"
 
         [Language.latex.english]
-        name = "LaTeX"
-        # description = "..."
+        title = "LaTeX"
 
         [Language.latex.chinese]
-        name = "LaTeX"
-        description = "..."
+        title = "LaTeX"
 
 [Website]
     # [Website.django]
-    #     [Website.django.basic_info]
+    #     [Website.django.info]
     #     level = "Intermediate"
-    #     image = "..."
+    #     fontawesome = "..."
 
     #     [Website.django.english]
-    #     name = "Django"
+    #     title = "Django"
     #     description = "..."
 
     #     [Website.django.chinese]
-    #     name = "Django"
+    #     title = "Django"
     #     description = "..."
 
 
     [Website.fastapi]
-        [Website.fastapi.basic_info]
+        [Website.fastapi.info]
         level = "Beginner"
-        image = "fa-solid fa-bolt"
+        
+        [Website.fastapi.info.image]
+        text = "FastAPI"
+        fontawesome = "fa-solid fa-bolt"
 
         [Website.fastapi.english]
-        name = "FastAPI"
-        # description = "..."
+        title = "FastAPI"
 
         [Website.fastapi.chinese]
-        name = "FastAPI"
-        description = "..."
+        title = "FastAPI"
 
 
     [Website.html]
-        [Website.html.basic_info]
+        [Website.html.info]
         level = "Beginner"
-        image = "fa-brands fa-html5"
+
+        [Website.html.info.image]
+        text = "HTML"
+        fontawesome = "fa-brands fa-html5"
 
         [Website.html.english]
-        name = "HTML"
-        # description = "..."
+        title = "HTML"
 
         [Website.html.chinese]
-        name = "HTML"
-        description = "..."
+        title = "HTML"
 
 
     [Website.CSSSCSS]
-        [Website.CSSSCSS.basic_info]
+        [Website.CSSSCSS.info]
         level = "Beginner"
-        image = "fa-brands fa-css3"
+
+        [Website.CSSSCSS.info.image]
+        text = "CSS/SCSS"
+        fontawesome = "fa-brands fa-css3"
 
         [Website.CSSSCSS.english]
-        name = "CSS/SCSS"
-        # description = "..."
+        title = "CSS/SCSS"
 
         [Website.CSSSCSS.chinese]
-        name = "CSS/SCSS"
-        description = "..."
+        title = "CSS/SCSS"
 
 
     [Website.bootstrap]
-        [Website.bootstrap.basic_info]
+        [Website.bootstrap.info]
         level = "Beginner"
-        image = "fa-brands fa-bootstrap"
+
+        [Website.bootstrap.info.image]
+        text = "Bootstrap"
+        fontawesome = "fa-brands fa-bootstrap"
 
         [Website.bootstrap.english]
-        name = "Bootstrap"
-        # description = "..."
+        title = "Bootstrap"
 
         [Website.bootstrap.chinese]
-        name = "Bootstrap"
-        description = "..."
+        title = "Bootstrap"
 
 
 [Tool]
     [Tool.git]
-        [Tool.git.basic_info]
+        [Tool.git.info]
         level = "Intermediate"
-        image = "fa-brands fa-git-alt"
+
+        [Tool.git.info.image]
+        text = "git"
+        fontawesome = "fa-brands fa-git-alt"
 
         [Tool.git.english]
-        name = "git"
-        # description = "..."
+        title = "git"
 
         [Tool.git.chinese]
-        name = "git"
-        description = "..."
+        title = "git"
     
 
     [Tool.docker]
-        [Tool.docker.basic_info]
+        [Tool.docker.info]
         level = "Intermediate"
-        image = "fa-brands fa-docker"
+
+        [Tool.docker.info.image]
+        fontawesome = "fa-brands fa-docker"
 
         [Tool.docker.english]
-        name = "Docker"
-        # description = "..."
+        title = "Docker"
 
         [Tool.docker.chinese]
-        name = "Docker"
-        description = "..."
+        title = "Docker"
 
 
     # [Tool.spark]
-    #     [Tool.spark.basic_info]
+    #     [Tool.spark.info]
     #     level = "Ongoing"
-    #     image = "..."
+    #     fontawesome = "..."
 
     #     [Tool.spark.english]
-    #     name = "Spark"
+    #     title = "Spark"
     #     description = "..."
 
     #     [Tool.spark.chinese]
-    #     name = "Spark"
+    #     title = "Spark"
     #     description = "..."
     
 
     # [Tool.hadoop]
-    #     [Tool.hadoop.basic_info]
+    #     [Tool.hadoop.info]
     #     level = "Ongoing"
-    #     image = "..."
+    #     fontawesome = "..."
 
     #     [Tool.hadoop.english]
-    #     name = "Hadoop"
+    #     title = "Hadoop"
     #     description = "..."
 
     #     [Tool.hadoop.chinese]
-    #     name = "Hadoop"
+    #     title = "Hadoop"
     #     description = "..."
 ["CI/CD"]
     ["CI/CD".githubActions]
-        ["CI/CD".githubActions.basic_info]
+        ["CI/CD".githubActions.info]
         level = "Beginner"
-        image = "fa-solid fa-code-compare"
+
+        ["CI/CD".githubActions.info.image]
+        text = "Github Actions"
+        fontawesome = "fa-solid fa-code-compare"
 
         ["CI/CD".githubActions.english]
-        name = "Github Actions"
-        # description = "..."
+        title = "Github Actions"
 
         ["CI/CD".githubActions.chinese]
-        name = "Github Actions"
-        description = "..."
+        title = "Github Actions"
     
     ["CI/CD".MLflow]
-        ["CI/CD".MLflow.basic_info]
+        ["CI/CD".MLflow.info]
         level = "Beginner"
-        image = "fa-solid fa-gauge-high"
+
+        ["CI/CD".MLflow.info.image]
+        text = "MLflow"
+        fontawesome = "fa-solid fa-gauge-high"
 
         ["CI/CD".MLflow.english]
-        name = "MLflow"
-        description = "using MLflow to track experiments and mointor the hardware usage."
+        title = "MLflow"
+        description = ["Using MLflow to track experiments and mointor the hardware usage."]
 
         ["CI/CD".MLflow.chinese]
-        name = "MLflow"
-        description = "..."
+        title = "MLflow"
     
     # ["CI/CD".Terraform]
-    #     ["CI/CD".Terraform.basic_info]
+    #     ["CI/CD".Terraform.info]
     #     level = "Beginner"
-    #     image = "fa-solid fa-industry"
+    #     fontawesome = "fa-solid fa-industry"
 
     #     ["CI/CD".Terraform.english]
-    #     name = "Terraform"
+    #     title = "Terraform"
     #     description = [
     #         # S, Too many docker images need to be built and pushed to the docker hub.
     #         # T, Organize the docker images and ....
@@ -219,70 +230,77 @@
     #     ]
 
         # ["CI/CD".Terraform.chinese]
-        # name = "Terraform"
+        # title = "Terraform"
         # description = "..."
 
     ["CI/CD".GitOps]
-        ["CI/CD".GitOps.basic_info]
+        ["CI/CD".GitOps.info]
         level = "Beginner"
-        image = "fa-solid fa-code-branch"
+
+        ["CI/CD".GitOps.info.image]
+        text = "GitOps"
+        fontawesome = "fa-solid fa-code-branch"
 
         ["CI/CD".GitOps.english]
-        name = "GitOps"
-        # description = "..."
+        title = "GitOps"
 
         ["CI/CD".GitOps.chinese]
-        name = "GitOps"
-        description = "..."
+        title = "GitOps"
 
     ["CI/CD".Ansible]
-        ["CI/CD".Ansible.basic_info]
+        ["CI/CD".Ansible.info]
         level = "Beginner"
-        image = "fa-solid fa-a"
+
+        ["CI/CD".Ansible.info.image]
+        text = "Ansible"
+        fontawesome = "fa-solid fa-a"
 
         ["CI/CD".Ansible.english]
-        name = "Ansible"
+        title = "Ansible"
 
         ["CI/CD".Ansible.chinese]
-        name = "Ansible"
+        title = "Ansible"
 
 [Platform]
     [Platform.ubuntu]
-        [Platform.ubuntu.basic_info]
+        [Platform.ubuntu.info]
         level = "Intermediate"
-        image = "fa-brands fa-ubuntu"
+
+        [Platform.ubuntu.info.image]
+        text = "Ubuntu"
+        fontawesome = "fa-brands fa-ubuntu"
 
         [Platform.ubuntu.english]
-        name = "Ubuntu"
-        # description = "..."
+        title = "Ubuntu"
 
         [Platform.ubuntu.chinese]
-        name = "Ubuntu"
-        description = "..."
+        title = "Ubuntu"
     
     [Platform.mac_os]
-        [Platform.mac_os.basic_info]
+        [Platform.mac_os.info]
         level = "Intermediate"
-        image = "fa-brands fa-apple"
+
+        [Platform.mac_os.info.image]
+        text = "mac OS"
+        fontawesome = "fa-brands fa-apple"
 
         [Platform.mac_os.english]
-        name = "mac OS"
-        # description = "..."
+        title = "mac OS"
 
         [Platform.mac_os.chinese]
-        name = "mac OS"
-        description = "..."
+        title = "mac OS"
     
 
     [Platform.windows]
-        [Platform.windows.basic_info]
+        [Platform.windows.info]
         level = "Intermediate"
-        image = "fa-brands fa-windows"
+
+        [Platform.windows.info.image]
+        text = "Windows"
+        fontawesome = "fa-brands fa-windows"
 
         [Platform.windows.english]
-        name = "Windows"
-        # description = "..."
+        title = "Windows"
 
         [Platform.windows.chinese]
-        name = "Windows"
-        description = "..."
+        title = "Windows"

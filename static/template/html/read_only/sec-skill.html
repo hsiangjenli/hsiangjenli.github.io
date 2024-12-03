@@ -1,23 +1,17 @@
 <section id="skill">
     <div class="container">
         <h3>Skill</h3>
-        {% for type in SKILL %}
-            {% set skills = SKILL[type] %}
-            <h4 style="text-transform: capitalize;">{{ type|replace('_', '/') }}</h4>
-            <ul>
-                {% for skill_id in skills %}
-                {% set skill_name = skills[skill_id].english.name %}
-                {% set skill = skills[skill_id] %}
-                    <li>
-                        <i style="min-width: 40px; text-align: center;"class="{{ skill.basic_info.image }}"></i>
-                        <text style="text-transform: lowercase;">{{ skill.basic_info.level }}</text> - 
-                        <b>{{ skill_name }}</b>
-                        {% if skill.english.description %}
-                            - <em class="annot">{{ skill.english.description }}</em>
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
+        {% for category in SKILL %}
+
+        <h4 style="text-transform: capitalize;">{{ category | replace('_', '/') }}</h4>
+            {% for skill in SKILL[category] %}
+                <ul>
+                    <li class="b">{{ skill.info.image.icon | safe }} {{ skill.english.title }}</li>
+                    {% for des in skill.english.description %}
+                    <li class="annot large" style="margin-left: calc(40px + 1em); list-style-type: '-';">{{ des }}</li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
         {% endfor %}
     </div>
 </section>
