@@ -1,19 +1,20 @@
-<section id="pull_request">
-    <!-- <div class="container"> -->
-        <h4>Open Source Project Pull Request</h4>
-        
-        {% for pr in PULL_REQUEST %}
-            {% set num = loop.index %}
-            {% set info = PULL_REQUEST[pr].basic_info %}
-            {% set history = PULL_REQUEST[pr].pull_request.history %}
-            
-            <text class="large b"><a href="{{ info.external_link }}">{{ info.name }}</a></text><text class="annot medium"> - <i class="fa-solid fa-clock-rotate-left"></i> {{ history|length }}</text>
-            <div class="medium">
-                {% for h in history %}
-                    <li><a href="{{ h }}"> {{ h }}</a></li>
-                {% endfor %}
-            </div>
-            
+<!-- <section id="pull_request"> -->
+<text class="larger b">Open Source Project Pull Request</text> <br>
+
+{% for pr in PULL_REQUEST %}
+    {% set num = loop.index %}
+    {% set info = PULL_REQUEST[pr].basic_info %}
+    {% set history = PULL_REQUEST[pr].pull_request.history %}
+    
+    <text class="annot large b">
+        <i class="fa-solid fa-box-open" style="min-width: 25px; text-align: left;"></i> 
+        <a href="{{ info.external_link }}"> {{ info.name }}</a></text><text class="annot medium"> - <i class="fa-solid fa-clock-rotate-left"></i> {{ history|length }}
+    </text>
+    <ul>
+        {% for h in history %}
+            <li class="annot large"><a href="{{ h }}"> {{ h }}</a></li>
         {% endfor %}
-    <!-- </div> -->
-</section>
+    </ul>
+    
+{% endfor %}
+<!-- </section> -->

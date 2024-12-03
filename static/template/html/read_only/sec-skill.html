@@ -2,14 +2,14 @@
     <div class="container">
         <h3>Skill</h3>
         {% for category in SKILL %}
-        <h4>{{ category | replace('_', '/') }}</h4>
+            <text class="larger b">{{ category | replace('_', '/') }}</text> <br>
             {% for skill in SKILL[category] %}
-            <text class="annot large b">{{ skill.info.image.icon | safe }} {{ skill.english.title }}</text>
-            <ul>
-                {% for des in skill.english.description %}
-                <li class="annot large" style="flex-basis: 40px;">{{ des }}</li>
-                {% endfor %}
-            </ul>
+                <text class="annot large b">{{ skill.info.image.icon | safe }} {{ skill.english.title }}</text>
+                <ul>
+                    {% for des in skill.english.description %}
+                    <li class="annot large">{{ des }}</li>
+                    {% endfor %}
+                </ul>
             {% endfor %}
         {% endfor %}
     </div>
