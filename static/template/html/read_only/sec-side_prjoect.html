@@ -1,97 +1,51 @@
 <section id="sproject">
     <!-- <div class="container"> -->
-        <text class="larger b">Side Project & IT Blog</text>
+        <text class="larger b">Side Project</text>
 
-        <ul>
-            <li class="annot large">Below are my recently personal <em class="b">side projects</em>, <a href="{{ IT_BLOG }}"><em class="b">IT blog</em></a>, and <a href="{{ CHEATSHEET }}"><em class="b">cheatsheet</em></a>.<br></li>
-        </ul>            
-
-        <table class="table" style="font-size: smaller;">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Period</th>
-                    <th scope="col">Project Name</th>
-                    <th scope="col">Tags</th>
-                </tr>
-            </thead>
-            <tbody>
+        <ul class="annot">
             {% for project in SIDE_PROJECT %}
-                {% set num = loop.index %}
-                {% set p = SIDE_PROJECT[project] %}
-                {% set info = SIDE_PROJECT[project].basic_info %}
-                <tr>
-                    <td scope="row" style="font-size: smaller; font-weight: bolder; text-align: center;">{{ num }}</td>
-                    <td style="font-size: small; text-align: left" class="w130">
-                        {{- info.period_start }} ~ 
-                        {%- if info.period_end == 'now' %} 
-                            <b>{{ info.period_end }} 🚀</b>
-                        {%- else %}
-                            {{ info.period_end -}}
-                        {%- endif -%}
-                    </td>
-                    <td class="w400 b">
-                        {{ p.english.project_name }}
-                        {% if info.external_link %}
-                        &nbsp;&nbsp;
-                        <a href="{{ info.external_link }}" target="_blank">
-                            <i class="fa-solid fa-globe"></i>
-                        </a>
-                        {% endif %}
-                        {% if info.pdf %}
-                        &nbsp;&nbsp;
-                        <a href="{{ info.pdf }}" target="_blank">
-                            <i class="fa-solid fa-file-pdf"></i>
-                        </a>
-                        {% endif %}
-                        {% if info.video %}
-                        &nbsp;&nbsp;
-                        <a href="{{ info.video }}" target="_blank">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        {% endif %}
+                <li>
 
-                        {% if info.pypi %}
-                        &nbsp;&nbsp;
-                        <a href="https://pypi.org/project/{{ info.pypi }}"><img class='pypi' src="https://img.shields.io/pypi/dm/{{ info.pypi }}?style=for-the-badge"></a>
-                        {% endif %}
-
-
-                    </td>
-                    <td style="font-size: small; text-transform: lowercase;">
-                        {% for tag in info.tags %}
-                        {{- tag -}} {% if not loop.last %}, {% endif %}
+                    <text class="annot large" style="font-family: monospace;">
+                        {{ project.info.period_start }} ~ {{ project.info.period_end_year_month_equal_now }} - 
+                        {% for resource in project.info.resource %}
+                            {{ resource.icon | safe }} {% if not loop.last %}, {% endif %}
                         {% endfor %}
-                    </td>
-                </tr>
+                    </text><br>
+                    
+                    <text class="large b">{{ project.english.title }}</text>  &nbsp;
+
+                    <text class="annot" style="font-size: small;">
+                        {% for tag in project.info.tags %} 
+                            <span style="background-color: #ddd; border-radius: 1rem; padding-left: .6rem; padding-right: .6rem; padding-top: .2rem; padding-bottom: .2rem; text-align: center; white-space: nowrap;">
+                                {{ tag }}
+                            </span>{% if not loop.last %}&nbsp;{% endif %}
+                        {% endfor %}
+                    </text> <br>
+
+                    <ul>
+                        {% for desc in project.english.description %}
+                            <li class="large" style="list-style-type: square;">{{ desc }}</li>
+                        {% endfor %}
+                    </ul>
+
+                </li>
             {% endfor %}
-            </tbody>
-        </table>
+        </ul>
 
-        <hr>
+        <text class="larger b">IT Blog</text>
 
-        <table class="table" style="font-size: smaller;">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col" style="text-align: center;">Date</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Title</th>
-                </tr>
-                <tbody>
-                    {% for blog in BLOG_POST %}
-                    <tr>
-                        {% set note_type = blog["title"].split(']')[0][1:] %}
-                        {% set blog_title = blog["title"].split(']')[1] %}
-                        <td scope="row" style="font-size: smaller; font-weight: bolder; text-align: center;">{{ loop.index }}</td>
-                        <td class="small text-center" style="min-width: 90px;">{{ blog["date"][:10] }}</td>
-                        <td class="small b">{{ note_type }}</td>
-                        <td class="b"><a href="{{ blog['_link'] }}">{{ blog_title }}</a></td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </thead>
-        </table>
+        <ul class="annot large">
+            {% for blog in BLOG_POST %}
+                {% set note_type = blog["title"].split(']')[0][1:] %}
+                {% set blog_title = blog["title"].split(']')[1] %}
+                <li>
+                    <text style="font-family: monospace;">{{ blog["date"][:10] }} - </text>
+                    <a href="{{ blog['_link'] }}" target="_blank">
+                        {{ blog_title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
 
-    <!-- </div> -->
 </section>

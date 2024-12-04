@@ -2,260 +2,313 @@
 # even number is computer science related project
 
 [awesomeLLM]
-    [awesomeLLM.basic_info]
+    [awesomeLLM.info]
     period_start = "2024.09"
     period_end = "now"
-    project_type = "personal project"
-    external_link = "https://hsiangjenli.github.io/note-llm"
+    # project_type = "personal project"
     tags = ["LLM", "Paper Reading"]
     weight = 2
 
+    [[awesomeLLM.info.resource]]
+    text = "GitHub Repository"
+    href = "https://hsiangjenli.github.io/note-llm"
+
     [awesomeLLM.english]
-    project_name = "Note LLM"
-    project_description = [
+    title = "Note LLM"
+    description = [
         "A curated list of awesome LLM resources.",
         "Paper reading about LLM and its applications.",
     ]
 
     [awesomeLLM.chinese]
-    project_name = "Note LLM"
-    # project_description = "..."
+    title = "Note LLM"
+    # description = "..."
 
 [pyCode2Vido]
-    [pyCode2Vido.basic_info]
+    [pyCode2Vido.info]
     period_start = "2024.08"
     period_end = "2024.08"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/code2video"
+    # project_type = "personal project"
     tags = ['Python', "ffmpeg", "pillow"]
     weight = 2
 
+    [[pyCode2Vido.info.resource]]
+    text = "GitHub Repository"
+    href = "https://github.com/hsiangjenli/code2video"
+
     [pyCode2Vido.english]
-    project_name = "Code2Video"
-    project_description = [
+    title = "Code2Video"
+    description = [
         "A small project for converting the code snippet to the video.",
     ]
 
     [pyCode2Vido.chinese]
-    project_name = "程式碼轉影片"
-    # project_description = "..."
+    title = "程式碼轉影片"
+    # description = "..."
 
 [ntustLatexTemplate]
-    [ntustLatexTemplate.basic_info]
+    [ntustLatexTemplate.info]
     period_start = "2024.03"
     period_end = "now"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/ntust-thesis-latex"
+    # project_type = "personal project"
+    # external_lin
     tags = ["LaTeX", "XeLatex", "tex-live", "Docker","Overleaf", "NTUST"]
     weight = 2
 
+    [[ntustLatexTemplate.info.resource]]
+    text = "GitHub Repository"
+    href = "https://github.com/hsiangjenli/ntust-thesis-latex"
+
     [ntustLatexTemplate.english]
-    project_name = "NTUST LaTeX Template"
+    title = "NTUST LaTeX Template"
 
     [ntustLatexTemplate.chinese]
-    project_name = "國立臺灣科技大學 論文 LaTeX 模板"
+    title = "國立臺灣科技大學 論文 LaTeX 模板"
 
 [pypiDIMG4MD]
-    [pypiDIMG4MD.basic_info]
+    [pypiDIMG4MD.info]
     period_start = "2024.02"
     period_end = "2024.02"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/pyimg4md"
+    # project_type = "personal project"
+    # external_link = 
     tags = ['Python', 'Markdown']
     weight = 2
-    pypi = "py-dimg4md"
+
+    [[pypiDIMG4MD.info.resource]]
+    text = "GitHub Repository"
+    href = "https://github.com/hsiangjenli/pyimg4md"
+
+    [[pypiDIMG4MD.info.resource]]
+    text = "PyPI"
+    href = "https://py-dimg4md"
 
     [pypiDIMG4MD.english]
-    project_name = "DIMG4MD"
-    project_description = [
+    title = "DIMG4MD"
+    description = [
         "A Python package for automatically download the image from the markdown file and save it to the local folder.",
     ]
 
     [pypiDIMG4MD.chinese]
-    project_name = "DIMG4MD"
-    # project_description = "..."
+    title = "DIMG4MD"
+    # description = "..."
 
 [learnJulia]
-    [learnJulia.basic_info]
+    [learnJulia.info]
     period_start = "2024.01"
     period_end = "now"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/learn-julia"
+    # project_type = "personal project"
+    # external_link = 
     tags = ['Julia']
     weight = 2
 
+    [[learnJulia.info.resource]]
+    text = "GitHub Repository"
+    href = "https://github.com/hsiangjenli/learn-julia"
+
     [learnJulia.english]
-    project_name = "Learn Julia"
-    project_description = [
+    title = "Learn Julia"
+    description = [
         "Learning Julia Programming Language with a series of scripts.",
     ]
 
     [learnJulia.chinese]
-    project_name = "學習 Julia"
-    # project_description = "..."
+    title = "學習 Julia"
+    # description = "..."
 
 
 [awesomeMetaheuristic]
-    [awesomeMetaheuristic.basic_info]
+    [awesomeMetaheuristic.info]
     period_start = "2024.01"
     period_end = "now"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/awesome-metaheuristic-and-its-application"
+    # project_type = "personal project"
+    # external_link = 
     weight = 2
 
+    [[awesomeMetaheuristic.info.resource]]
+    text = "Website"
+    href = "https://github.com/hsiangjenli/awesome-metaheuristic-and-its-application"
+
     [awesomeMetaheuristic.english]
-    project_name = "Awesome Metaheuristic and its Applications"
-    project_description = [
+    title = "Awesome Metaheuristic and its Applications"
+    description = [
         "A curated list of awesome metaheuristic and its applications resources.",
         "Including the basic concepts of metaheuristic, the application of metaheuristic, like Graph Neural Network and Graph Database.",
         "Also including the latest research papers about metaheuristic."
     ]
 
     [awesomeMetaheuristic.chinese]
-    project_name = "Awesome - 啟發式演算法與應用"
-    # project_description = "..."
+    title = "Awesome - 啟發式演算法與應用"
+    # description = "..."
 
 [awesomeComplexSystem]
-    [awesomeComplexSystem.basic_info]
+    [awesomeComplexSystem.info]
     period_start = "2023.12"
     period_end = "now"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/awesome-complex-system"
+    # project_type = "personal project"
+    # external_link = "https://github.com/hsiangjenli/awesome-complex-system"
     weight = 2
 
+    [[awesomeComplexSystem.info.resource]]
+    text = "Website"
+    href = "https://github.com/hsiangjenli/awesome-complex-system"
+
     [awesomeComplexSystem.english]
-    project_name = "Awesome Complex System and Network Science"
-    project_description = [
+    title = "Awesome Complex System and Network Science"
+    description = [
         "A curated list of awesome complex system and network science resources.",
         "Including the basic concepts of complex system and network science, the application of complex system and network science, like Graph Neural Network and Graph Database.",
         "Also including the latest research papers about complex system and network science."
     ]
 
     [awesomeComplexSystem.chinese]
-    project_name = "Awesome - 複雜系統與網路科學"
-    # project_description = "..."
+    title = "Awesome - 複雜系統與網路科學"
+    # description = "..."
 
 [ntustcsieMLCybersecurity]
-    [ntustcsieMLCybersecurity.basic_info]
+    [ntustcsieMLCybersecurity.info]
     period_start = "2023.09"
     period_end = "2023.12"
-    project_type = "class project"
-    external_link = ""
+    # project_type = "class project"
+    # external_link = ""
     tags = ['Machine Learning', 'Cybersecurity', 'Adversarial Attack', 'CNN', 'Maleware Detection']
-    pdf = "https://drive.google.com/file/d/1e8d_MSq9L3k7YJNjAGVuhjGYujt4ICTV/view?usp=sharing"
+    # pdf = "https://drive.google.com/file/d/1e8d_MSq9L3k7YJNjAGVuhjGYujt4ICTV/view?usp=sharing"
     weight = 6
 
+    [[ntustcsieMLCybersecurity.info.resource]]
+    text = "Presentation Slide"
+    href = "https://drive.google.com/file/d/1e8d_MSq9L3k7YJNjAGVuhjGYujt4ICTV/view?usp=sharing"
+
     [ntustcsieMLCybersecurity.english]
-    project_name = "Evasion Attack in Machine Learning"
-    project_description = [
+    title = "Evasion Attack in Machine Learning"
+    description = [
         "Trying to use evasion attack to attack the CNN-based maleware detection model.",
         "Need to add noise to the maleware sample to make the model misclassify the sample.",
         "The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).",
     ]
 
     [ntustcsieMLCybersecurity.chinese]
-    project_name = "..."
+    title = "..."
 
 [2023IthomeIronmanChallenge]
-    [2023IthomeIronmanChallenge.basic_info]
+    [2023IthomeIronmanChallenge.info]
     period_start = "2023.09"
     period_end = "2023.10"
-    project_type = "personal project"
-    external_link = "https://ithelp.ithome.com.tw/users/20132837/ironman/6927"
-    image = "https://github.com/hsiangjenli/hsiangjenli/assets/71996166/7d0927f8-c1ea-4c11-bf7e-f3fdff670e1a"
+    # project_type = "personal project"
+    # external_link = "https://ithelp.ithome.com.tw/users/20132837/ironman/6927"
+    # image = "https://github.com/hsiangjenli/hsiangjenli/assets/71996166/7d0927f8-c1ea-4c11-bf7e-f3fdff670e1a"
     tags = ['Network Science', 'GNN', 'Paper Reading', '30 Days Challenge']
     weight = 2
+
+    [[2023IthomeIronmanChallenge.info.resource]]
+    text = "IT Home Ironman Challenge"
+    href = "https://ithelp.ithome.com.tw/users/20132837/ironman/6927"
     # pdf = "..."
 
     [2023IthomeIronmanChallenge.english]
-    project_name = "2023 IT home Ironman Challenge - AI and Data"
-    project_description = [
+    title = "2023 IT home Ironman Challenge - AI and Data"
+    description = [
         "In this challenge, I had written 30 articles about Network Science and Graph Neural Network.",
         "Including the basic concepts of Network Science, the application of Network Science, like Graph Neural Network and Graph Database.",
         "Also including the latest research papers about Graph Neural Network."
     ]
 
     [2023IthomeIronmanChallenge.chinese]
-    project_name = "2023 IT home 鐵人賽 - AI & Data"
-    # project_description = "..."
+    title = "2023 IT home 鐵人賽 - AI & Data"
+    # description = "..."
 
 [scsbSNC]
-    [scsbSNC.basic_info]
+    [scsbSNC.info]
     period_start = "2023.07"
     period_end = "2023.08"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/social-network-crawler/"
+    # project_type = "personal project"
+    # external_link = "https://github.com/hsiangjenli/social-network-crawler/"
     tags = ['Web Scraping', 'Dynamic Web Scraping', 'Selenium', 'BeautifulSoup', 'playwright']
     weight = 5
 
+    [[scsbSNC.info.resource]]
+    text = "GitHub Repository"
+    href = "https://github.com/hsiangjenli/social-network-crawler/"
+
     [scsbSNC.english]
-    project_name = "Web Scraping : Social Network Crawler"
-    project_description = [
+    title = "Web Scraping : Social Network Crawler"
+    description = [
         "Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.",
         "The data will be stored in MongoDB and can be used for further analysis."
         ]
 
     [scsbSNC.chinese]
-    project_name = "動態社群網路爬蟲"
+    title = "動態社群網路爬蟲"
 
 
 [twEKRS]
-    [twEKRS.basic_info]
+    [twEKRS.info]
     period_start = "2023.05"
     period_end = "2023.06"
-    project_type = "class project"
-    image = "image/rocket.svg"
+    # project_type = "class project"
+    # image = "image/rocket.svg"
     tags = ['Graph Theory', 'Network', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'Fast API']
-    pdf = "https://drive.google.com/file/d/1IXfgcc8a_FrKM8mhFT_ELxcTvrda5zqs/view?usp=sharing"
-    video = "https://youtu.be/T2dS-ZdDytc"
+    # pdf = "https://drive.google.com/file/d/1IXfgcc8a_FrKM8mhFT_ELxcTvrda5zqs/view?usp=sharing"
+    # video = "https://youtu.be/T2dS-ZdDytc"
     weight = 6
 
+    [[twEKRS.info.resource]]
+    text = "Presentation Slide"
+    href = "https://drive.google.com/file/d/1IXfgcc8a_FrKM8mhFT_ELxcTvrda5zqs/view?usp=sharing"
+
+    [[twEKRS.info.resource]]
+    text = "Presentation Video"
+    href = "https://youtu.be/T2dS-ZdDytc"
+
     [twEKRS.english]
-    project_name = "Graph-based : Keywords Recommendation System"
-    project_description = [
+    title = "Graph-based : Keywords Recommendation System"
+    description = [
         "Applying Network Science field to build a keywords recommendation system.",
     ]
 
     [twEKRS.chinese]
-    project_name = "基於網路圖的關鍵字推薦系統"
-    # project_description = "..."
+    title = "基於網路圖的關鍵字推薦系統"
+    # description = "..."
 
 
 [twFEFIP]
-    [twFEFIP.basic_info]
+    [twFEFIP.info]
     period_start = "2022.11"
     period_end = "2022.12"
-    project_type = "class project"
-    image = "image/rocket.svg"
+    # project_type = "class project"
+    # image = "image/rocket.svg"
     tags = ['SQLite', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'dimension-reduction', 'cluster']
     weight = 2
 
     [twFEFIP.english]
-    project_name = "Taiwan Famous Ecommerce : Find Identical Products"
-    project_description = [
+    title = "Taiwan Famous Ecommerce : Find Identical Products"
+    description = [
         "Finding identical products from item's name is a quite challenging task.",
         "Using Regular-Expression and CKIP-transformer to extract keywords from item's name.",
         "And using dimension-reduction and cluster algorithms to find identical products."
     ]
 
     [twFEFIP.chinese]
-    project_name = "..."
-    # project_description = "..."
+    title = "..."
+    # description = "..."
 
 
 [aprioriJ104]
-    [aprioriJ104.basic_info]
+    [aprioriJ104.info]
     period_start = "2022.05"
     period_end = "2022.06"
-    project_type = "class project"
-    external_link = "https://hsiangjenli.gitlab.io/apriori-j104/README.html"
-    image = "https://i.imgur.com/bJS92RH.png"
+    # project_type = "class project"
+    # external_link = "https://hsiangjenli.gitlab.io/apriori-j104/README.html"
+    # image = "https://i.imgur.com/bJS92RH.png"
     tags = ['Web Scraping', 'pyvis', 'apyori', 'CKIP-transformer']
     weight = 6
 
+    [[aprioriJ104.info.resource]]
+    text = "Website"
+    href = "https://hsiangjenli.gitlab.io/apriori-j104/README.html"
+
     [aprioriJ104.english]
-    project_name = "Apriori J104"
-    project_description = [
+    title = "Apriori J104"
+    description = [
         "An application for analyzing the skills required by the job market.",
         "The data is crawled from 104 job bank and stored in MongoDB.",
         "And the data will be processed by CKIP-transformer.",
@@ -263,81 +316,97 @@
         ]
 
     [aprioriJ104.chinese]
-    project_name = "工作技能分析系統"
-    # project_description = "..."
+    title = "工作技能分析系統"
+    # description = "..."
 
 
 [POA]
-    [POA.basic_info]
+    [POA.info]
     period_start = "2022.03"
     period_end = "2022.06"
-    project_type = "class project"
-    external_link = "https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project"
-    image = "image/rocket.svg"
+    # project_type = "class project"
+    # external_link = "https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project"
+    # image = "image/rocket.svg"
     tags =  ['Web Scraping', 'Django', 'MongoDB', 'Bootstrap', 'plotly.js', 'Anue', 'TWSE']
     weight = 5
 
+    [[POA.info.resource]]
+    text = "GitLab Repository"
+    href = "https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project"
+
     [POA.english]
-    project_name = "Financial Public Opinion Analysis"
-    project_description = [
+    title = "Financial Public Opinion Analysis"
+    description = [
         "Using Django to build a web application for analyzing financial public opinion.",
         "The data is crawled from Anue and the data will be stored in MongoDB.",
     ]
 
     [POA.chinese]
-    project_name = "輿情分析系統"
-    # project_description = "..."
+    title = "輿情分析系統"
+    # description = "..."
 
 
 [webANUE]
-    [webANUE.basic_info]
+    [webANUE.info]
     period_start = "2022.04"
     period_end = "2022.04"
-    project_type = "personal project"
-    external_link = "https://gitlab.com/tuxedo-web-scraping/anue"
-    image = "https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg"
+    # project_type = "personal project"
+    # external_link = "https://gitlab.com/tuxedo-web-scraping/anue"
+    # image = "https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg"
     tags = ['Web Scraping', 'MongoDB']
     weight = 1
 
+    [[webANUE.info.resource]]
+    text = "GitLab Repository"
+    href = "https://gitlab.com/tuxedo-web-scraping/anue"
+
     [webANUE.english]
-    project_name = "Web Scraping : Anue"
+    title = "Web Scraping : Anue"
 
     [webANUE.chinese]
-    project_name = "爬蟲 : Anue"
+    title = "爬蟲 : Anue"
     
 
 [webTWSE]
-    [webTWSE.basic_info]
+    [webTWSE.info]
     period_start = "2021.12"
     period_end = "2022.04"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
-    image = "image/rocket.svg"
+    # project_type = "personal project"
+    # external_link = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
+    # image = "image/rocket.svg"
     tags = ['Web Scraping', 'SQLite', 'plotly']
     weight = 1
 
+    [[webTWSE.info.resource]]
+    text = "GitHub Repository"
+    href = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
+
     [webTWSE.english]
-    project_name = "Web Scraping : TWSE"
+    title = "Web Scraping : TWSE"
 
     [webTWSE.chinese]
-    project_name = "爬蟲 : 台灣證券交易所"
+    title = "爬蟲 : 台灣證券交易所"
 
 
 [linebotStockInfo]
-    [linebotStockInfo.basic_info]
+    [linebotStockInfo.info]
     period_start = "2020.10"
     period_end = "2021.07"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/LineBot-STOCK.tw-Public"
-    image = "https://camo.githubusercontent.com/a171e8f00d35f451876bc4165e5c05a8453fc8bfa553d4df88530b5020ee175f/68747470733a2f2f692e696d6775722e636f6d2f444c524b5871372e706e67"
+    # project_type = "personal project"
+    # external_link = "https://github.com/hsiangjenli/LineBot-STOCK.tw-Public"
+    # image = "https://camo.githubusercontent.com/a171e8f00d35f451876bc4165e5c05a8453fc8bfa553d4df88530b5020ee175f/68747470733a2f2f692e696d6775722e636f6d2f444c524b5871372e706e67"
     tags = ['Line-Bot', 'Heroku', 'mplfinance', 'yfinance']
     weight = 3
 
+    [[linebotStockInfo.info.resource]]
+    text = "GitHub Repository"
+    href = "https://github.com/hsiangjenli/LineBot-STOCK.tw-Public"
+
     [linebotStockInfo.english]
-    project_name = "Line-Bot : Stock Info"
-    project_description = [
+    title = "Line-Bot : Stock Info"
+    description = [
         "A Line-Bot for getting the stock information.",
     ]
 
     [linebotStockInfo.chinese]
-    project_name = "Line-Bot : 股票資訊"
+    title = "Line-Bot : 股票資訊"
