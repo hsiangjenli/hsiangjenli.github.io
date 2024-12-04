@@ -5,15 +5,15 @@
     {% set num = loop.index %}
     {% set info = PULL_REQUEST[pr].basic_info %}
     {% set history = PULL_REQUEST[pr].pull_request.history %}
-    
-    <text class="annot large b">
-        <i class="fa-solid fa-box-open" style="min-width: 25px; text-align: left;"></i> 
-        <a href="{{ info.external_link }}"> {{ info.name }}</a></text><text class="annot medium"> - <i class="fa-solid fa-clock-rotate-left"></i> {{ history|length }}
-    </text>
-    <ul>
-        {% for h in history %}
-            <li class="annot large"><a href="{{ h }}"> {{ h }}</a></li>
-        {% endfor %}
+    <ul class="annot large">
+        <li>
+            <a style="font-family: monospace;" href="{{ info.external_link }}"> {{ info.name }}</a></text> <text class="annot medium">&nbsp;-&nbsp;<i class="fa-solid fa-clock-rotate-left"></i> {{ history | length }}
+            <ul>
+                {% for h in history %}
+                    <li style="list-style: square;"><a href="{{ h }}"> {{ h }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
     </ul>
     
 {% endfor %}
