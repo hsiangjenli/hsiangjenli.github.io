@@ -1,5 +1,14 @@
 h3 {
     font-weight: bolder;
+    border-bottom: solid 1px #ddd;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+ul {
+    margin: 0 0 1em 0;
 }
 
 table td {
@@ -20,7 +29,7 @@ th {
 }
 
     #main > section > .container {
-        padding: 1.5em 0 1.5em 0;
+        padding: 0 0 0 0;
     }
 
     #main > section:first-child {
