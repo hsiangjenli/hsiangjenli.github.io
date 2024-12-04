@@ -6,6 +6,7 @@ import shutil
 import requests
 
 from core import tutils
+from core.component import SkillTomlFile, TomlFile
 
 # == personal information ============================================================================================
 Q = "<div>The way lead to success is your own resolution.</div><div>得常咬菜根，即做百事成。</div>"
@@ -29,13 +30,13 @@ IT_BLOG = "https://hsiangjenli.github.io/blog/"
 CHEATSHEET = "https://hsiangjenli.github.io/cheat-sheet/"
 LINKEDIN = "hsiangjenli"
 
-EDU = tutils.load_toml("config/_education.toml")
-EXP = tutils.load_toml("config/_experience.toml")
-SKILL = tutils.load_toml("config/_skill.toml")
-RI = tutils.load_toml("config/_research.toml")
-SIDE_PROJECT = tutils.load_toml("config/_project.toml")
+EDU = TomlFile.load("config/_education.toml").entries
+EXP = TomlFile.load("config/_experience.toml").entries
+SKILL = SkillTomlFile.load("config/_skill.toml").entries
+RI = TomlFile.load("config/_research.toml").entries
+SIDE_PROJECT = TomlFile.load("config/_project.toml").entries
 PULL_REQUEST = tutils.load_toml("config/_open_source.toml")
-AWARD = tutils.load_toml("config/_award.toml")
+AWARD = TomlFile.load("config/_award.toml").entries
 BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/getPosts/").json()[
     "data"
 ]["posts"]
@@ -116,12 +117,12 @@ if __name__ == "__main__":
     # O_CV_CHN = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="chinese", WEIGTH=2)
     # tutils.write(O_CV_CHN, f"static/output/cv_zh_tw.html")
 
-    PERSONAL_INFO["SEEKING_POSITION"] = [
-        x.replace("&", "\\&") for x in SEEKING_POSITION
-    ]
-    PERSONAL_INFO["CURRENT_POSITION"] = CURRENT_POSITION.replace("&", "\\&")
+    # PERSONAL_INFO["SEEKING_POSITION"] = [
+    #     x.replace("&", "\\&") for x in SEEKING_POSITION
+    # ]
+    # PERSONAL_INFO["CURRENT_POSITION"] = CURRENT_POSITION.replace("&", "\\&")
 
-    O_LATEX = LATEX_TEMPLATE.render(
-        **PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, WEIGTH=1
-    )
-    tutils.write(O_LATEX, "cv_eng.tex")
+    # O_LATEX = LATEX_TEMPLATE.render(
+    #     **PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, WEIGTH=1
+    # )
+    # tutils.write(O_LATEX, "cv_eng.tex")

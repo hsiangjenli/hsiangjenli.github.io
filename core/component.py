@@ -50,7 +50,7 @@ class HtmlIcon(BaseModel):
 
     @property
     def style(self) -> str:
-        return "min-width: 40px; text-align: center;"
+        return "min-width: 25px; text-align: left;"
 
     @property
     def html(self) -> str:
@@ -73,9 +73,9 @@ class EntryInfo(BaseModel):
     period_start: Optional[Union[datetime.date, str]] = Field("Now")
     period_end: Optional[Union[datetime.date, str]] = Field("Now", alias="graduation")
 
-    resource: Optional[list[HtmlIcon]] = None
+    resource: Optional[list[HtmlIcon]] = []
 
-    tags: Optional[list[str]] = None
+    tags: Optional[list[str]] = []
     weight: Optional[int] = 0
     image: HtmlIcon = None
 
@@ -118,6 +118,12 @@ class EntryInfo(BaseModel):
             return self.period_end.strftime("%Y-%m")
         return self.period_end
 
+    @property
+    def period_end_year_month_equal_now(self):
+        if self.period_end.lower() == "now":
+            return "Now 🔥🔥🔥"
+        return self.period_end_year_month
+
 
 class EntryDescription(BaseModel):
     title: str = Field(alias="university")
@@ -127,6 +133,10 @@ class EntryDescription(BaseModel):
     @property
     def university(self):
         return self.title
+
+    @field_validator("description", mode="before")
+    def capitalize_first_letter(cls, description):
+        return [d.capitalize() for d in description]
 
 
 class Entry(BaseModel):
