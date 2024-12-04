@@ -33,12 +33,12 @@ jobs:
       run: |
         python auto.py
     # ------------------------------------------------------------------------------------------------------------------------------
-    - name: Setup Docker Image
-      uses: addnab/docker-run-action@v3
-      with:
-        image: hsiangjenli/xelatex:20240801
-        options: -v ${{ github.workspace }}:/app -w /app --user=root
-        run: xelatex cv_eng.tex --output-directory=static/pdf
+    # - name: Setup Docker Image
+    #   uses: addnab/docker-run-action@v3
+    #   with:
+    #     image: hsiangjenli/xelatex:20240801
+    #     options: -v ${{ github.workspace }}:/app -w /app --user=root
+    #     run: xelatex cv_eng.tex --output-directory=static/pdf
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Copy Static Folder
       run: cp -r static/* hsiangjenli.github.io/static/
