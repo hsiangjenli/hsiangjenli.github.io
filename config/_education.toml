@@ -13,6 +13,7 @@
 
     [["M.S.".info.resource]]
     text = "Graduate Thesis"
+    fontawesome = "fa-brands fa-google-scholar"
     href = "https://etheses.lib.ntust.edu.tw/detail/f3738badcd95779cf574e5c3e0d6e43f/"
 
 

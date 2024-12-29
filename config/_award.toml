@@ -12,10 +12,12 @@
 
     [[2022_tabf_tbb_fintech.info.resource]]
     text = "Group Photo"
+    fontawesome = "fa-solid fa-image"
     href = "https://drive.google.com/file/d/1G09H8KYHXiukd7q4Cn7asrRQ_zOiVqck/view?usp=sharing"
 
     [[2022_tabf_tbb_fintech.info.resource]]
     text = "Participation Certificate"
+    fontawesome = "fa-solid fa-award"
     href = "https://drive.google.com/file/d/18tsB30fu4O09uJyHJRHlW6Fy0Tbh-sUz/view?usp=sharing"
 
     [2022_tabf_tbb_fintech.english]
@@ -59,24 +61,24 @@
         "在約 30 支隊伍中排名第一"
     ]
 
-[2020_fintech_space]
-    [2020_fintech_space.info]
-    period_start = "2020"
+# [2020_fintech_space]
+#     [2020_fintech_space.info]
+#     period_start = "2020"
 
-    [[2020_fintech_space.info.resource]]
-    text = "Competition's Host Website"
-    href = "https://www.fintechspace.com.tw/"
+#     [[2020_fintech_space.info.resource]]
+#     text = "Competition's Host Website"
+#     href = "https://www.fintechspace.com.tw/"
     
-    [2020_fintech_space.english]
-    title = "Campus Achievement Exhibition"
-    description = [
-        "Hosted by Fintech Space",
-        "Ranked as the preferred choice"
-    ]
+#     [2020_fintech_space.english]
+#     title = "Campus Achievement Exhibition"
+#     description = [
+#         "Hosted by Fintech Space",
+#         "Ranked as the preferred choice"
+#     ]
     
-    [2020_fintech_space.chinese]
-    title = "校園成果展"
-    description = [
-        "主辦單位：Fintech Space",
-        "優選"
-    ]
+#     [2020_fintech_space.chinese]
+#     title = "校園成果展"
+#     description = [
+#         "主辦單位：Fintech Space",
+#         "優選"
+#     ]

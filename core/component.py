@@ -14,6 +14,8 @@ class FontAwesomeIcon(Enum):
     IMAGE = "fa-solid fa-image"
     GOOGLE_DRIVE = "fa-brands fa-google-drive"
     GITHUB = "fa-brands fa-github"
+    OVERLEAF = "fa-solid fa-superscript"
+    SCHOOL = "fa-solid fa-school"
     DEFAULT = "fa-solid fa-link"
 
 
@@ -30,6 +32,8 @@ class HtmlIcon(BaseModel):
     DOMAIN_MAPPING: ClassVar[dict[str, FontAwesomeIcon]] = {
         "drive.google.com": FontAwesomeIcon.GOOGLE_DRIVE,
         "github.com": FontAwesomeIcon.GITHUB,
+        "overleaf.com": FontAwesomeIcon.OVERLEAF,
+        "edu.tw": FontAwesomeIcon.SCHOOL,
     }
 
     @property
@@ -54,7 +58,13 @@ class HtmlIcon(BaseModel):
 
     @property
     def html(self) -> str:
-        icon_html = f'<i style="{self.style}" class="{self.icon_type.value}"></i>'
+        if self.fontawesome:
+            icon_html = f'<i style="{self.style}" class="{self.fontawesome}"></i>'
+        else:
+            icon_html = f'<i style="{self.style}" class="{self.icon_type.value}"></i>'
+        
+        if self.href and self.fontawesome:
+            return f'<a href="{self.href}" style="font-weight: bold" target="_blank"> {icon_html}{self.text} </a>'
         if self.href:
             return f'<a href="{self.href}" style="font-weight: bold" target="_blank"> {icon_html}{self.text} </a>'
         return icon_html
