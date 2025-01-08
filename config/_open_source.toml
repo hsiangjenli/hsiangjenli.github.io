@@ -1,3 +1,13 @@
+[petercat-ai-petercat]
+    [petercat-ai-petercat.basic_info]
+        name = "petercat-ai/petercat"
+        external_link = "https://github.com/petercat-ai/petercat"
+    
+    [petercat-ai-petercat.pull_request]
+        history = [
+            "https://github.com/petercat-ai/petercat/pull/660",
+        ]
+
 [python-docs-zh-tw]
     [python-docs-zh-tw.basic_info]
         name = "python/python-docs-zh-tw"
