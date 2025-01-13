@@ -1,3 +1,13 @@
+[memgraph-card-fraud]
+    [memgraph-card-fraud.basic_info]
+        name = "memgraph/card-fraud"
+        external_link = "https://github.com/memgraph/card-fraud"
+    
+    [memgraph-card-fraud.pull_request]
+        history = [
+            "https://github.com/memgraph/card-fraud/pull/1",
+        ]
+
 [petercat-ai-petercat]
     [petercat-ai-petercat.basic_info]
         name = "petercat-ai/petercat"
