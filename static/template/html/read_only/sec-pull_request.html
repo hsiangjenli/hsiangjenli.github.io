@@ -7,7 +7,7 @@
     {% set history = PULL_REQUEST[pr].pull_request.history %}
     <ul class="annot large">
         <li>
-            <a style="font-family: monospace;" href="{{ info.external_link }}"> {{ info.name }}</a></text> <text class="annot medium">&nbsp;-&nbsp;<i class="fa-solid fa-clock-rotate-left"></i> {{ history | length }}
+            <a style="font-family: monospace;" href="{{ info.external_link }}"> {{ info.name }}</a></text> <text class="annot medium">&nbsp;&nbsp;-&nbsp;&nbsp;<i class="fa-solid fa-code-pull-request"></i> {{ history | length }}
             <ul>
                 {% for h in history %}
                     <li style="list-style: square;"><a href="{{ h }}"> {{ h }}</a></li>
