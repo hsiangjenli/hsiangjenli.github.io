@@ -1,58 +1,56 @@
 ["M.S."]
-    ["M.S.".info]
-    graduation = "2024"
-    gpa = "4.02/4.3"
+["M.S.".info]
+gpa = "4.02/4.3"
+graduation = "2024"
 
-    [["M.S.".info.resource]]
-    text = "Department Website"
-    href = "https://www.csie.ntust.edu.tw/"
+[["M.S.".info.resource]]
+href = "https://www.csie.ntust.edu.tw/"
+text = "Department Website"
 
-    [["M.S.".info.resource]]
-    text = "Transcript"
-    href = "https://hsiangjenli.github.io/static/pdf/transcript_ntust.pdf"
+[["M.S.".info.resource]]
+href = "https://hsiangjenli.github.io/static/pdf/transcript_ntust.pdf"
+text = "Transcript"
 
-    [["M.S.".info.resource]]
-    text = "Graduate Thesis"
-    fontawesome = "fa-brands fa-google-scholar"
-    href = "https://etheses.lib.ntust.edu.tw/detail/f3738badcd95779cf574e5c3e0d6e43f/"
+[["M.S.".info.resource]]
+fontawesome = "fa-brands fa-google-scholar"
+href = "https://etheses.lib.ntust.edu.tw/detail/f3738badcd95779cf574e5c3e0d6e43f/"
+text = "Graduate Thesis"
 
+["M.S.".english]
+location = "Taipei, Taiwan"
+major = "Department of Computer Science and Information Engineering"
+university = "National Taiwan University of Science and Technology"
+# description = ["Big data analytics and information security"]
+supervisor = "Chao-Lung Yang & Shan-Hsiang Shen"
+thesis = "Temporal Graph Embedding incorporating with Memory Mechanism and k-hop Selection"
 
-    ["M.S.".english]
-    university = "National Taiwan University of Science and Technology"
-    major = "Department of Computer Science and Information Engineering"
-    location = "Taipei, Taiwan"
-    # description = ["Big data analytics and information security"]
-    supervisor = "Chao-Lung Yang & Shan-Hsiang Shen"
-    thesis = "Temporal Graph Embedding incorporating with Memory Mechanism and k-hop Selection"
-
-    ["M.S.".chinese]
-    university = "國立臺灣科技大學"
-    major = "資訊工程學系"
-    location = "臺北, 臺灣"
-    supervisor = "楊朝龍、沈上翔"
-    thesis = "結合記憶機制以及多躍式選擇於時序圖嵌入"
-    description = ["大數據分析與資訊安全"]
-
+["M.S.".chinese]
+description = ["大數據分析與資訊安全"]
+location = "臺北, 臺灣"
+major = "資訊工程學系"
+supervisor = "楊朝龍、沈上翔"
+thesis = "結合記憶機制以及多躍式選擇於時序圖嵌入"
+university = "國立臺灣科技大學"
 
 ["B.S."]
-    ["B.S.".info]
-    graduation = "2022"
-    gpa = "3.82/4.3"
-    
-    [["B.S.".info.resource]]
-    text = "Department Website"
-    href = "https://banking.nkust.edu.tw/"
+["B.S.".info]
 
-    [["B.S.".info.resource]]
-    text = "Transcript"
-    href = "https://hsiangjenli.github.io/static/pdf/transcript_nkust.pdf"
+gpa = "3.82/4.3"
+graduation = "2022"
+[["B.S.".info.resource]]
+href = "https://banking.nkust.edu.tw/"
+text = "Department Website"
 
-    ["B.S.".english]
-    university = "National Kaohsiung University of Science and Technology"
-    major = "Department of Money and Banking"
-    location = "Kaohsiung, Taiwan"
+[["B.S.".info.resource]]
+href = "https://hsiangjenli.github.io/static/pdf/transcript_nkust.pdf"
+text = "Transcript"
 
-    ["B.S.".chinese]
-    university = "國立高雄科技大學"
-    major = "金融系"
-    location = "高雄, 臺灣"
+["B.S.".english]
+location = "Kaohsiung, Taiwan"
+major = "Department of Money and Banking"
+university = "National Kaohsiung University of Science and Technology"
+
+["B.S.".chinese]
+location = "高雄, 臺灣"
+major = "金融系"
+university = "國立高雄科技大學"
