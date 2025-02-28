@@ -40,7 +40,7 @@ AWARD = TomlFile.load("config/_award.toml").entries
 BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/getPosts/").json()[
     "data"
 ]["posts"]
-BLOG_POST = sorted(BLOG_POST, key=lambda x: x["date"], reverse=True)
+BLOG_POST = sorted(BLOG_POST, key=lambda x: x["date"], reverse=True)[:10]
 
 # == webpage ==========================================================================================================
 WEBPAGE = "hsiangjenli.github.io"
