@@ -4,30 +4,30 @@ name.nick_name = "RN"
 name.others.chinese.original = "李享紝"
 name.others.chinese.pronunciation = "image/李享紝.svg"
 
-profile = "image/logo.svg"
 mail = "hsiangjenli@gmail.com"
+profile = "image/logo.svg"
 
 [social_media]
-    [social_media.linkedin]
-    url = "https://www.linkedin.com/in/hsiangjenli"
-    bg_color = "0077B5"
-    logo_color = "white"
-    font_awesome = "fa-brands fa-linkedin"
+[social_media.linkedin]
+bg_color = "0077B5"
+font_awesome = "fa-brands fa-linkedin"
+logo_color = "white"
+url = "https://www.linkedin.com/in/hsiangjenli"
 
-    [social_media.github]
-    url = "https://github.com/hsiangjenli"
-    bg_color = "100000"
-    logo_color = "white"
-    font_awesome = "fa-brands fa-github"
+[social_media.github]
+bg_color = "100000"
+font_awesome = "fa-brands fa-github"
+logo_color = "white"
+url = "https://github.com/hsiangjenli"
 
-    [social_media.gitlab]
-    url = "https://gitlab.com/hsiangjenli"
-    bg_color = "330F63"
-    logo_color = "white"
-    font_awesome = "fa-brands fa-gitlab"
+[social_media.gitlab]
+bg_color = "330F63"
+font_awesome = "fa-brands fa-gitlab"
+logo_color = "white"
+url = "https://gitlab.com/hsiangjenli"
 
-    [social_media.dockerhub]
-    url = "https://hub.docker.com/u/hsiangjenli"
-    bg_color = "2CA5E0"
-    logo_color = "white"
-    font_awesome = "fa-brands fa-docker"
+[social_media.dockerhub]
+bg_color = "2CA5E0"
+font_awesome = "fa-brands fa-docker"
+logo_color = "white"
+url = "https://hub.docker.com/u/hsiangjenli"
