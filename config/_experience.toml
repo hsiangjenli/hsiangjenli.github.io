@@ -7,7 +7,7 @@
     title = "Shanghai Commercial and Savings Bank"
     headline = "Data Analyst @ SCSB Digital Banking Department"
     location = "Taipei, Taiwan"
-    description = ["Research"]
+    # description = ["Research"]
 
     [scsb_digital_banking_da.chinese]
     title = "上海商業儲蓄銀行"
@@ -44,30 +44,30 @@
     title = "系統資訊與管理科學實驗室 - SiMS Lab"
 
 
-[sharing_programming_knowledge]
-    [sharing_programming_knowledge.info]
-    period_start = "2020.01"
-    period_end = "Now"
+# [sharing_programming_knowledge]
+#     [sharing_programming_knowledge.info]
+#     period_start = "2020.01"
+#     period_end = "Now"
 
-    [sharing_programming_knowledge.english]
-    title = "Sharing Programming Knowledge"
-    headline = "Enthusiast @ Knowledge Sharing"
+#     [sharing_programming_knowledge.english]
+#     title = "Sharing Programming Knowledge"
+#     headline = "Enthusiast @ Knowledge Sharing"
 
-    [sharing_programming_knowledge.chinese]
-    title = "撰寫 IT Blog"
+#     [sharing_programming_knowledge.chinese]
+#     title = "撰寫 IT Blog"
 
 
-[nkust_ccet_ta]
-    [nkust_ccet_ta.info]
-    period_start = "2021.09"
-    period_end = "2022.01"
+# [nkust_ccet_ta]
+#     [nkust_ccet_ta.info]
+#     period_start = "2021.09"
+#     period_end = "2022.01"
 
-    [nkust_ccet_ta.english]
-    title = "National Kaohsiung University of Science and Technology"
-    headline = "Teaching Assistant @ Cross College Elite Tech Program - Data Science"
-    location = "Kaohsiung, Taiwan"
+#     [nkust_ccet_ta.english]
+#     title = "National Kaohsiung University of Science and Technology"
+#     headline = "Teaching Assistant @ Cross College Elite Tech Program - Data Science"
+#     location = "Kaohsiung, Taiwan"
 
-    [nkust_ccet_ta.chinese]
-    title = "國立高雄科技大學"
-    headline = "高瞻科技不分系 資料科學 助教"
-    location = "高雄, 臺灣"
+#     [nkust_ccet_ta.chinese]
+#     title = "國立高雄科技大學"
+#     headline = "高瞻科技不分系 資料科學 助教"
+#     location = "高雄, 臺灣"

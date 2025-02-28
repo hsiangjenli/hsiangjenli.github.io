@@ -3,77 +3,77 @@
 
 [python-package-template]
 [python-package-template.info]
-period_start = "2025.02"
 period_end = "now"
+period_start = "2025.02"
 
 tags = ['Python', 'DevOps', 'GitHub Actions', 'CI/CD', 'Sphinx']
 
 [[python-package-template.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/python-package-template"
+text = "GitHub Repository"
 
 [python-package-template.english]
-title = "Python Package Template"
 description = [
-    # Situation
-
-    # Task
-
-    # Action
-
-    # Result
-
+  # Situation
+  "Building a Python package is repetitive, so I want to automate tasks like setting up pre-commit hooks, documentation, and CI/CD.",
+  # Task
+  "Create a template that includes pre-commit hooks, documentation, and CI/CD to simplify package setup.",
+  # Action
+  "The template uses Rye for dependencies, Sphinx for documentation, Docker for CI/CD, and GitHub Actions for automation.",
+  # Result
+  "This template makes it easier to release packages, so I can focus on development instead of setup.",
 ]
+title = "Python Package Template"
 
 [python-package-template.chinese]
 title = "Python 模組模板"
 
 [star2review]
 [star2review.info]
-period_start = "2024.12"
 period_end = "now"
+period_start = "2024.12"
 
 tags = ['Python', 'PyGithub', 'State Machine', 'Pydantic']
 weight = 2
 
 [[star2review.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/star-to-review"
+text = "GitHub Repository"
 
 [star2review.english]
-title = "Star2Review"
 description = [
-    # Situation
-    "As a software engineer, I explore open-source projects on GitHub but often forget starred repositories.",
-    # Task
-    "How to avoid forgetting starred repositories?",
-    # Action
-    "GitHub Actions schedule tasks, PyGitHub creates issues, and a state machine with Pydantic manages reviews.",
-    # Result
-    "The tool, still in progress, helps me review repositories regularly and effectively.",
+  # Situation
+  "As a software engineer, I explore open-source projects on GitHub but often forget starred repositories.", 
+  # Task
+  "How to avoid forgetting starred repositories?",                                                              
+  # Action
+  "GitHub Actions schedule tasks, PyGitHub creates issues, and a state machine with Pydantic manages reviews.", 
+  # Result
+  "The tool, still in progress, helps me review repositories regularly and effectively.",
 ]
+title = "Star2Review"
 
 [star2review.chinese]
 title = "Star2Review"
 
 [awesomeLLM]
 [awesomeLLM.info]
-period_start = "2024.09"
 period_end = "now"
+period_start = "2024.09"
 
 tags = ["LLM", "Paper Reading"]
 weight = 2
 
 [[awesomeLLM.info.resource]]
-text = "GitHub Repository"
 href = "https://hsiangjenli.github.io/note-llm"
+text = "GitHub Repository"
 
 [awesomeLLM.english]
-title = "Note LLM"
 description = [
-    "A curated list of awesome LLM resources.",
-    "Paper reading about LLM and its applications.",
+  "A curated list of awesome LLM resources.",
+  "Paper reading about LLM and its applications.",
 ]
+title = "Note LLM"
 
 [awesomeLLM.chinese]
 title = "Note LLM"
@@ -81,19 +81,19 @@ title = "Note LLM"
 
 [pyCode2Vido]
 [pyCode2Vido.info]
-period_start = "2024.08"
 period_end = "2024.08"
+period_start = "2024.08"
 # project_type = "personal project"
 tags = ['Python', "ffmpeg", "pillow"]
 weight = 2
 
 [[pyCode2Vido.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/code2video"
+text = "GitHub Repository"
 
 [pyCode2Vido.english]
-title = "Code2Video"
 description = ["A small project for converting the code snippet to the video."]
+title = "Code2Video"
 
 [pyCode2Vido.chinese]
 title = "程式碼轉影片"
@@ -101,105 +101,98 @@ title = "程式碼轉影片"
 
 [ntustLatexTemplate]
 [ntustLatexTemplate.info]
-period_start = "2024.03"
 period_end = "2024.06"
+period_start = "2024.03"
 # project_type = "personal project"
 # external_lin
 tags = ["LaTeX", "XeLatex", "tex-live", "Docker", "Overleaf", "NTUST"]
 weight = 2
 
 [[ntustLatexTemplate.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/ntust-thesis-latex"
+text = "GitHub Repository"
 
 [[ntustLatexTemplate.info.resource]]
-text = "Overleaf Template"
 href = "https://www.overleaf.com/latex/templates/ntust-thesis-latex-v1-dot-8-1/zhssqbmtcsjp"
+text = "Overleaf Template"
 
 [ntustLatexTemplate.english]
-title = "NTUST LaTeX Template"
 description = [
-    # Situation
-    "As a graduate student, I need to write my thesis in LaTeX, but the original template is outdated.",
-    # Task
-    "Refactored it for use on Overleaf and local environment.",
-    # Action
-    "Sought guidance on Docker image creation specifically for XeLaTeX and reviewed related templates.",
-    # Result
-    "Shared the template on Overleaf, a Docker image, and tutorials for beginners.",
+  # Situation
+  "As a graduate student, I need to write my thesis in LaTeX, but the original template is outdated.", # Task
+  "Refactored it for use on Overleaf and local environment.",                                          # Action
+  "Sought guidance on Docker image creation specifically for XeLaTeX and reviewed related templates.", # Result
+  "Shared the template on Overleaf, a Docker image, and tutorials for beginners.",
 ]
+title = "NTUST LaTeX Template"
 
 [ntustLatexTemplate.chinese]
 title = "國立臺灣科技大學 論文 LaTeX 模板"
 
 [pypiDIMG4MD]
 [pypiDIMG4MD.info]
-period_start = "2024.02"
 period_end = "2024.02"
+period_start = "2024.02"
 # project_type = "personal project"
 # external_link = 
 tags = ['Python', 'Markdown']
 weight = 2
 
 [[pypiDIMG4MD.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/pyimg4md"
+text = "GitHub Repository"
 
 [[pypiDIMG4MD.info.resource]]
-text = "PyPI"
 href = "https://py-dimg4md"
+text = "PyPI"
 
 [pypiDIMG4MD.english]
-title = "DIMG4MD"
 description = [
-    "A Python package for automatically download the image from the markdown file and save it to the local folder.",
+  "A Python package for automatically download the image from the markdown file and save it to the local folder.",
 ]
+title = "DIMG4MD"
 
 [pypiDIMG4MD.chinese]
 title = "DIMG4MD"
 # description = "..."
 
-[learnJulia]
-[learnJulia.info]
-period_start = "2024.01"
-period_end = "now"
-# project_type = "personal project"
-# external_link = 
-tags = ['Julia']
-weight = 2
+# [learnJulia]
+# [learnJulia.info]
+# period_end = "now"
+# period_start = "2024.01"
+# tags = ['Julia']
+# weight = 2
 
-[[learnJulia.info.resource]]
-text = "GitHub Repository"
-href = "https://github.com/hsiangjenli/learn-julia"
+# [[learnJulia.info.resource]]
+# href = "https://github.com/hsiangjenli/learn-julia"
+# text = "GitHub Repository"
 
-[learnJulia.english]
-title = "Learn Julia"
-description = ["Learning Julia Programming Language with a series of scripts."]
+# [learnJulia.english]
+# description = ["Learning Julia Programming Language with a series of scripts."]
+# title = "Learn Julia"
 
-[learnJulia.chinese]
-title = "學習 Julia"
-# description = "..."
-
+# [learnJulia.chinese]
+# title = "學習 Julia"
 
 [awesomeMetaheuristic]
 [awesomeMetaheuristic.info]
+period_end = "2024.01"
 period_start = "2024.01"
-period_end = "now"
 # project_type = "personal project"
 # external_link = 
 weight = 2
 
 [[awesomeMetaheuristic.info.resource]]
-text = "Website"
 href = "https://github.com/hsiangjenli/awesome-metaheuristic-and-its-application"
+text = "Website"
 
 [awesomeMetaheuristic.english]
-title = "Awesome Metaheuristic and its Applications"
 description = [
-    "A curated list of awesome metaheuristic and its applications resources.",
-    "Including the basic concepts of metaheuristic, the application of metaheuristic.",
-    "Also including the latest research papers about metaheuristic.",
+  "A curated list of awesome metaheuristic and its applications resources.",
+  "Including the basic concepts of metaheuristic, the application of metaheuristic.",
+  "Also including the latest research papers about metaheuristic.",
 ]
+title = "Awesome Metaheuristic and its Applications"
 
 [awesomeMetaheuristic.chinese]
 title = "Awesome - 啟發式演算法與應用"
@@ -207,23 +200,23 @@ title = "Awesome - 啟發式演算法與應用"
 
 [awesomeComplexSystem]
 [awesomeComplexSystem.info]
-period_start = "2023.12"
 period_end = "now"
+period_start = "2023.12"
 # project_type = "personal project"
 # external_link = "https://github.com/hsiangjenli/awesome-complex-system"
 weight = 2
 
 [[awesomeComplexSystem.info.resource]]
-text = "Website"
 href = "https://github.com/hsiangjenli/awesome-complex-system"
+text = "Website"
 
 [awesomeComplexSystem.english]
-title = "Awesome Complex System and Network Science"
 description = [
-    "A curated list of awesome complex system and network science resources.",
-    "Including the basic concepts of complex system and network science, the application of complex system and network science, like Graph Neural Network and Graph Database.",
-    "Also including the latest research papers about complex system and network science.",
+  "A curated list of awesome complex system and network science resources.",
+  "Including the basic concepts of complex system and network science, the application of complex system and network science, like Graph Neural Network and Graph Database.",
+  "Also including the latest research papers about complex system and network science.",
 ]
+title = "Awesome Complex System and Network Science"
 
 [awesomeComplexSystem.chinese]
 title = "Awesome - 複雜系統與網路科學"
@@ -231,39 +224,39 @@ title = "Awesome - 複雜系統與網路科學"
 
 [ntustcsieMLCybersecurity]
 [ntustcsieMLCybersecurity.info]
-period_start = "2023.09"
 period_end = "2023.12"
+period_start = "2023.09"
 # project_type = "class project"
 # external_link = ""
 tags = [
-    'Machine Learning',
-    'Cybersecurity',
-    'Adversarial Attack',
-    'CNN',
-    'Maleware Detection',
+  'Machine Learning',
+  'Cybersecurity',
+  'Adversarial Attack',
+  'CNN',
+  'Maleware Detection',
 ]
 # pdf = "https://drive.google.com/file/d/1e8d_MSq9L3k7YJNjAGVuhjGYujt4ICTV/view?usp=sharing"
 weight = 6
 
 [[ntustcsieMLCybersecurity.info.resource]]
-text = "Presentation Slide"
 href = "https://drive.google.com/file/d/1e8d_MSq9L3k7YJNjAGVuhjGYujt4ICTV/view?usp=sharing"
+text = "Presentation Slide"
 
 [ntustcsieMLCybersecurity.english]
-title = "Evasion Attack in Machine Learning"
 description = [
-    "Trying to use evasion attack to attack the CNN-based maleware detection model.",
-    "Need to add noise to the maleware sample to make the model misclassify the sample.",
-    "The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).",
+  "Trying to use evasion attack to attack the CNN-based maleware detection model.",
+  "Need to add noise to the maleware sample to make the model misclassify the sample.",
+  "The dataset is collected by ourselves (Using Cuckoo Sandbox and VirusShare).",
 ]
+title = "Evasion Attack in Machine Learning"
 
 [ntustcsieMLCybersecurity.chinese]
 title = "..."
 
 [2023IthomeIronmanChallenge]
 [2023IthomeIronmanChallenge.info]
-period_start = "2023.09"
 period_end = "2023.10"
+period_start = "2023.09"
 # project_type = "personal project"
 # external_link = "https://ithelp.ithome.com.tw/users/20132837/ironman/6927"
 # image = "https://github.com/hsiangjenli/hsiangjenli/assets/71996166/7d0927f8-c1ea-4c11-bf7e-f3fdff670e1a"
@@ -271,17 +264,17 @@ tags = ['Network Science', 'GNN', 'Paper Reading', '30 Days Challenge']
 weight = 2
 
 [[2023IthomeIronmanChallenge.info.resource]]
-text = "IT Home Ironman Challenge"
 href = "https://ithelp.ithome.com.tw/users/20132837/ironman/6927"
+text = "IT Home Ironman Challenge"
 # pdf = "..."
 
 [2023IthomeIronmanChallenge.english]
-title = "2023 IT home Ironman Challenge - AI and Data"
 description = [
-    "In this challenge, I had written 30 articles about Network Science and Graph Neural Network.",
-    "Including the basic concepts of Network Science, the application of Network Science, like Graph Neural Network and Graph Database.",
-    "Also including the latest research papers about Graph Neural Network.",
+  "In this challenge, I had written 30 articles about Network Science and Graph Neural Network.",
+  "Including the basic concepts of Network Science, the application of Network Science, like Graph Neural Network and Graph Database.",
+  "Also including the latest research papers about Graph Neural Network.",
 ]
+title = "2023 IT home Ironman Challenge - AI and Data"
 
 [2023IthomeIronmanChallenge.chinese]
 title = "2023 IT home 鐵人賽 - AI & Data"
@@ -289,105 +282,102 @@ title = "2023 IT home 鐵人賽 - AI & Data"
 
 [scsbSNC]
 [scsbSNC.info]
-period_start = "2023.07"
 period_end = "2023.08"
+period_start = "2023.07"
 # project_type = "personal project"
 # external_link = "https://github.com/hsiangjenli/social-network-crawler/"
 tags = [
-    'Web Scraping',
-    'Dynamic Web Scraping',
-    'Selenium',
-    'BeautifulSoup',
-    'playwright',
+  'Web Scraping',
+  'Dynamic Web Scraping',
+  'Selenium',
+  'BeautifulSoup',
+  'playwright',
 ]
 weight = 5
 
 [[scsbSNC.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/social-network-crawler/"
+text = "GitHub Repository"
 
 [scsbSNC.english]
-title = "Web Scraping : Social Network Crawler"
 description = [
-    "Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.",
-    "The data will be stored in MongoDB and can be used for further analysis.",
-    "These crawlers are only used for personal skill improvement.",
+  "Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.",
+  "The data will be stored in MongoDB and can be used for further analysis.",
+  "These crawlers are only used for personal skill improvement.",
 ]
+title = "Web Scraping : Social Network Crawler"
 
 [scsbSNC.chinese]
 title = "動態社群網路爬蟲"
 
-
 [twEKRS]
 [twEKRS.info]
-period_start = "2023.05"
 period_end = "2023.06"
+period_start = "2023.05"
 # project_type = "class project"
 # image = "image/rocket.svg"
 tags = [
-    'Graph Theory',
-    'Network',
-    'CKIP-transformer',
-    'Regular-Expression',
-    'POS-tagging',
-    'Fast API',
+  'Graph Theory',
+  'Network',
+  'CKIP-transformer',
+  'Regular-Expression',
+  'POS-tagging',
+  'Fast API',
 ]
 # pdf = "https://drive.google.com/file/d/1IXfgcc8a_FrKM8mhFT_ELxcTvrda5zqs/view?usp=sharing"
 # video = "https://youtu.be/T2dS-ZdDytc"
 weight = 6
 
 [[twEKRS.info.resource]]
-text = "Presentation Slide"
 href = "https://drive.google.com/file/d/1IXfgcc8a_FrKM8mhFT_ELxcTvrda5zqs/view?usp=sharing"
+text = "Presentation Slide"
 
 [[twEKRS.info.resource]]
-text = "Presentation Video"
 href = "https://youtu.be/T2dS-ZdDytc"
+text = "Presentation Video"
 
 [twEKRS.english]
-title = "Graph-based : Keywords Recommendation System"
 description = [
-    "Applying Network Science field to build a keywords recommendation system.",
+  "Applying Network Science field to build a keywords recommendation system.",
 ]
+title = "Graph-based : Keywords Recommendation System"
 
 [twEKRS.chinese]
 title = "基於網路圖的關鍵字推薦系統"
 # description = "..."
 
-
 [twFEFIP]
 [twFEFIP.info]
-period_start = "2022.11"
 period_end = "2022.12"
+period_start = "2022.11"
 # project_type = "class project"
 # image = "image/rocket.svg"
 tags = [
-    'SQLite',
-    'CKIP-transformer',
-    'Regular-Expression',
-    'POS-tagging',
-    'dimension-reduction',
-    'cluster',
+  'SQLite',
+  'CKIP-transformer',
+  'Regular-Expression',
+  'POS-tagging',
+  'dimension-reduction',
+  'cluster',
 ]
 weight = 2
 
 [twFEFIP.english]
-title = "Taiwan Famous Ecommerce : Find Identical Products"
 description = [
-    "Finding identical products from item's name is a quite challenging task.",
-    "Using Regular-Expression and CKIP-transformer to extract keywords from item's name.",
-    "And using dimension-reduction and cluster algorithms to find identical products.",
+  "Finding identical products from item's name is a quite challenging task.",
+  "Using Regular-Expression and CKIP-transformer to extract keywords from item's name.",
+  "And using dimension-reduction and cluster algorithms to find identical products.",
 ]
+title = "Taiwan Famous Ecommerce : Find Identical Products"
 
 [twFEFIP.chinese]
 title = "..."
 # description = "..."
 
-
 [aprioriJ104]
 [aprioriJ104.info]
-period_start = "2022.05"
 period_end = "2022.06"
+period_start = "2022.05"
 # project_type = "class project"
 # external_link = "https://hsiangjenli.gitlab.io/apriori-j104/README.html"
 # image = "https://i.imgur.com/bJS92RH.png"
@@ -395,63 +385,61 @@ tags = ['Web Scraping', 'pyvis', 'apyori', 'CKIP-transformer']
 weight = 6
 
 [[aprioriJ104.info.resource]]
-text = "Website"
 href = "https://hsiangjenli.gitlab.io/apriori-j104/README.html"
+text = "Website"
 
 [aprioriJ104.english]
-title = "Apriori J104"
 description = [
-    "An application for analyzing the skills required by the job market.",
-    "The data is crawled from 104 job bank and stored in MongoDB.",
-    "And the data will be processed by CKIP-transformer.",
-    "Finally, using apyori algorithm to find the association rules between skills.",
-    "These crawlers are only used for personal skill improvement.",
+  "An application for analyzing the skills required by the job market.",
+  "The data is crawled from 104 job bank and stored in MongoDB.",
+  "And the data will be processed by CKIP-transformer.",
+  "Finally, using apyori algorithm to find the association rules between skills.",
+  "These crawlers are only used for personal skill improvement.",
 ]
+title = "Apriori J104"
 
 [aprioriJ104.chinese]
 title = "工作技能分析系統"
 # description = "..."
 
-
 [POA]
 [POA.info]
-period_start = "2022.03"
 period_end = "2022.06"
+period_start = "2022.03"
 # project_type = "class project"
 # external_link = "https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project"
 # image = "image/rocket.svg"
 tags = [
-    'Web Scraping',
-    'Django',
-    'MongoDB',
-    'Bootstrap',
-    'plotly.js',
-    'Anue',
-    'TWSE',
+  'Web Scraping',
+  'Django',
+  'MongoDB',
+  'Bootstrap',
+  'plotly.js',
+  'Anue',
+  'TWSE',
 ]
 weight = 5
 
 [[POA.info.resource]]
-text = "GitLab Repository"
 href = "https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project"
+text = "GitLab Repository"
 
 [POA.english]
-title = "Financial Public Opinion Analysis"
 description = [
-    "Using Django to build a web application for analyzing financial public opinion.",
-    "The data is crawled from Anue and the data will be stored in MongoDB.",
-    "These crawlers are only used for personal skill improvement.",
+  "Using Django to build a web application for analyzing financial public opinion.",
+  "The data is crawled from Anue and the data will be stored in MongoDB.",
+  "These crawlers are only used for personal skill improvement.",
 ]
+title = "Financial Public Opinion Analysis"
 
 [POA.chinese]
 title = "輿情分析系統"
 # description = "..."
 
-
 [webANUE]
 [webANUE.info]
-period_start = "2022.04"
 period_end = "2022.04"
+period_start = "2022.04"
 # project_type = "personal project"
 # external_link = "https://gitlab.com/tuxedo-web-scraping/anue"
 # image = "https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg"
@@ -459,21 +447,20 @@ tags = ['Web Scraping', 'MongoDB']
 weight = 1
 
 [[webANUE.info.resource]]
-text = "GitLab Repository"
 href = "https://gitlab.com/tuxedo-web-scraping/anue"
+text = "GitLab Repository"
 
 [webANUE.english]
-title = "Web Scraping : Anue"
 description = ["These crawlers are only used for personal skill improvement"]
+title = "Web Scraping : Anue"
 
 [webANUE.chinese]
 title = "爬蟲 : Anue"
 
-
 [webTWSE]
 [webTWSE.info]
-period_start = "2021.12"
 period_end = "2022.04"
+period_start = "2021.12"
 # project_type = "personal project"
 # external_link = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
 # image = "image/rocket.svg"
@@ -481,21 +468,20 @@ tags = ['Web Scraping', 'SQLite', 'plotly']
 weight = 1
 
 [[webTWSE.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
+text = "GitHub Repository"
 
 [webTWSE.english]
-title = "Web Scraping : TWSE"
 description = ["These crawlers are only used for personal skill improvement"]
+title = "Web Scraping : TWSE"
 
 [webTWSE.chinese]
 title = "爬蟲 : 台灣證券交易所"
 
-
 [linebotStockInfo]
 [linebotStockInfo.info]
-period_start = "2020.10"
 period_end = "2021.07"
+period_start = "2020.10"
 # project_type = "personal project"
 # external_link = "https://github.com/hsiangjenli/LineBot-STOCK.tw-Public"
 # image = "https://camo.githubusercontent.com/a171e8f00d35f451876bc4165e5c05a8453fc8bfa553d4df88530b5020ee175f/68747470733a2f2f692e696d6775722e636f6d2f444c524b5871372e706e67"
@@ -503,12 +489,12 @@ tags = ['Line-Bot', 'Heroku', 'mplfinance', 'yfinance']
 weight = 3
 
 [[linebotStockInfo.info.resource]]
-text = "GitHub Repository"
 href = "https://github.com/hsiangjenli/LineBot-STOCK.tw-Public"
+text = "GitHub Repository"
 
 [linebotStockInfo.english]
-title = "Line-Bot : Stock Info"
 description = ["A Line-Bot for getting the stock information."]
+title = "Line-Bot : Stock Info"
 
 [linebotStockInfo.chinese]
 title = "Line-Bot : 股票資訊"
