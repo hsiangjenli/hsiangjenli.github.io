@@ -40,6 +40,9 @@ AWARD = TomlFile.load("config/_award.toml").entries
 BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/getPosts/").json()[
     "data"
 ]["posts"]
+# Filter out the post with [chatgpt] tag
+BLOG_POST = [x for x in BLOG_POST if "[chatgpt]" not in x["title"].lower()]
+# Sort the post by date
 BLOG_POST = sorted(BLOG_POST, key=lambda x: x["date"], reverse=True)[:10]
 
 # == webpage ==========================================================================================================
