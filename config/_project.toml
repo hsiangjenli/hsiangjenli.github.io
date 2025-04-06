@@ -3,7 +3,7 @@
 
 [python-package-template]
 [python-package-template.info]
-period_end = "now"
+period_end = "2025.03"
 period_start = "2025.02"
 
 tags = ['Python', 'DevOps', 'GitHub Actions', 'CI/CD', 'Sphinx']
@@ -58,7 +58,7 @@ title = "Star2Review"
 
 [awesomeLLM]
 [awesomeLLM.info]
-period_end = "now"
+period_end = "2024.10"
 period_start = "2024.09"
 
 tags = ["LLM", "Paper Reading"]
@@ -200,7 +200,7 @@ title = "Awesome - 啟發式演算法與應用"
 
 [awesomeComplexSystem]
 [awesomeComplexSystem.info]
-period_end = "now"
+period_end = "2024.11"
 period_start = "2023.12"
 # project_type = "personal project"
 # external_link = "https://github.com/hsiangjenli/awesome-complex-system"

@@ -5,15 +5,15 @@
     
     [scsb_digital_banking_da.english]
     title = "Shanghai Commercial and Savings Bank"
-    headline = "Data Analyst @ SCSB Digital Banking Department"
+    headline = "Data Analyst @ SCSB Digital Banking Department - AI Lab"
     location = "Taipei, Taiwan"
-    # description = ["Research"]
+    description = ["Composed Work Instructions and Operation Guides"]
 
     [scsb_digital_banking_da.chinese]
     title = "上海商業儲蓄銀行"
     headline = "數據分析師 @ SCSB 數位金融事業部"
     location = "臺北, 臺灣"
-    description = ["研究"]
+    description = ["撰寫工作說明書及作業手冊"]
 
 [scsb_digital_banking]
     [scsb_digital_banking.info]
@@ -35,6 +35,17 @@
     [ntust_simslab.info]
     period_start = "2022.09"
     period_end = "2024.08"
+
+    [[ntust_simslab.info.resource]]
+    href = "https://sims.im.ntust.edu.tw/simslabweb/en/introduction/"
+    text = "SiMS Lab"
+    fontawesome = "fa-solid fa-flask"
+    
+    [[ntust_simslab.info.resource]]
+    href = "https://sims.im.ntust.edu.tw/simslabweb/en/people/"
+    text = "Collaborative IT Blog by Graduate Lab Members"
+    fontawesome = "fa-solid fa-users-line"
+    
     
     [ntust_simslab.english]
     title = "System Informatics and Management Science - SiMS Lab"
@@ -44,17 +55,22 @@
     title = "系統資訊與管理科學實驗室 - SiMS Lab"
 
 
-# [sharing_programming_knowledge]
-#     [sharing_programming_knowledge.info]
-#     period_start = "2020.01"
-#     period_end = "Now"
+[sharing_programming_knowledge]
+    [sharing_programming_knowledge.info]
+    period_start = "2020.01"
+    period_end = "Now"
 
-#     [sharing_programming_knowledge.english]
-#     title = "Sharing Programming Knowledge"
-#     headline = "Enthusiast @ Knowledge Sharing"
+    [[sharing_programming_knowledge.info.resource]]
+    href = "https://hsiangjenli.github.io/blog"
+    text = "IT Blog"
 
-#     [sharing_programming_knowledge.chinese]
-#     title = "撰寫 IT Blog"
+    [sharing_programming_knowledge.english]
+    title = "Sharing Programming Knowledge"
+    headline = "Enthusiast @ Knowledge Sharing"
+    description = ["You don't have to be great to start, but you have to start to be great"]
+
+    [sharing_programming_knowledge.chinese]
+    title = "撰寫 IT Blog"
 
 
 # [nkust_ccet_ta]
