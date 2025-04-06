@@ -5,7 +5,17 @@
             <text class="larger b">{{ exp.english.title }} </text> <em class="annot medium"> - {{ exp.info.period_start_year_month }} ~ {{ exp.info.period_end_year_month }}</em><br>
             {% if exp.english.headline %}
             <ul>
-                <li class="annot large">{{ exp.english.headline }}</li>
+                <li class="annot large">
+                    {{ exp.english.headline }}
+                        {% if exp.info.resource %} 
+                        &nbsp;
+                        (
+                            {% for resource in exp.info.resource %}
+                            {{ resource.html | safe }} {% if not loop.last %},&nbsp;{% endif %}
+                            {% endfor %}
+                        )
+                        {% endif %}
+                </li>
                 {% for des in exp.english.description %}
                     <li class="annot large">{{ des }}</li>
                 {% endfor %}
