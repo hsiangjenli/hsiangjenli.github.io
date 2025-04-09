@@ -1,3 +1,13 @@
+[dvc]
+    [dvc.basic_info]
+        name = "iterative/dvc.org"
+        external_link = "https://github.com/iterative/dvc.org"
+    
+    [dvc.pull_request]
+        history = [
+            "https://github.com/iterative/dvc.org/pull/5352",
+        ]
+
 [memgraph-card-fraud]
     [memgraph-card-fraud.basic_info]
         name = "memgraph/card-fraud"

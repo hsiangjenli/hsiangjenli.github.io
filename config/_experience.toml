@@ -1,7 +1,7 @@
 [scsb_digital_banking_da]
     [scsb_digital_banking_da.info]
     period_start = "2024.09"
-    period_end = "Now"
+    period_end = "2025.04"
     
     [scsb_digital_banking_da.english]
     title = "Shanghai Commercial and Savings Bank"
