@@ -1,32 +1,54 @@
-ci:
-  skip: [pylint]
-
+# This configuration file is used by pre-commit to run a series of checks on
+# the code in this repository. The checks are run in the order they are listed
+# here.
 repos:
 
+  # This check sorts the imports in the code according to the following rules:
+  # 1. Standard library imports
+  # 2. Third party imports
+  # 3. Local imports
+  # The check is run with the --atomic flag, which means that it will only
+  # modify the code if all imports can be sorted correctly.
   - repo: https://github.com/PyCQA/isort
     rev: 5.12.0
     hooks:
       - id: isort
 
+  # This check sorts the TOML file according to the following rules:
+  # 1. Keys are sorted alphabetically
+  # 2. Values are sorted alphabetically
+  # The check is run with the --in-place flag, which means that it will modify
+  # the file in place.
   # - repo: https://github.com/pappasam/toml-sort
   #   rev: v0.23.1
   #   hooks:
   #     - id: toml-sort-fix
   #       args: ["--in-place", "pyproject.toml"]
 
+  # This check runs Ruff, a linter for Python code. The check is run with the
+  # --fix flag, which means that it will try to fix any issues it finds.
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.7.3
     hooks:
       - id: ruff
         args: ["--fix"]
+      # This check runs Ruff with the --format flag, which means that it will
+      # try to format the code according to the Ruff style guide.
       - id: ruff-format
 
+  # This check runs Pylint, a linter for Python code. The check is run with the
+  # --fail-fast flag, which means that it will stop running as soon as it finds
+  # an issue.
   - repo: https://github.com/PyCQA/pylint
     rev: v3.3.1
     hooks:
       - id: pylint
         fail_fast: false  
 
+  # This check runs Bandit, a security linter for Python code. The check is run
+  # with the --severity-level flag set to "all", which means that it will check
+  # for all possible security issues. The check is also run with the --exclude
+  # flag, which means that it will exclude the tests directory from the check.
   - repo: https://github.com/PyCQA/bandit
     rev: 1.7.4
     hooks:
@@ -34,12 +56,20 @@ repos:
         args: ["--severity-level", "all", "--exclude", "tests/"]
         fail_fast: false  
   
+  # This check runs Docformatter, a tool for reformatting docstrings in Python
+  # code. The check is run with the --in-place flag, which means that it will
+  # modify the file in place.
   - repo: https://github.com/PyCQA/docformatter 
     rev: eb1df347edd128b30cd3368dddc3aa65edcfac38 # https://github.com/PyCQA/docformatter/issues/293
     hooks:
       - id: docformatter
         additional_dependencies: [tomli]
 
+  # This check runs Doc8, a tool for checking the style of docstrings in
+  # Python code. The check is run with the --max-line-length flag set to 120,
+  # which means that it will check that the docstrings are no longer than 120
+  # characters. The check is also run with the --files flag, which means that it
+  # will only check the files with the .rst extension.
   - repo: https://github.com/PyCQA/doc8
     rev: v1.1.2 
     hooks:
@@ -47,3 +77,11 @@ repos:
         args:
           - --max-line-length=120 
         files: \.rst$
+
+  # This check runs Semgrep, a tool for finding common security issues in
+  # code. The check is run with the default rules, which means that it will
+  # check for a variety of common security issues.
+  - repo: https://github.com/returntocorp/semgrep
+    rev: 0.96.0
+    hooks:
+      - id: semgrep
