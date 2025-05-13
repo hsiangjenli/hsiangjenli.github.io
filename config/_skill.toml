@@ -190,6 +190,44 @@
         ["CI/CD".githubActions.info]
         level = "Beginner"
 
+    ["CI/CD".k8s]
+        ["CI/CD".k8s.info]
+        level = "Beginner"
+
+        ["CI/CD".k8s.info.image]
+        text = "Kubernetes (k8s)"
+        fontawesome = "fa-solid fa-dharmachakra"
+
+        ["CI/CD".k8s.english]
+        title = "Kubernetes (k8s)"
+        description = [
+            "Familiar with using k3s to operate kubectl commands, including deployment and management.",
+            "k3s is a lightweight version of Kubernetes (k8s), fully compatible with kubectl.",
+        ]
+
+        ["CI/CD".k8s.chinese]
+        title = "Kubernetes (k8s)"
+        description = [
+            "熟悉使用 k3s 執行 kubectl 指令，包含部署與管理。",
+            "k3s 是 Kubernetes (k8s) 的輕量版，指令相容。",
+        ]
+
+    ["CI/CD".azureDevOps]
+        ["CI/CD".azureDevOps.info]
+        level = "Beginner"
+
+        ["CI/CD".azureDevOps.info.image]
+        text = "Azure DevOps"
+        fontawesome = "fa-brands fa-microsoft"
+
+        ["CI/CD".azureDevOps.english]
+        title = "Azure DevOps"
+        description = ["Familiar with setting up personal Agent on Azure DevOps."]
+
+        ["CI/CD".azureDevOps.chinese]
+        title = "Azure DevOps"
+        description = ["能夠在 Azure DevOps 上建立個人 Agent。"]
+
         ["CI/CD".githubActions.info.image]
         text = "Github Actions"
         fontawesome = "fa-solid fa-code-compare"
