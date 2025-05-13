@@ -1,52 +1,54 @@
-name: 'Deploy my static website'
+# 部署靜態網站的 GitHub Actions Workflow
+name: 'Deploy my static website'  # workflow 名稱，顯示於 GitHub Actions 頁面
 
 on:
-  schedule: [{cron: "0 0 * * 0"}]
+  # 觸發條件：每週日的 00:00 自動執行，以及 main 分支有 push 時自動執行
+  schedule: [{cron: "0 0 * * 0"}]  # 定期排程（每週日）
   push:
-    branches: [main]
+    branches: [main]  # 僅監控 main 分支的 push 行為
 
 jobs:
   sync:
     # ==============================================================================================================================
-    name: 'Deploy my Static Website'
-    runs-on: ubuntu-latest
+    name: 'Deploy my Static Website'  # job 名稱
+    runs-on: ubuntu-latest  # 指定執行環境為最新的 Ubuntu
     defaults:
       run:
-        shell: bash
+        shell: bash  # 預設 shell 為 bash
     # ==============================================================================================================================
     steps:
     # ------------------------------------------------------------------------------------------------------------------------------
-    - name: Checkout Repo
-      uses: actions/checkout@v4
+    - name: Checkout Repo  # 步驟 1：檢出原始碼
+      uses: actions/checkout@v4  # 使用官方 checkout action 取得專案程式碼
     # ------------------------------------------------------------------------------------------------------------------------------    
-    - name: Setup Python
+    - name: Setup Python  # 步驟 2：設定 Python 環境
       uses: actions/setup-python@v4
       with:
-        python-version: 3.9
+        python-version: 3.9  # 指定 Python 版本為 3.9
     # ------------------------------------------------------------------------------------------------------------------------------
-    - name: Install requirements
+    - name: Install requirements  # 步驟 3：安裝相依套件
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        python -m pip install --upgrade pip  # 升級 pip
+        pip install -r requirements.txt  # 安裝 requirements.txt 內所有套件
     # ------------------------------------------------------------------------------------------------------------------------------
-    - name: Run Python code to generate static site
+    - name: Run Python code to generate static site  # 步驟 4：執行自動化腳本產生靜態網站內容
       run: |
-        python auto.py
+        python auto.py  # 執行 auto.py，自動產生靜態內容
     # ------------------------------------------------------------------------------------------------------------------------------
-    # - name: Setup Docker Image
+    # - name: Setup Docker Image  # （可選）步驟 5：建立 Docker 環境產生 PDF（目前註解）
     #   uses: addnab/docker-run-action@v3
     #   with:
-    #     image: hsiangjenli/xelatex:20240801
-    #     options: -v ${{ github.workspace }}:/app -w /app --user=root
-    #     run: xelatex cv_eng.tex --output-directory=static/pdf
+    #     image: hsiangjenli/xelatex:20240801  # 指定自定義 XeLaTeX Docker image
+    #     options: -v ${{ github.workspace }}:/app -w /app --user=root  # 掛載專案目錄並以 root 執行
+    #     run: xelatex cv_eng.tex --output-directory=static/pdf  # 產生 PDF 檔案
     # ------------------------------------------------------------------------------------------------------------------------------
-    - name: Copy Static Folder
+    - name: Copy Static Folder  # 步驟 6：複製產生好的靜態資源到發佈目錄
       run: cp -r static/* hsiangjenli.github.io/static/
-    # - name: Copy file in publish directory
+    # - name: Copy file in publish directory  # （可選）複製單一檔案到發佈目錄（目前註解）
     #   run: cp cv_eng.pdf hsiangjenli.github.io/static/pdf
     # ------------------------------------------------------------------------------------------------------------------------------
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy  # 步驟 7：部署到 GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3  # 使用 peaceiris 的 gh-pages action
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./hsiangjenli.github.io
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # 用 GitHub 提供的權杖自動部署
+        publish_dir: ./hsiangjenli.github.io  # 指定要發佈的目錄
