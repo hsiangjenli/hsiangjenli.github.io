@@ -1,9 +1,11 @@
+PYTHON := $(shell command -v python3 2>/dev/null || command -v python)
+
 html:
-	python auto.py --dev True
+	$(PYTHON) auto.py --dev True
 	cp -r static/* hsiangjenli.github.io/static
 
 gpa:
-	python3 core/gpa.py \
+	$(PYTHON) core/gpa.py \
 		--input config/gpa.xlsx \
 		--sheet NTUST-CSIE \
 		--bg-logo https://hsiangjenli.github.io/static/image/ntust.png\
