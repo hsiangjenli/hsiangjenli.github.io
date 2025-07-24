@@ -1,3 +1,18 @@
+[cathay_financial_holdings_devops]
+    [cathay_financial_holdings_devops.info]
+    period_start = "2025.04"
+    period_end = "now"
+
+    [cathay_financial_holdings_devops.english]
+    title = "Cathay Financial Holdings"
+    headline = "DevOps Engineer @ Open Source Innovation Group"
+    location = "Taipei, Taiwan"
+
+    [cathay_financial_holdings_devops.chinese]
+    title = "國泰金控"
+    headline = "DevOps 工程師 @ 開源創新發展小組"
+    location = "臺北, 臺灣"
+
 [scsb_digital_banking_da]
     [scsb_digital_banking_da.info]
     period_start = "2024.09"
@@ -23,7 +38,7 @@
     [scsb_digital_banking.english]
     title = "Shanghai Commercial and Savings Bank"
     headline = "Intern @ SCSB Digital Banking Department"
-    description = ["Developed a Public Opinion Analysis System for the SCSB"]
+    description = ["Designed and implemented a sentiment analysis system for SCSB to monitor and interpret public opinion trends"]
     location = "Taipei, Taiwan"
 
     [scsb_digital_banking.chinese]
