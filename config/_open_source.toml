@@ -41,7 +41,8 @@
 [ansible-documentation]
     [ansible-documentation.basic_info]
         name = "ansible/ansible-documentation"
-        external_link = "https://github.com/ansible/ansible-documentation/pull/2062"
+        external_link = "https://github.com/ansible/ansible-documentation"
+
     [ansible-documentation.pull_request]
         history = [
             "https://github.com/ansible/ansible-documentation/pull/2062",
@@ -50,11 +51,21 @@
 [kelvins-awesome-dataops]
     [kelvins-awesome-dataops.basic_info]
         name = "kelvins/awesome-dataops"
-        external_link = ""
+        external_link = "https://github.com/kelvins/awesome-dataops"
     
     [kelvins-awesome-dataops.pull_request]
         history = [
             "https://github.com/kelvins/awesome-dataops/pull/5",
             "https://github.com/kelvins/awesome-dataops/pull/7",
             "https://github.com/kelvins/awesome-dataops/pull/8",
+        ]
+
+[hannibal046-awesome-llm]
+    [hannibal046-awesome-llm.basic_info]
+        name = "Hannibal046/Awesome-LLM"
+        external_link = "https://github.com/Hannibal046/Awesome-LLM"
+    
+    [hannibal046-awesome-llm.pull_request]
+        history = [
+            "https://github.com/Hannibal046/Awesome-LLM/pull/235",
         ]
