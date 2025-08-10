@@ -3,6 +3,16 @@
     period_start = "2025.04"
     period_end = "now"
 
+    [[cathay_financial_holdings_devops.info.resource]]
+    href = "https://medium.com/osi-tech-blog/subpage/opensource"
+    text = "OSI Tech Blog"
+    fontawesome = "fa-brands fa-medium"
+
+    [[cathay_financial_holdings_devops.info.resource]]
+    href = "https://www.facebook.com/groups/monsterossie"
+    text = "凱西島的怪獸們"
+    fontawesome = "fa-solid fa-people-group"
+
     [cathay_financial_holdings_devops.english]
     title = "Cathay Financial Holdings"
     headline = "DevOps Engineer @ Open Source Innovation Group"
