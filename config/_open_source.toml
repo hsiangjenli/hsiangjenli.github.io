@@ -35,7 +35,8 @@
 
     [python-docs-zh-tw.pull_request]
         history = [
-            "https://github.com/python/python-docs-zh-tw/pull/609"
+            "https://github.com/python/python-docs-zh-tw/pull/609",
+            "https://github.com/python/python-docs-zh-tw/pull/1139"
         ]
 
 [ansible-documentation]
