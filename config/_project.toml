@@ -1,6 +1,34 @@
 # odd number is finance related project
 # even number is computer science related project
 
+[2025IthomeIronmanChallenge]
+[2025IthomeIronmanChallenge.info]
+period_end = "2025.09"
+period_start = "2025.09"
+
+tags = ['AI', 'LLM', '30 Days Challenge']
+weight = 2
+
+[[2025IthomeIronmanChallenge.info.resource]]
+href = "https://ithelp.ithome.com.tw/users/20132837/ironman/8263"
+text = "IT Home Ironman Challenge"
+
+[[2025IthomeIronmanChallenge.info.resource]]
+href = "https://github.com/hsiangjenli/2025-it-help-ironman"
+text = "GitHub Repository"
+
+[[2025IthomeIronmanChallenge.info.resource]]
+href = "https://hsiangjenli.github.io/2025-it-help-ironman/"
+text = "GitHub Pages"
+
+[2025IthomeIronmanChallenge.english]
+description = [
+]
+title = "2025 IT home Ironman Challenge - GenAI"
+
+[2025IthomeIronmanChallenge.chinese]
+title = "2025 IT home 鐵人賽 - GenAI"
+# description = "..."
 [python-package-template]
 [python-package-template.info]
 period_end = "2025.03"

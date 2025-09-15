@@ -42,6 +42,9 @@ BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/getPosts/").jso
 ]["posts"]
 # Filter out the post with [chatgpt] tag
 BLOG_POST = [x for x in BLOG_POST if "[chatgpt]" not in x["title"].lower()]
+
+# Filter out the post _path containing "chinese" or "zh-tw"
+BLOG_POST = [x for x in BLOG_POST if "chinese" not in x["_path"].lower() and "zh-tw" not in x["_path"].lower()]
 # Sort the post by date
 BLOG_POST = sorted(BLOG_POST, key=lambda x: x["date"], reverse=True)[:10]
 

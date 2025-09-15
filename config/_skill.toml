@@ -190,27 +190,27 @@
         ["CI/CD".githubActions.info]
         level = "Beginner"
 
-    ["CI/CD".k8s]
-        ["CI/CD".k8s.info]
-        level = "Beginner"
+    # ["CI/CD".k8s]
+    #     ["CI/CD".k8s.info]
+    #     level = "Beginner"
 
-        ["CI/CD".k8s.info.image]
-        text = "Kubernetes (k8s)"
-        fontawesome = "fa-solid fa-dharmachakra"
+    #     ["CI/CD".k8s.info.image]
+    #     text = "Kubernetes (k8s)"
+    #     fontawesome = "fa-solid fa-dharmachakra"
 
-        ["CI/CD".k8s.english]
-        title = "Kubernetes (k8s)"
-        description = [
-            "Familiar with using k3s to operate kubectl commands, including deployment and management.",
-            "k3s is a lightweight version of Kubernetes (k8s), fully compatible with kubectl.",
-        ]
+    #     ["CI/CD".k8s.english]
+    #     title = "Kubernetes (k8s)"
+    #     description = [
+    #         "Familiar with using k3s to operate kubectl commands, including deployment and management.",
+    #         "k3s is a lightweight version of Kubernetes (k8s), fully compatible with kubectl.",
+    #     ]
 
-        ["CI/CD".k8s.chinese]
-        title = "Kubernetes (k8s)"
-        description = [
-            "熟悉使用 k3s 執行 kubectl 指令，包含部署與管理。",
-            "k3s 是 Kubernetes (k8s) 的輕量版，指令相容。",
-        ]
+    #     ["CI/CD".k8s.chinese]
+    #     title = "Kubernetes (k8s)"
+    #     description = [
+    #         "熟悉使用 k3s 執行 kubectl 指令，包含部署與管理。",
+    #         "k3s 是 Kubernetes (k8s) 的輕量版，指令相容。",
+    #     ]
 
     ["CI/CD".azureDevOps]
         ["CI/CD".azureDevOps.info]
@@ -285,19 +285,19 @@
         ["CI/CD".GitOps.chinese]
         title = "GitOps"
 
-    ["CI/CD".Ansible]
-        ["CI/CD".Ansible.info]
-        level = "Beginner"
+    # ["CI/CD".Ansible]
+    #     ["CI/CD".Ansible.info]
+    #     level = "Beginner"
 
-        ["CI/CD".Ansible.info.image]
-        text = "Ansible"
-        fontawesome = "fa-solid fa-a"
+    #     ["CI/CD".Ansible.info.image]
+    #     text = "Ansible"
+    #     fontawesome = "fa-solid fa-a"
 
-        ["CI/CD".Ansible.english]
-        title = "Ansible"
+    #     ["CI/CD".Ansible.english]
+    #     title = "Ansible"
 
-        ["CI/CD".Ansible.chinese]
-        title = "Ansible"
+    #     ["CI/CD".Ansible.chinese]
+    #     title = "Ansible"
 
 [Platform]
     [Platform.ubuntu]
