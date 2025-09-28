@@ -37,14 +37,11 @@ RI = TomlFile.load("config/_research.toml").entries
 SIDE_PROJECT = TomlFile.load("config/_project.toml").entries
 PULL_REQUEST = tutils.load_toml("config/_open_source.toml")
 AWARD = TomlFile.load("config/_award.toml").entries
-BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/getPosts/").json()[
-    "data"
-]["posts"]
+BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/enhanced/getPosts/").json()["data"]["posts"]
 # Filter out the post with [chatgpt] tag
 BLOG_POST = [x for x in BLOG_POST if "[chatgpt]" not in x["title"].lower()]
-
-# Filter out the post _path containing "chinese" or "zh-tw"
-BLOG_POST = [x for x in BLOG_POST if "chinese" not in x["_path"].lower() and "zh-tw" not in x["_path"].lower()]
+# Keep only the English post
+BLOG_POST = [x for x in BLOG_POST if "en" in x["lang"].lower()]
 # Sort the post by date
 BLOG_POST = sorted(BLOG_POST, key=lambda x: x["date"], reverse=True)[:10]
 
