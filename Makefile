@@ -1,7 +1,7 @@
 PYTHON := $(shell command -v python3 2>/dev/null || command -v python)
 
 html:
-	$(PYTHON) auto.py --dev True
+	uv run auto.py --dev True
 	cp -r static/* hsiangjenli.github.io/static
 
 gpa:
