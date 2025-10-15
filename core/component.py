@@ -6,6 +6,11 @@ from typing import ClassVar, Optional, Union
 import toml
 from pydantic import AnyHttpUrl, BaseModel, ConfigDict, Field, field_validator
 
+class RepoStatus(Enum):
+    ACTIVE = "active"
+    DONE = "done"
+    ARCHIVED = "archived"
+
 
 class FontAwesomeIcon(Enum):
     PDF = "fa-solid fa-file-pdf"
@@ -82,6 +87,7 @@ class HtmlIcon(BaseModel):
 class EntryInfo(BaseModel):
     period_start: Optional[Union[datetime.date, str]] = Field("Now")
     period_end: Optional[Union[datetime.date, str]] = Field("Now", alias="graduation")
+    status: Optional[RepoStatus] = RepoStatus.DONE
 
     resource: Optional[list[HtmlIcon]] = []
 
@@ -90,6 +96,19 @@ class EntryInfo(BaseModel):
     image: HtmlIcon = None
 
     model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    @field_validator("status")
+    def check_status(cls, value):
+        if value is None:
+            return RepoStatus.DONE
+        if isinstance(value, str):
+            value = value.lower()
+            if value == "active":
+                return RepoStatus.ACTIVE
+            elif value == "archived":
+                return RepoStatus.ARCHIVED
+            else:
+                raise ValueError(f"Invalid status: {value}")
 
     @field_validator("period_start", "period_end")
     def parse_date(cls, value):

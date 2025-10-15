@@ -4,32 +4,32 @@
 
         <ul class="annot">
             {% for project in SIDE_PROJECT %}
-                <li>
+                {% if project.info.status.value == "done" %}
 
-                    <text class="annot large" style="font-family: monospace;">
-                        {{ project.info.period_start }} ~ {{ project.info.period_end_year_month_equal_now }} - 
-                        {% for resource in project.info.resource %}
-                            {{ resource.icon | safe }} {% if not loop.last %}, {% endif %}
-                        {% endfor %}
-                    </text><br>
-                    
-                    <text class="large b">{{ project.english.title }}</text>  &nbsp;
+                        <text class="annot large" style="font-family: monospace;">
+                            {{ project.info.period_start }} ~ {{ project.info.period_end_year_month_equal_now }} - 
+                            {% for resource in project.info.resource %}
+                                {{ resource.icon | safe }} {% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        </text><br>
+                        
+                        <text class="large b">{{ project.english.title }}</text>  &nbsp;
 
-                    <text class="annot" style="font-size: small;">
-                        {% for tag in project.info.tags %} 
-                            <span style="background-color: #ddd; border-radius: 1rem; padding-left: .6rem; padding-right: .6rem; padding-top: .2rem; padding-bottom: .2rem; text-align: center; white-space: nowrap;">
-                                {{ tag }}
-                            </span>{% if not loop.last %}&nbsp;{% endif %}
-                        {% endfor %}
-                    </text> <br>
+                        <text class="annot" style="font-size: small;">
+                            {% for tag in project.info.tags %} 
+                                <span style="background-color: #ddd; border-radius: 1rem; padding-left: .6rem; padding-right: .6rem; padding-top: .2rem; padding-bottom: .2rem; text-align: center; white-space: nowrap;">
+                                    {{ tag }}
+                                </span>{% if not loop.last %}&nbsp;{% endif %}
+                            {% endfor %}
+                        </text> <br>
 
-                    <ul>
-                        {% for desc in project.english.description %}
-                            <li class="large" style="list-style-type: square;">{{ desc }}</li>
-                        {% endfor %}
-                    </ul>
-
-                </li>
+                        <ul>
+                            {% for desc in project.english.description %}
+                                <li class="large" style="list-style-type: square;">{{ desc }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endif %}
             {% endfor %}
         </ul>
 

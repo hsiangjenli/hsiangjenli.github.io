@@ -10,12 +10,12 @@ tags = ['AI', 'LLM', '30 Days Challenge']
 weight = 2
 
 [[2025IthomeIronmanChallenge.info.resource]]
-href = "https://ithelp.ithome.com.tw/users/20132837/ironman/8263"
-text = "IT Home Ironman Challenge"
-
-[[2025IthomeIronmanChallenge.info.resource]]
 href = "https://github.com/hsiangjenli/2025-it-help-ironman"
 text = "GitHub Repository"
+
+[[2025IthomeIronmanChallenge.info.resource]]
+href = "https://ithelp.ithome.com.tw/users/20132837/ironman/8263"
+text = "IT Home Ironman Challenge"
 
 [[2025IthomeIronmanChallenge.info.resource]]
 href = "https://hsiangjenli.github.io/2025-it-help-ironman/"
@@ -88,6 +88,7 @@ title = "Star2Review"
 [awesomeLLM.info]
 period_end = "2024.10"
 period_start = "2024.09"
+status = "archived"
 
 tags = ["LLM", "Paper Reading"]
 weight = 2
@@ -206,6 +207,7 @@ title = "DIMG4MD"
 [awesomeMetaheuristic.info]
 period_end = "2024.01"
 period_start = "2024.01"
+status = "archived"
 # project_type = "personal project"
 # external_link = 
 weight = 2
@@ -230,6 +232,7 @@ title = "Awesome - 啟發式演算法與應用"
 [awesomeComplexSystem.info]
 period_end = "2024.11"
 period_start = "2023.12"
+status = "archived"
 # project_type = "personal project"
 # external_link = "https://github.com/hsiangjenli/awesome-complex-system"
 weight = 2
