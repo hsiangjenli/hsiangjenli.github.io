@@ -1,0 +1,13 @@
+[project]
+name = "hsiangjenli-github-io"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "jinja2>=3.1.6",
+    "pydantic>=2.12.3",
+    "requests>=2.32.5",
+    "toml>=0.10.2",
+]
