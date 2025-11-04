@@ -1,3 +1,13 @@
+[safety-research-petri]
+    [safety-research-petri.basic_info]
+        name = "safety-research/petri"
+        external_link = "https://github.com/safety-research/petri"
+    
+    [safety-research-petri.pull_request]
+        history = [
+            "https://github.com/safety-research/petri/pull/15",
+        ]
+
 [dvc]
     [dvc.basic_info]
         name = "iterative/dvc.org"
