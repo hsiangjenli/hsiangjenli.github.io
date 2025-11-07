@@ -6,6 +6,7 @@
     [safety-research-petri.pull_request]
         history = [
             "https://github.com/safety-research/petri/pull/15",
+            "https://github.com/safety-research/petri/pull/16",
         ]
 
 [dvc]
