@@ -1,3 +1,13 @@
+[kubernetes-sigs-headlamp]
+    [kubernetes-sigs-headlamp.basic_info]
+        name = "kubernetes-sigs/headlamp"
+        external_link = "https://github.com/kubernetes-sigs/headlamp"
+    
+    [kubernetes-sigs-headlamp.pull_request]
+        history = [
+            "https://github.com/kubernetes-sigs/headlamp/pull/4206",
+        ]
+        
 [safety-research-petri]
     [safety-research-petri.basic_info]
         name = "safety-research/petri"
@@ -47,7 +57,8 @@
     [python-docs-zh-tw.pull_request]
         history = [
             "https://github.com/python/python-docs-zh-tw/pull/609",
-            "https://github.com/python/python-docs-zh-tw/pull/1139"
+            "https://github.com/python/python-docs-zh-tw/pull/1139",
+            "https://github.com/python/python-docs-zh-tw/pull/1176",
         ]
 
 [ansible-documentation]
@@ -70,6 +81,7 @@
             "https://github.com/kelvins/awesome-dataops/pull/5",
             "https://github.com/kelvins/awesome-dataops/pull/7",
             "https://github.com/kelvins/awesome-dataops/pull/8",
+            "https://github.com/kelvins/awesome-dataops/pull/12",
         ]
 
 [hannibal046-awesome-llm]
