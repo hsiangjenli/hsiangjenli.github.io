@@ -1,4 +1,18 @@
 [Language]
+    [Language.java]
+        [Language.java.info]
+        level = "Beginner"
+        
+        [Language.java.info.image]
+        text = "Java"
+        fontawesome = "fa-brands fa-java"
+
+        [Language.java.english]
+        title = "Java"
+
+        [Language.java.chinese]
+        title = "Java"
+
     [Language.python]
         [Language.python.info]
         level = "Advanced"
@@ -68,6 +82,19 @@
     #     title = "Django"
     #     description = "..."
 
+    [Website.springboot]
+        [Website.springboot.info]
+        level = "Beginner"
+        
+        [Website.springboot.info.image]
+        text = "Spring Boot"
+        fontawesome = "fa-solid fa-power-off"
+
+        [Website.springboot.english]
+        title = "Spring Boot"
+
+        [Website.springboot.chinese]
+        title = "Spring Boot"
 
     [Website.fastapi]
         [Website.fastapi.info]
@@ -342,3 +369,4 @@
 
         [Platform.windows.chinese]
         title = "Windows"
+
