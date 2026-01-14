@@ -2,7 +2,7 @@
     <div class="container">
         <h3>Skill</h3>
         {% for category in SKILL %}
-            <text class="larger b">{{ category | replace('_', '/') }}</text> <br>
+            <h4 class="larger b">{{ category | replace('_', '/') }}</h4>
             {% for skill in SKILL[category] %}
                 <text class="annot large b">{{ skill.info.image.icon | safe }} {{ skill.english.title }}</text>
                 <ul>
