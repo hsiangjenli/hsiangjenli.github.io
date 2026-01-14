@@ -23,7 +23,7 @@
 
         [Language.python.english]
         title = "Python"
-        description = ["Familiar with pandas, numpy, scikit-learn, pytorch etc."]
+        # description = ["Familiar with pandas, numpy, scikit-learn, pytorch etc."]
 
         [Language.python.chinese]
         title = "Python"
@@ -249,7 +249,7 @@
 
         ["CI/CD".azureDevOps.english]
         title = "Azure DevOps"
-        description = ["Familiar with setting up personal Agent on Azure DevOps."]
+        # description = ["Familiar with setting up personal Agent on Azure DevOps."]
 
         ["CI/CD".azureDevOps.chinese]
         title = "Azure DevOps"
@@ -275,7 +275,7 @@
 
         ["CI/CD".MLflow.english]
         title = "MLflow"
-        description = ["Using MLflow to track experiments and mointor the hardware usage."]
+        # description = ["Using MLflow to track experiments and mointor the hardware usage."]
 
         ["CI/CD".MLflow.chinese]
         title = "MLflow"

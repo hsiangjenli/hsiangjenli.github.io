@@ -6,6 +6,7 @@ from typing import ClassVar, Optional, Union
 import toml
 from pydantic import AnyHttpUrl, BaseModel, ConfigDict, Field, field_validator
 
+
 class RepoStatus(Enum):
     ACTIVE = "active"
     DONE = "done"
@@ -67,7 +68,7 @@ class HtmlIcon(BaseModel):
             icon_html = f'<i style="{self.style}" class="{self.fontawesome}"></i>'
         else:
             icon_html = f'<i style="{self.style}" class="{self.icon_type.value}"></i>'
-        
+
         if self.href and self.fontawesome:
             return f'<a href="{self.href}" style="font-weight: bold" target="_blank"> {icon_html}{self.text} </a>'
         if self.href:
