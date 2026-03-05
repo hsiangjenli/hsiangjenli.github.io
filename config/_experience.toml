@@ -1,7 +1,27 @@
+[cathay_united_bank_ap]
+    [cathay_united_bank_ap.info]
+    period_start = "Upcoming Employee"
+    period_end = "now"
+
+    [[cathay_united_bank_ap.info.resource]]
+    href = "https://www.cathay-cube.com.tw/cathaybk"
+    text = "Cathay United Bank Official Website"
+    fontawesome = "fa-solid fa-building-columns"
+
+    [cathay_united_bank_ap.english]
+    title = "Cathay United Bank"
+    headline = "Application Programmer"
+    location = "Taipei, Taiwan"
+
+    [cathay_united_bank_ap.chinese]
+    title = "國泰世華銀行"
+    headline = "軟體工程師"
+    location = "臺北, 臺灣"
+
 [cathay_financial_holdings_devops]
     [cathay_financial_holdings_devops.info]
     period_start = "2025.04"
-    period_end = "now"
+    period_end = "2026.03"
 
     [[cathay_financial_holdings_devops.info.resource]]
     href = "https://medium.com/osi-tech-blog/subpage/opensource"
@@ -17,11 +37,13 @@
     title = "Cathay Financial Holdings"
     headline = "DevOps Engineer @ Open Source Innovation Group"
     location = "Taipei, Taiwan"
+    description = ["Evaluated AI developer tools (Windsurf, GitLab Duo, Amazon Q) and documented adoption recommendations","Built MCP-based PoC (NoSQL query, API planning) for workflow optimization","Researched AI/ML workflows (speaker recognition) and shared insights with team","Tested BDD/SDD/TDD with GitHub MCP for issue management automation","Authored technical blog posts and supported OSS community events"]
 
     [cathay_financial_holdings_devops.chinese]
     title = "國泰金控"
     headline = "DevOps 工程師 @ 開源創新發展小組"
     location = "臺北, 臺灣"
+    description = ["評估 AI 開發工具（Windsurf、GitLab Duo、Amazon Q）並整理導入建議","開發 MCP PoC（NoSQL 查詢、API 規劃）以優化工作流程","研究 AI/ML 工作流程（聲紋辨識）並分享技術洞察","測試 BDD/SDD/TDD + GitHub MCP 議題管理自動化","撰寫技術文章並支援 OSS 社群活動"]
 
 [scsb_digital_banking_da]
     [scsb_digital_banking_da.info]

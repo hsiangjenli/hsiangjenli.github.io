@@ -1,3 +1,61 @@
+[AI-Development]
+    [AI-Development.GitHub-Copilot]
+        [AI-Development.GitHub-Copilot.info]
+        level = "Medium"
+
+        [AI-Development.GitHub-Copilot.info.image]
+        text = "GitHub Copilot"
+        fontawesome = "fa-solid fa-robot"
+
+        [AI-Development.GitHub-Copilot.english]
+        title = "GitHub Copilot"
+
+        [AI-Development.GitHub-Copilot.chinese]
+        title = "GitHub Copilot"
+
+    
+    [AI-Development.Skills]
+        [AI-Development.Skills.info]
+        level = "Medium"
+
+        [AI-Development.Skills.info.image]
+        text = "Skills"
+        fontawesome = "fa-solid fa-kitchen-set"
+
+        [AI-Development.Skills.english]
+        title = "Skills"
+
+        [AI-Development.Skills.chinese]
+        title = "Skills"
+
+    [AI-Development.MCP]
+        [AI-Development.MCP.info]
+        level = "Medium"
+
+        [AI-Development.MCP.info.image]
+        text = "MCP (Model Context Protocol)"
+        fontawesome = "fa-solid fa-toolbox"
+
+        [AI-Development.MCP.english]
+        title = "Model Context Protocol"
+
+        [AI-Development.MCP.chinese]
+        title = "模型上下文協定"
+
+    [AI-Development.AI-ML-Workflow]
+        [AI-Development.AI-ML-Workflow.info]
+        level = "Medium"
+
+        [AI-Development.AI-ML-Workflow.info.image]
+        text = "AI/ML Workflow"
+        fontawesome = "fa-solid fa-chart-diagram"
+
+        [AI-Development.AI-ML-Workflow.english]
+        title = "AI/ML Workflow"
+
+        [AI-Development.AI-ML-Workflow.chinese]
+        title = "AI/ML 工作流程"
+
 [Language]
     [Language.java]
         [Language.java.info]

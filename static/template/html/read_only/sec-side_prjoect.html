@@ -2,7 +2,7 @@
     <!-- <div class="container"> -->
         <text class="larger b">Side Project</text>
 
-        <ul class="annot">
+        <div class="annot">
             {% for project in SIDE_PROJECT %}
                 {% if project.info.status.value == "done" %}
 
@@ -25,13 +25,13 @@
 
                         <ul>
                             {% for desc in project.english.description %}
-                                <li class="large" style="list-style-type: square;">{{ desc }}</li>
+                                <li class="large">{{ desc }}</li>
                             {% endfor %}
                         </ul>
                     </li>
                 {% endif %}
             {% endfor %}
-        </ul>
+                </div>
 
         <text class="larger b">IT Blog</text>
 
