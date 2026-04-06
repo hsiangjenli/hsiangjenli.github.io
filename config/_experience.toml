@@ -1,6 +1,6 @@
 [cathay_united_bank_ap]
     [cathay_united_bank_ap.info]
-    period_start = "Upcoming Employee"
+    period_start = "2026.04"
     period_end = "now"
 
     [[cathay_united_bank_ap.info.resource]]
@@ -10,12 +10,12 @@
 
     [cathay_united_bank_ap.english]
     title = "Cathay United Bank"
-    headline = "Application Programmer"
+    headline = "Java Application Programmer"
     location = "Taipei, Taiwan"
 
     [cathay_united_bank_ap.chinese]
     title = "國泰世華銀行"
-    headline = "軟體工程師"
+    headline = "Java 軟體工程師"
     location = "臺北, 臺灣"
 
 [cathay_financial_holdings_devops]
