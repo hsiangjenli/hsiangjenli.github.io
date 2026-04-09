@@ -10,12 +10,12 @@
 
     [cathay_united_bank_ap.english]
     title = "Cathay United Bank"
-    headline = "Java Application Programmer"
+    headline = "Java Application Programmer @ Business Intermediate-Platform Development (Credit Card Middle Platform Section)"
     location = "Taipei, Taiwan"
 
     [cathay_united_bank_ap.chinese]
     title = "國泰世華銀行"
-    headline = "Java 軟體工程師"
+    headline = "Java 軟體工程師 @ 業務中台部 - 信用卡中台科"
     location = "臺北, 臺灣"
 
 [cathay_financial_holdings_devops]
