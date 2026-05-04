@@ -1,12 +1,19 @@
 <section id="exp">
     <div class="container">
         <h3>Experiment</h3>
-        {% for exp in EXP %}
-            <text class="larger b">{{ exp.english.title }} </text> <em class="annot medium"> - {{ exp.info.period_start_year_month }} ~ {{ exp.info.period_end_year_month }}</em><br>
-            {% if exp.english.headline %}
-                <div class="annot large b">
-                    {{ exp.english.headline }}
-                        {% if exp.info.resource %} 
+        {% for group in EXP_GROUPS %}
+            <text class="larger b">{{ group.english_title }} </text> <em class="annot medium"> - {{ group.period_start_year_month }} ~ {{ group.period_end_year_month }}</em><br>
+            {% for exp in group.entries %}
+                {% if exp.english.headline %}
+                    <div class="annot large b">
+                        {% if group.show_entry_title %}
+                            {{ exp.english.title }} -
+                        {% endif %}
+                        {{ exp.english.headline }}
+                        {% if group.entries | length > 1 %}
+                            <em class="annot medium">({{ exp.info.period_start_year_month }} ~ {{ exp.info.period_end_year_month }})</em>
+                        {% endif %}
+                        {% if exp.info.resource %}
                         &nbsp;
                         (
                             {% for resource in exp.info.resource %}
@@ -14,13 +21,14 @@
                             {% endfor %}
                         )
                         {% endif %}
-                </div>
-                <ul>
-                    {% for des in exp.english.description %}
-                        <li class="annot large">{{ des }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+                    </div>
+                    <ul>
+                        {% for des in exp.english.description %}
+                            <li class="annot large">{{ des }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endfor %}
         {% endfor %}
     </div>
 </section>

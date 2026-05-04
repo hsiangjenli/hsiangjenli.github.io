@@ -30,14 +30,19 @@ IT_BLOG = "https://hsiangjenli.github.io/blog/"
 CHEATSHEET = "https://hsiangjenli.github.io/cheat-sheet/"
 LINKEDIN = "hsiangjenli"
 
+EXPERIENCE = TomlFile.load("config/_experience.toml")
+
 EDU = TomlFile.load("config/_education.toml").entries
-EXP = TomlFile.load("config/_experience.toml").entries
+EXP = EXPERIENCE.entries
+EXP_GROUPS = EXPERIENCE.grouped_entries
 SKILL = SkillTomlFile.load("config/_skill.toml").entries
 RI = TomlFile.load("config/_research.toml").entries
 SIDE_PROJECT = TomlFile.load("config/_project.toml").entries
 PULL_REQUEST = tutils.load_toml("config/_open_source.toml")
 AWARD = TomlFile.load("config/_award.toml").entries
-BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/enhanced/getPosts/").json()["data"]["posts"]
+BLOG_POST = requests.get(
+    "https://hsiangjenli.github.io/blog/api/enhanced/getPosts/"
+).json()["data"]["posts"]
 # Filter out the post with [chatgpt] tag
 BLOG_POST = [x for x in BLOG_POST if "[chatgpt]" not in x["title"].lower()]
 # Keep only the English post
@@ -99,6 +104,7 @@ if __name__ == "__main__":
     SEC_INFO = {
         "EDU": EDU,
         "EXP": EXP,
+        "EXP_GROUPS": EXP_GROUPS,
         "SKILL": SKILL,
         "RI": RI,
         "SIDE_PROJECT": SIDE_PROJECT,

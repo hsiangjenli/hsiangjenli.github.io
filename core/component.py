@@ -7,6 +7,48 @@ import toml
 from pydantic import AnyHttpUrl, BaseModel, ConfigDict, Field, field_validator
 
 
+def _parse_period_value(
+    value: datetime.date | str, *, is_end: bool
+) -> tuple[int, int, int]:
+    if isinstance(value, datetime.date):
+        return (value.year, value.month, value.day)
+
+    normalized = value.strip().lower()
+    if normalized == "now":
+        return (9999, 12, 31) if is_end else (0, 1, 1)
+
+    for fmt in ("%Y-%m-%d", "%Y.%m", "%Y"):
+        try:
+            parsed = datetime.datetime.strptime(value, fmt).date()
+            return (parsed.year, parsed.month, parsed.day)
+        except ValueError:
+            continue
+    raise ValueError(f"Invalid date format: {value}")
+
+
+def _common_prefix(values: list[str]) -> str:
+    if not values:
+        return ""
+
+    prefix = values[0]
+    for value in values[1:]:
+        while prefix and not value.startswith(prefix):
+            prefix = prefix[:-1]
+
+    prefix = prefix.rstrip(" -_/")
+    if not prefix:
+        return values[0]
+
+    if " " in prefix and prefix != values[0]:
+        prefix = prefix.rsplit(" ", 1)[0].rstrip(" -_/") or prefix
+    return prefix
+
+
+def _month_index(value: datetime.date | str, *, is_end: bool) -> int:
+    year, month, _ = _parse_period_value(value, is_end=is_end)
+    return year * 12 + month
+
+
 class RepoStatus(Enum):
     ACTIVE = "active"
     DONE = "done"
@@ -89,6 +131,7 @@ class EntryInfo(BaseModel):
     period_start: Optional[Union[datetime.date, str]] = Field("Now")
     period_end: Optional[Union[datetime.date, str]] = Field("Now", alias="graduation")
     status: Optional[RepoStatus] = RepoStatus.DONE
+    group: Optional[str] = None
 
     resource: Optional[list[HtmlIcon]] = []
 
@@ -157,6 +200,7 @@ class EntryInfo(BaseModel):
 
 class EntryDescription(BaseModel):
     title: str = Field(alias="university")
+    group_title: Optional[str] = None
     description: Optional[list[str]] = []
     model_config = ConfigDict(extra="allow", populate_by_name=True)
 
@@ -170,10 +214,82 @@ class EntryDescription(BaseModel):
 
 
 class Entry(BaseModel):
+    entry_id: str = Field(default="", exclude=True)
     info: EntryInfo
     english: EntryDescription
     chinese: EntryDescription
     model_config = ConfigDict(extra="allow")
+
+    @property
+    def group_key(self) -> str:
+        if self.info.group:
+            return self.info.group
+        if not self.entry_id:
+            return self.english.title.lower()
+        return self.entry_id.split("_", 1)[0]
+
+
+class EntryGroup(BaseModel):
+    entries: list[Entry]
+
+    def _custom_group_title(self, language: str) -> str | None:
+        for entry in self.entries:
+            description = getattr(entry, language)
+            if description.group_title:
+                return description.group_title
+        return None
+
+    def can_merge(self, entry: Entry) -> bool:
+        last_entry = self.entries[-1]
+
+        if last_entry.group_key != entry.group_key:
+            return False
+
+        newer_start = _month_index(last_entry.info.period_start, is_end=False)
+        older_end = _month_index(entry.info.period_end, is_end=True)
+        return older_end + 1 >= newer_start
+
+    @property
+    def english_title(self) -> str:
+        custom_title = self._custom_group_title("english")
+        if custom_title:
+            return custom_title
+        if len(self.entries) == 1:
+            return self.entries[0].english.title
+        return _common_prefix([entry.english.title for entry in self.entries])
+
+    @property
+    def chinese_title(self) -> str:
+        custom_title = self._custom_group_title("chinese")
+        if custom_title:
+            return custom_title
+        if len(self.entries) == 1:
+            return self.entries[0].chinese.title
+        return _common_prefix([entry.chinese.title for entry in self.entries])
+
+    @property
+    def period_start_year_month(self) -> str:
+        entry = min(
+            self.entries,
+            key=lambda candidate: _parse_period_value(
+                candidate.info.period_start, is_end=False
+            ),
+        )
+        return entry.info.period_start_year_month
+
+    @property
+    def period_end_year_month(self) -> str:
+        entry = max(
+            self.entries,
+            key=lambda candidate: _parse_period_value(
+                candidate.info.period_end, is_end=True
+            ),
+        )
+        return entry.info.period_end_year_month
+
+    @property
+    def show_entry_title(self) -> bool:
+        return any(entry.english.title != self.english_title for entry in self.entries)
 
 
 class TomlFile(BaseModel):
@@ -182,7 +298,19 @@ class TomlFile(BaseModel):
     @classmethod
     def load(cls, path: Path) -> list[Entry]:
         data = toml.load(path)
-        return cls(entries=[data[entry] for entry in data])
+        return cls(entries=[Entry(entry_id=entry, **data[entry]) for entry in data])
+
+    @property
+    def grouped_entries(self) -> list[EntryGroup]:
+        grouped_entries: list[EntryGroup] = []
+
+        for entry in self.entries:
+            if grouped_entries and grouped_entries[-1].can_merge(entry):
+                grouped_entries[-1].entries.append(entry)
+                continue
+            grouped_entries.append(EntryGroup(entries=[entry]))
+
+        return grouped_entries
 
 
 class SkillTomlFile(BaseModel):
