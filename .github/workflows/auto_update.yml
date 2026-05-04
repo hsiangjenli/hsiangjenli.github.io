@@ -24,7 +24,7 @@ jobs:
     - name: Setup Python  # 步驟 2：設定 Python 環境
       uses: actions/setup-python@v4
       with:
-        python-version: 3.9  # 指定 Python 版本為 3.9
+        python-version: '3.10'
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Install requirements  # 步驟 3：安裝相依套件
       run: |
