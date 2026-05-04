@@ -1,7 +1,7 @@
 import datetime
 from enum import Enum
 from pathlib import Path
-from typing import ClassVar, Optional, Union
+from typing import ClassVar
 
 import toml
 from pydantic import AnyHttpUrl, BaseModel, ConfigDict, Field, field_validator
@@ -68,9 +68,9 @@ class FontAwesomeIcon(Enum):
 
 
 class HtmlIcon(BaseModel):
-    text: str = None
-    fontawesome: str = None
-    href: AnyHttpUrl = None
+    text: str | None = None
+    fontawesome: str | None = None
+    href: AnyHttpUrl | None = None
 
     EXTENSION_MAPPING: ClassVar[dict[tuple[str, ...], FontAwesomeIcon]] = {
         (".pdf",): FontAwesomeIcon.PDF,
@@ -128,16 +128,16 @@ class HtmlIcon(BaseModel):
 
 
 class EntryInfo(BaseModel):
-    period_start: Optional[Union[datetime.date, str]] = Field("Now")
-    period_end: Optional[Union[datetime.date, str]] = Field("Now", alias="graduation")
-    status: Optional[RepoStatus] = RepoStatus.DONE
-    group: Optional[str] = None
+    period_start: datetime.date | str = Field("Now")
+    period_end: datetime.date | str = Field("Now", alias="graduation")
+    status: RepoStatus = RepoStatus.DONE
+    group: str | None = None
 
-    resource: Optional[list[HtmlIcon]] = []
+    resource: list[HtmlIcon] = Field(default_factory=list)
 
-    tags: Optional[list[str]] = []
-    weight: Optional[int] = 0
-    image: HtmlIcon = None
+    tags: list[str] = Field(default_factory=list)
+    weight: int = 0
+    image: HtmlIcon | None = None
 
     model_config = ConfigDict(extra="allow", populate_by_name=True)
 
@@ -145,6 +145,8 @@ class EntryInfo(BaseModel):
     def check_status(cls, value):
         if value is None:
             return RepoStatus.DONE
+        if isinstance(value, RepoStatus):
+            return value
         if isinstance(value, str):
             value = value.lower()
             if value == "active":
@@ -153,9 +155,12 @@ class EntryInfo(BaseModel):
                 return RepoStatus.ARCHIVED
             else:
                 raise ValueError(f"Invalid status: {value}")
+        raise ValueError(f"Invalid status: {value}")
 
     @field_validator("period_start", "period_end")
     def parse_date(cls, value):
+        if isinstance(value, datetime.date):
+            return value
         if isinstance(value, str):
             return value
         # 處理多種時間格式
@@ -193,15 +198,15 @@ class EntryInfo(BaseModel):
 
     @property
     def period_end_year_month_equal_now(self):
-        if self.period_end.lower() == "now":
+        if isinstance(self.period_end, str) and self.period_end.lower() == "now":
             return "Now 🔥🔥🔥"
         return self.period_end_year_month
 
 
 class EntryDescription(BaseModel):
     title: str = Field(alias="university")
-    group_title: Optional[str] = None
-    description: Optional[list[str]] = []
+    group_title: str | None = None
+    description: list[str] = Field(default_factory=list)
     model_config = ConfigDict(extra="allow", populate_by_name=True)
 
     @property
@@ -210,6 +215,8 @@ class EntryDescription(BaseModel):
 
     @field_validator("description", mode="before")
     def capitalize_first_letter(cls, description):
+        if description is None:
+            return []
         return [d.capitalize() for d in description]
 
 
@@ -296,7 +303,7 @@ class TomlFile(BaseModel):
     entries: list[Entry]
 
     @classmethod
-    def load(cls, path: Path) -> list[Entry]:
+    def load(cls, path: str | Path) -> "TomlFile":
         data = toml.load(path)
         return cls(entries=[Entry(entry_id=entry, **data[entry]) for entry in data])
 
@@ -317,7 +324,7 @@ class SkillTomlFile(BaseModel):
     entries: dict[str, list[Entry]]  # 動態解析各分類
 
     @classmethod
-    def load(cls, path: str):
+    def load(cls, path: str | Path) -> "SkillTomlFile":
         data = toml.load(path)
         return cls(
             entries={
