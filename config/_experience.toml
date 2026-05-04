@@ -2,6 +2,7 @@
     [cathay_united_bank_ap.info]
     period_start = "2026.04"
     period_end = "now"
+    group = "cathay_financial_group"
 
     [[cathay_united_bank_ap.info.resource]]
     href = "https://www.cathay-cube.com.tw/cathaybk"
@@ -10,11 +11,13 @@
 
     [cathay_united_bank_ap.english]
     title = "Cathay United Bank"
+    group_title = "Cathay Financial Group"
     headline = "Java Application Programmer @ Business Intermediate-Platform Development (Credit Card Middle Platform Section)"
     location = "Taipei, Taiwan"
 
     [cathay_united_bank_ap.chinese]
     title = "國泰世華銀行"
+    group_title = "國泰金融集團"
     headline = "Java 軟體工程師 @ 業務中台部 - 信用卡中台科"
     location = "臺北, 臺灣"
 
@@ -22,6 +25,7 @@
     [cathay_financial_holdings_devops.info]
     period_start = "2025.04"
     period_end = "2026.03"
+    group = "cathay_financial_group"
 
     [[cathay_financial_holdings_devops.info.resource]]
     href = "https://medium.com/osi-tech-blog/subpage/opensource"
