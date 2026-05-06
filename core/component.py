@@ -202,6 +202,37 @@ class EntryInfo(BaseModel):
             return "Now 🔥🔥🔥"
         return self.period_end_year_month
 
+    def _github_user_repo(self) -> str | None:
+        for r in self.resource:
+            if r.href and "github.com" in str(r.href):
+                parts = str(r.href).rstrip("/").split("github.com/")
+                if len(parts) == 2:
+                    path = parts[1].strip("/")
+                    segments = path.split("/")
+                    if len(segments) >= 2:
+                        return f"{segments[0]}/{segments[1]}"
+        return None
+
+    @property
+    def period_badge(self) -> str:
+        _color = "3b3838"
+        _style = f"style=flat-square&color={_color}"
+        user_repo = self._github_user_repo()
+        if user_repo:
+            created = f"https://img.shields.io/github/created-at/{user_repo}?{_style}"
+            last_commit = (
+                f"https://img.shields.io/github/last-commit/{user_repo}?{_style}"
+            )
+            return (
+                f'<img src="{created}" alt="created">'
+                f" ~ "
+                f'<img src="{last_commit}" alt="last commit">'
+            )
+        start = str(self.period_start_year_month).replace("-", "--")
+        end = str(self.period_end_year_month).replace("-", "--")
+        badge = f"https://img.shields.io/badge/{start}_~_{end}-{_color}?{_style}"
+        return f'<img src="{badge}" alt="{self.period_start_year_month} ~ {self.period_end_year_month}">'
+
 
 class EntryDescription(BaseModel):
     title: str = Field(alias="university")
