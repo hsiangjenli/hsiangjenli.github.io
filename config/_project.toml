@@ -1,6 +1,25 @@
 # odd number is finance related project
 # even number is computer science related project
 
+[ai-skills]
+[ai-skills.info]
+period_end = "Now"
+period_start = "2026.03"
+tags = ['Python', 'AI', 'Skills']
+weight = 4
+
+[[ai-skills.info.resource]]
+href = "https://github.com/hsiangjenli/skills"
+text = "GitHub Repository"
+
+[ai-skills.english]
+description = []
+title = "AI Skills"
+
+[ai-skills.chinese]
+description = []
+title = "AI Skills"
+
 [python-mcp-template]
 [python-mcp-template.info]
 period_end = "2025.12"
