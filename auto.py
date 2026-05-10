@@ -13,7 +13,7 @@ Q = "<div>The way lead to success is your own resolution.</div><div>得常咬菜
 
 NAME = "Hsiang-Jen Li"
 ZH_TW_NAME = "李享紝"
-NICKNAME = "RN"
+NICKNAME = "Reon"
 
 SEEKING_POSITION = [
     "Seeking a Data & MLOps Engineer role with a focus on research and complex data relationships",
@@ -22,7 +22,6 @@ SEEKING_POSITION = [
     "Standardizing development practices to automate CI/CD",
     "Unifying dev and deploy environments through Docker",
 ]
-CURRENT_POSITION = "Finance & CS Background | Data Analyst @ SCSB"
 
 GITHUB = "hsiangjenli"
 MAIL = "hsiangjenli@gmail.com"
@@ -31,6 +30,12 @@ CHEATSHEET = "https://hsiangjenli.github.io/cheat-sheet/"
 LINKEDIN = "hsiangjenli"
 
 EXPERIENCE = TomlFile.load("config/_experience.toml")
+# 獲取最新的職位（假設職位按照時間順序排列，最新的職位在最後）
+CURRENT_POSITION = EXPERIENCE.entries[0] if EXPERIENCE.entries else None
+if CURRENT_POSITION:
+    english = CURRENT_POSITION.english
+    title = english.title
+    CURRENT_POSITION = f"{english.headline} @ {title} ({english.location})"
 
 EDU = TomlFile.load("config/_education.toml").entries
 EXP = EXPERIENCE.entries

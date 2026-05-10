@@ -237,6 +237,8 @@ class EntryInfo(BaseModel):
 class EntryDescription(BaseModel):
     title: str = Field(alias="university")
     group_title: str | None = None
+    headline: str | None = None
+    location: str | None = None
     description: list[str] = Field(default_factory=list)
     model_config = ConfigDict(extra="allow", populate_by_name=True)
 
@@ -245,10 +247,10 @@ class EntryDescription(BaseModel):
         return self.title
 
     @field_validator("description", mode="before")
-    def capitalize_first_letter(cls, description):
+    def normalize_description(cls, description):
         if description is None:
             return []
-        return [d.capitalize() for d in description]
+        return description
 
 
 class Entry(BaseModel):

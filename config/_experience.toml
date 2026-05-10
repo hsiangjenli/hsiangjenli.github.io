@@ -12,14 +12,16 @@
     [cathay_united_bank_ap.english]
     title = "Cathay United Bank"
     group_title = "Cathay Financial Group"
-    headline = "Java Application Programmer @ Business Intermediate-Platform Development (Credit Card Middle Platform Section)"
+    headline = "Java Application Programmer"
     location = "Taipei, Taiwan"
+    description = ["Primary Role: BIPD - Credit Card Middle Platform Section @ Cathay United Bank (IT)"]
 
     [cathay_united_bank_ap.chinese]
     title = "國泰世華銀行"
     group_title = "國泰金融集團"
-    headline = "Java 軟體工程師 @ 業務中台部 - 信用卡中台科"
+    headline = "Java 軟體工程師"
     location = "臺北, 臺灣"
+    description = ["主要職位：業務中台部 - 信用卡中台科 @ 國泰世華銀行（IT）"]
 
 [cathay_financial_holdings_devops]
     [cathay_financial_holdings_devops.info]
@@ -41,13 +43,13 @@
     title = "Cathay Financial Holdings"
     headline = "DevOps Engineer @ Open Source Innovation Group"
     location = "Taipei, Taiwan"
-    description = ["Evaluated AI developer tools (Windsurf, GitLab Duo, Amazon Q) and documented adoption recommendations","Built MCP-based PoC (NoSQL query, API planning) for workflow optimization","Researched AI/ML workflows (speaker recognition) and shared insights with team","Tested BDD/SDD/TDD with GitHub MCP for issue management automation","Authored technical blog posts and supported OSS community events"]
+        description = ["Primary Role: OSI Team @ Cathay Financial Holdings (DDT)","Concurrent Role: TIPD - Data Middle Platform Section @ Cathay United Bank (IT)","Tool Evaluation: Assessed AI developer tools (Windsurf, GitLab Duo, Amazon Q Developer) and produced internal adoption reports","Prototyping & Research: Built MCP-based prototypes for NoSQL querying and API planning (MongoDB + Swagger)","Prototyping & Research: Conducted two-phase speaker recognition research and presented findings internally","Engineering Practice: Explored BDD/SDD/TDD workflows integrated with GitHub MCP for issue tracking automation","Open Source & Community: Authored technical blog posts and assisted with Open Source Meetup events"]
 
     [cathay_financial_holdings_devops.chinese]
     title = "國泰金控"
     headline = "DevOps 工程師 @ 開源創新發展小組"
     location = "臺北, 臺灣"
-    description = ["評估 AI 開發工具（Windsurf、GitLab Duo、Amazon Q）並整理導入建議","開發 MCP PoC（NoSQL 查詢、API 規劃）以優化工作流程","研究 AI/ML 工作流程（聲紋辨識）並分享技術洞察","測試 BDD/SDD/TDD + GitHub MCP 議題管理自動化","撰寫技術文章並支援 OSS 社群活動"]
+        description = ["主要職位：OSI 開源創新發展小組 @ 國泰金控（DDT）","兼任職位：技術中台部 - 數據中台科 @ 國泰世華銀行（IT）"]
 
 [scsb_digital_banking_da]
     [scsb_digital_banking_da.info]
