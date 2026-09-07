@@ -1,0 +1,66 @@
+name: Build, publish, and deploy resume
+
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [blog-updated]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: resume-pages
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Lint
+        run: uv run --with ruff ruff check auto.py sitegen tests
+      - name: Test and render
+        run: |
+          uv run --with pytest pytest
+          uv run auto.py --output dist
+      - name: Build Docker image
+        if: github.event_name != 'repository_dispatch'
+        run: docker build --tag hsiangjenli/personal-site:sha-${{ github.sha }} .
+
+  publish-image:
+    if: github.event_name != 'repository_dispatch'
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: |
+            hsiangjenli/personal-site:latest
+            hsiangjenli/personal-site:sha-${{ github.sha }}
+
+  deploy-pages:
+    needs: verify
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run auto.py --output dist
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

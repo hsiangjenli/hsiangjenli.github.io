@@ -1,5 +1,8 @@
+dist/
 hsiangjenli.github.io/
 test*
+!tests/
+!tests/*.py
 .DS_Store
 *.tex
 

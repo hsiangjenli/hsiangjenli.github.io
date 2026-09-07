@@ -1,0 +1,8 @@
+:root { color-scheme: light; }
+body { background: #fff; color: #444; }
+#header { background: #f7f7f7; }
+.chinese-name { width: min(12rem, 80%); height: auto; vertical-align: middle; }
+.locale-link { font-family: inherit; font-size: .85rem; }
+#main ul { margin-bottom: 1.5rem; }
+#main strong { color: #333; }
+time { font-family: monospace; color: #666; }

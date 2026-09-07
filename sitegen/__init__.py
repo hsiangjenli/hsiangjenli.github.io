@@ -1,0 +1,1 @@
+"""Static resume site generator."""

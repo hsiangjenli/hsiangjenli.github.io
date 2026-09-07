@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ ui.html_lang }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="{{ site.name }} ({{ site.nickname }})"><title>{{ site.name }} ({{ site.nickname }})</title>
+  <link rel="icon" href="{{ asset_prefix }}static/image/ico.svg">
+  <link rel="stylesheet" href="{{ asset_prefix }}static/css/main.css"><link rel="stylesheet" href="{{ asset_prefix }}static/css/custom.css">
+  <link rel="stylesheet" href="{{ asset_prefix }}static/css/simple-icon.css"><link rel="stylesheet" href="{{ asset_prefix }}static/shared/brand.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+</head>
+<body class="is-preload" data-analytics-id="{{ site.analytics_id }}" data-development="{{ dev_mode | lower }}">
+  {% include "resume/header.html" %}
+  <div id="wrapper"><main id="main">
+    {% include "resume/sections/intro.html" %}{% include "resume/sections/education.html" %}{% include "resume/sections/experience.html" %}
+    {% include "resume/sections/awards.html" %}{% include "resume/sections/skills.html" %}{% include "resume/sections/interest.html" %}
+  </main>{% include "resume/footer.html" %}</div>
+  <script src="{{ asset_prefix }}static/js/jquery.min.js"></script><script src="{{ asset_prefix }}static/js/jquery.scrollex.min.js"></script>
+  <script src="{{ asset_prefix }}static/js/jquery.scrolly.min.js"></script><script src="{{ asset_prefix }}static/js/browser.min.js"></script>
+  <script src="{{ asset_prefix }}static/js/breakpoints.min.js"></script><script src="{{ asset_prefix }}static/js/util.js"></script>
+  <script src="{{ asset_prefix }}static/js/main.js"></script><script src="{{ asset_prefix }}static/shared/brand.js"></script><script src="{{ asset_prefix }}static/shared/analytics.js"></script>
+</body></html>
