@@ -1,16 +1,20 @@
 <section id="skill">
     <div class="container">
         <h3>Skill</h3>
+        <div class="skill-grid">
         {% for category in SKILL %}
-            <h4 class="larger b">{{ category | replace('_', '/') }}</h4>
-            {% for skill in SKILL[category] %}
+            <div class="skill-category">
+                <h4 class="larger b">{{ category | replace('_', '/') }}</h4>
+                {% for skill in SKILL[category] %}
                 <text class="annot large b">{{ skill.info.image.icon | safe }} {{ skill.english.title }}</text>
                 <ul>
                     {% for des in skill.english.description %}
                     <li class="annot large">{{ des }}</li>
                     {% endfor %}
                 </ul>
-            {% endfor %}
+                {% endfor %}
+            </div>
         {% endfor %}
+        </div>
     </div>
 </section>
