@@ -169,49 +169,49 @@
         title = "FastAPI"
 
 
-    [Website.html]
-        [Website.html.info]
-        level = "Beginner"
+    # [Website.html]
+    #     [Website.html.info]
+    #     level = "Beginner"
 
-        [Website.html.info.image]
-        text = "HTML"
-        fontawesome = "fa-brands fa-html5"
+    #     [Website.html.info.image]
+    #     text = "HTML"
+    #     fontawesome = "fa-brands fa-html5"
 
-        [Website.html.english]
-        title = "HTML"
+    #     [Website.html.english]
+    #     title = "HTML"
 
-        [Website.html.chinese]
-        title = "HTML"
-
-
-    [Website.CSSSCSS]
-        [Website.CSSSCSS.info]
-        level = "Beginner"
-
-        [Website.CSSSCSS.info.image]
-        text = "CSS/SCSS"
-        fontawesome = "fa-brands fa-css3"
-
-        [Website.CSSSCSS.english]
-        title = "CSS/SCSS"
-
-        [Website.CSSSCSS.chinese]
-        title = "CSS/SCSS"
+    #     [Website.html.chinese]
+    #     title = "HTML"
 
 
-    [Website.bootstrap]
-        [Website.bootstrap.info]
-        level = "Beginner"
+    # [Website.CSSSCSS]
+    #     [Website.CSSSCSS.info]
+    #     level = "Beginner"
 
-        [Website.bootstrap.info.image]
-        text = "Bootstrap"
-        fontawesome = "fa-brands fa-bootstrap"
+    #     [Website.CSSSCSS.info.image]
+    #     text = "CSS/SCSS"
+    #     fontawesome = "fa-brands fa-css3"
 
-        [Website.bootstrap.english]
-        title = "Bootstrap"
+    #     [Website.CSSSCSS.english]
+    #     title = "CSS/SCSS"
 
-        [Website.bootstrap.chinese]
-        title = "Bootstrap"
+    #     [Website.CSSSCSS.chinese]
+    #     title = "CSS/SCSS"
+
+
+    # [Website.bootstrap]
+    #     [Website.bootstrap.info]
+    #     level = "Beginner"
+
+    #     [Website.bootstrap.info.image]
+    #     text = "Bootstrap"
+    #     fontawesome = "fa-brands fa-bootstrap"
+
+    #     [Website.bootstrap.english]
+    #     title = "Bootstrap"
+
+    #     [Website.bootstrap.chinese]
+    #     title = "Bootstrap"
 
 
 [Tool]
